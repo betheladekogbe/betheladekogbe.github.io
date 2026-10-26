@@ -13,6 +13,11 @@ art: series
 
 This past Holy Week, I had the privilege of directing a six-person crew to produce an eight-part video devotional series for Pentecostal Tabernacle. We crafted a daily sequence of reflections designed to guide the community through the biggest week in the Christian calendar.
 
+<figure class="os-story-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/xtCVRaLPyUY" title="Holy Week Devotional Series — video example" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <figcaption><a href="https://youtu.be/xtCVRaLPyUY" target="_blank" rel="noopener noreferrer">Watch this devotional on YouTube ↗</a></figcaption>
+</figure>
+
 ## Pre-Production
 
 This project began with a proposal. It was revised and approved by Pentecostal Tabernacle's creative team and executive board. The scripts would be pre-written by me and approved by the communications director of the church, but we all agreed to let the speaker have some creative liberties. We wanted the content to be emotionally valuable for the talent and feel personal to the congregation, so we made a special effort to pick members of the community who were well-spoken, personable, and represented the diversity of the church.
@@ -37,6 +42,11 @@ We pulled off this very quick job within a single day with PT's stellar media te
 - **Talent Relations Manager:** Anna Adekogbe
 - **Lead Production Coordinator:** Joshua Ikegwu
 
+<figure class="os-story-photo">
+  <a href="https://static.wixstatic.com/media/aacd86_8b4604b20ea24029ac79c044a0f6401d~mv2.png/v1/fill/w_1920,h_1280,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/aacd86_8b4604b20ea24029ac79c044a0f6401d~mv2.png" target="_blank" rel="noopener noreferrer"><img src="https://static.wixstatic.com/media/aacd86_8b4604b20ea24029ac79c044a0f6401d~mv2.png/v1/fill/w_1920,h_1280,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/aacd86_8b4604b20ea24029ac79c044a0f6401d~mv2.png" alt="Behind-the-scenes production photograph inside Pentecostal Tabernacle's sanctuary, showing a crew member preparing a speaker for filming." loading="lazy" decoding="async"></a>
+  <figcaption>Behind the scenes during the Holy Week devotional production.</figcaption>
+</figure>
+
 ## Post-Production
 
 We filmed everything one week before Holy Week began, so we had to edit everything within a single week! Thankfully, we had such excellent content filmed, so it was easy to edit it into something wonderful. With some light foley work and some color correction, we were able to create an excellent video series that released day by day, celebrating the Easter season.
@@ -45,8 +55,13 @@ We filmed everything one week before Holy Week began, so we had to edit everythi
 
 You can find the entire video series on all Pentecostal Tabernacle's social media, and we've included some written comments from Pentecostal Tabernacle's leadership below.
 
+<figure class="os-story-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/0mfl1BOiD5I" title="Easter Sunday — Holy Week Daily Devotional number eight" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <figcaption><a href="https://youtu.be/0mfl1BOiD5I" target="_blank" rel="noopener noreferrer">Watch Easter Sunday devotional on YouTube ↗</a></figcaption>
+</figure>
+
 > Great job on creating the wonderful devotionals this week! — Elder Lady Carmen
 
 > Thank you for sharing these videos. They are well done and thought provoking. — Elder Roy Ray
 
-[Watch the series and view the original photographs ↗](https://thedkob.wixsite.com/betheladekogbe/post/holy-week-devotional-video-series)
+[Watch the Easter Sunday devotional on YouTube ↗](https://youtu.be/0mfl1BOiD5I)
