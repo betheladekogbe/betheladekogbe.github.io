@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="subpage-header"><a class="breadcrumb" href="{{ '/work/' | relative_url }}">← All work</a><span class="eyebrow">Case study / {{ page.category }}</span></div>
+<article class="article-shell">
+  <header class="article-header">
+    <p class="eyebrow">{{ page.year }} · {{ page.organization }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.summary }}</p>
+  </header>
+  <div class="case-summary">
+    <div><span class="meta-title">Role</span><strong>{{ page.role }}</strong></div>
+    <div><span class="meta-title">Focus</span><strong>{{ page.category }}</strong></div>
+    <div><span class="meta-title">Year</span><strong>{{ page.year }}</strong></div>
+  </div>
+  {% if page.image %}<figure class="feature-media"><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}" loading="lazy"></figure>{% else %}<div class="visual-placeholder visual-placeholder--wide"><span>PROJECT MATERIALS / ADD PHOTOGRAPH OR VIDEO STILL</span></div>{% endif %}
+  <div class="prose">{{ content }}</div>
+  <div class="next-link"><a href="{{ '/work/' | relative_url }}">Explore more work <span aria-hidden="true">↗</span></a></div>
+</article>

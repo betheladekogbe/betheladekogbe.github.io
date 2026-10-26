@@ -1,0 +1,12 @@
+<header class="site-header">
+  <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Bethel Adekogbe home">
+    <span class="brand-mark" aria-hidden="true">BA<span class="brand-dot">.</span></span>
+    <span class="wordmark-name">Bethel Adekogbe <small>/ Portfolio</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="{{ '/work/' | relative_url }}" {% if page.section == 'work' %}aria-current="page"{% endif %}>Work</a>
+    <a href="{{ '/about/' | relative_url }}" {% if page.section == 'about' %}aria-current="page"{% endif %}>About</a>
+    <a href="{{ '/journal/' | relative_url }}" {% if page.section == 'journal' %}aria-current="page"{% endif %}>Journal</a>
+    <a href="{{ '/contact/' | relative_url }}" {% if page.section == 'contact' %}aria-current="page"{% endif %}>Contact <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>

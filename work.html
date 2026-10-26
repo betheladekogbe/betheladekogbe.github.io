@@ -1,0 +1,8 @@
+---
+layout: default
+title: Work
+permalink: /work/
+section: work
+---
+<section class="page-intro"><span class="eyebrow">Portfolio / 01</span><h1>Work that <em>makes an impact.</em></h1><p>Selected projects spanning educational media, creative production, live experiences, and team development.</p></section>
+<div class="portfolio-list">{% assign sorted_projects = site.projects | sort: 'order' %}{% for project in sorted_projects %}<a href="{{ project.url | relative_url }}" class="portfolio-row"><span class="portfolio-number">0{{ forloop.index }}</span><span class="portfolio-row-main"><strong>{{ project.title }}</strong><small>{{ project.organization }} / {{ project.category }}</small></span><span class="portfolio-year">{{ project.year }}</span><span class="portfolio-arrow">↗</span></a>{% endfor %}</div>

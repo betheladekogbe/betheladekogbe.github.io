@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-topline"><span class="eyebrow">Independent creative portfolio / 2026</span><span class="live-signal"><i></i> Currently exploring new opportunities</span></div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="hero-kicker">Creative production <span>+</span> learning experiences</p>
+      <h1 id="hero-title">Media that connects.<br><em>Experiences that teach.</em></h1>
+      <p class="hero-description">I'm Bethel — a multimedia professional who brings together storytelling, production technology, and people development. I build the work and help teams grow around it.</p>
+      <div class="hero-actions"><a class="button button-dark" href="{{ '/work/' | relative_url }}">Explore my work <span>↗</span></a><a class="text-link" href="{{ '/about/' | relative_url }}">More about me ↗</a></div>
+    </div>
+    <div class="desktop-composition" aria-label="Desktop-inspired navigation to work and journal">
+      <div class="desktop-toolbar"><span>PORTFOLIO.OS</span><span><span class="status-square"></span> ONLINE</span></div>
+      <div class="desktop-body">
+        <div class="file-stack" aria-hidden="true"><span class="folder-shape f-blue"></span><span class="folder-shape f-orange"></span></div>
+        <a class="os-shortcut shortcut-work" href="{{ '/work/' | relative_url }}"><span class="shortcut-glyph">▦</span><span>Selected<br>work</span><small>01</small></a>
+        <a class="os-shortcut shortcut-journal" href="{{ '/journal/' | relative_url }}"><span class="shortcut-glyph">✎</span><span>Field<br>notes</span><small>02</small></a>
+        <div class="floating-window" aria-hidden="true"><div class="window-top"><span class="window-dots"><i></i><i></i><i></i></span><span>about_this_portfolio.txt</span><span>↗</span></div><div class="window-content"><span class="window-label">CURRENT FOCUS</span><strong>Stories.<br>Systems.<br>People.</strong><span class="window-tag">Creative leadership / Educational media</span></div></div>
+      </div>
+      <div class="desktop-bottom"><span>DESIGNED FOR CURIOSITY</span><span>↘ BROWSE FILES</span></div>
+    </div>
+  </div>
+</section>
+<section class="section work-section" id="selected-work">
+  <div class="section-heading"><div><p class="eyebrow">01 / Featured projects</p><h2>Selected work<span class="heading-dot">.</span></h2></div><a class="inline-arrow" href="{{ '/work/' | relative_url }}">View all projects ↗</a></div>
+  <div class="project-grid">
+    {% assign featured = site.projects | where: 'featured', true | sort: 'order' %}
+    {% for project in featured %}
+    <a class="project-tile" href="{{ project.url | relative_url }}">
+      <div class="project-art project-art--{{ project.art | default: 'neutral' }}"><span class="art-index">0{{ forloop.index }}</span><div class="art-graphic">{% if project.art == 'series' %}<span class="graphic-orbit">✳</span><span class="graphic-type">HOLY<br>WEEK</span>{% elsif project.art == 'team' %}<span class="team-grid"><b>●</b><b>●</b><b>●</b><b>●</b><b>●</b><b>●</b></span>{% else %}<span class="graphic-type">LIVE<br>PRODUCTION</span>{% endif %}</div><span class="art-corner">↗</span></div>
+      <div class="project-caption"><div><span class="project-type">{{ project.category }} · {{ project.year }}</span><h3>{{ project.title }}</h3><p>{{ project.summary }}</p></div><span class="tile-arrow">↗</span></div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+<section class="section approach-section"><div class="approach-intro"><p class="eyebrow">02 / Approach</p><h2>I work at the intersection of <em>creative direction</em> and <em>human development.</em></h2></div><div class="principles"><div><span>01</span><h3>Make it clear.</h3><p>Turn complex ideas into accessible experiences through purposeful storytelling and visual communication.</p></div><div><span>02</span><h3>Make it work.</h3><p>Pair creative ambition with reliable production systems and careful execution.</p></div><div><span>03</span><h3>Make people better.</h3><p>Design opportunities for teams to learn, collaborate, and take ownership.</p></div></div></section>
+<section class="section notes-section"><div class="section-heading"><div><p class="eyebrow">03 / Journal</p><h2>Field notes<span class="heading-dot">.</span></h2></div><a class="inline-arrow" href="{{ '/journal/' | relative_url }}">Read the journal ↗</a></div><div class="journal-preview"><p>Ideas from production, leadership, education, and the work in between.</p><a class="journal-open" href="{{ '/journal/' | relative_url }}">Open journal <span>→</span></a></div></section>

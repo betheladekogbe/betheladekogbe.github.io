@@ -1,0 +1,27 @@
+title: "Bethel Adekogbe"
+description: "Educational media, creative production, and team development."
+url: ""
+baseurl: ""
+markdown: kramdown
+permalink: /journal/:title/
+collections:
+  projects:
+    output: true
+    permalink: /work/:name/
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+exclude:
+  - README.md
+  - preview/
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
