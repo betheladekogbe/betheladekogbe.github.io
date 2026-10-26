@@ -1,9 +1,20 @@
 ---
 layout: default
 ---
-<div class="subpage-header"><a class="breadcrumb" href="{{ '/journal/' | relative_url }}">← Journal</a><span class="eyebrow">Field notes / {{ page.date | date: '%B %Y' }}</span></div>
-<article class="article-shell">
-  <header class="article-header"><p class="eyebrow">{{ page.date | date: '%B %-d, %Y' }}</p><h1>{{ page.title }}</h1>{% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}</header>
-  <div class="prose">{{ content }}</div>
-  <div class="next-link"><a href="{{ '/journal/' | relative_url }}">More journal entries <span aria-hidden="true">↗</span></a></div>
-</article>
+<section class="desktop-page" aria-label="Journal post"><div class="os-frame"><div class="os-wallpaper">
+<div class="os-sun" aria-hidden="true"></div>
+<div class="os-hill os-hill-one" aria-hidden="true"></div>
+<div class="os-hill os-hill-two" aria-hidden="true"></div>
+{% include os-page-icons.html %}
+<article class="os-window os-article-window " aria-label="JOURNAL">
+<div class="os-window-titlebar os-article-titlebar">
+  <div class="os-window-actions"><a class="os-close" href="{{ '/journal/' | relative_url }}" aria-label="Close and return">×</a><span class="os-control-dot" aria-hidden="true"></span><span class="os-control-dot" aria-hidden="true"></span></div>
+  <strong>{{ page.title | escape }}</strong><span class="os-window-filetype">JOURNAL</span>
+</div>
+<div class="os-article-scroll"><div class="os-article-content">
+<a class="os-article-back" href="{{ '/journal/' | relative_url }}">← Journal</a>
+<p class="os-article-kicker">{{ page.date | date: '%B %-d, %Y' }}</p>
+<h1>{{ page.title }}</h1>{% if page.summary %}<p class="os-article-lede">{{ page.summary }}</p>{% endif %}
+<div class="os-article-prose">{{ content }}</div><div class="os-article-end"><a href="{{ '/journal/' | relative_url }}">← More entries</a><a href="{{ '/' | relative_url }}">Desktop ↗</a></div>
+</div></div></article>
+</div></div></section>

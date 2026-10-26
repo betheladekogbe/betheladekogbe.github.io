@@ -1,8 +1,29 @@
 ---
 layout: default
-title: Work
+title: Projects
 permalink: /work/
 section: work
 ---
-<section class="page-intro"><span class="eyebrow">Portfolio / 01</span><h1>Work that <em>makes an impact.</em></h1><p>Selected projects spanning educational media, creative production, live experiences, and team development.</p></section>
-<div class="portfolio-list">{% assign sorted_projects = site.projects | sort: 'order' %}{% for project in sorted_projects %}<a href="{{ project.url | relative_url }}" class="portfolio-row"><span class="portfolio-number">0{{ forloop.index }}</span><span class="portfolio-row-main"><strong>{{ project.title }}</strong><small>{{ project.organization }} / {{ project.category }}</small></span><span class="portfolio-year">{{ project.year }}</span><span class="portfolio-arrow">↗</span></a>{% endfor %}</div>
+<section class="desktop-page" aria-label="Projects folder"><div class="os-frame"><div class="os-wallpaper">
+<div class="os-sun" aria-hidden="true"></div>
+<div class="os-hill os-hill-one" aria-hidden="true"></div>
+<div class="os-hill os-hill-two" aria-hidden="true"></div>
+{% include os-page-icons.html %}
+<article class="os-window os-article-window os-directory-window" aria-label="FOLDER">
+<div class="os-window-titlebar os-article-titlebar">
+  <div class="os-window-actions"><a class="os-close" href="{{ '/' | relative_url }}" aria-label="Close and return">×</a><span class="os-control-dot" aria-hidden="true"></span><span class="os-control-dot" aria-hidden="true"></span></div>
+  <strong>Projects</strong><span class="os-window-filetype">FOLDER</span>
+</div>
+<div class="os-article-scroll"><div class="os-article-content">
+<a class="os-article-back" href="{{ '/' | relative_url }}">← Desktop</a>
+<p class="os-article-kicker">Portfolio / Projects</p>
+<h1>Projects<span class="heading-dot">.</span></h1>
+<p class="os-article-lede">Creative production, educational media, live events, and team development.</p>
+<div class="os-directory-list">{% assign sorted_projects = site.projects | sort: 'order' %}{% for project in sorted_projects %}
+<a class="os-directory-entry" href="{{ project.url | relative_url }}">
+<span class="os-directory-symbol" aria-hidden="true">▤</span>
+<span class="os-directory-text"><strong>{{ project.title }}</strong><small>{{ project.organization }} · {{ project.category }} · {{ project.year }}</small><span>{{ project.summary }}</span></span>
+<span class="os-directory-open" aria-hidden="true">↗</span></a>
+{% endfor %}</div>
+</div></div></article>
+</div></div></section>

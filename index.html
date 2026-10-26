@@ -10,7 +10,7 @@ desktop_home: true
       <div class="os-hill os-hill-two" aria-hidden="true"></div>
 
       <nav class="os-icons" aria-label="Desktop folders">
-        <a href="{{ '/work/' | relative_url }}" class="os-icon" data-open-panel="work" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-work" aria-hidden="true"></span><span>Selected Work</span></a>
+        <a href="{{ '/work/' | relative_url }}" class="os-icon" data-open-panel="work" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-work" aria-hidden="true"></span><span>Projects</span></a>
         <a href="{{ '/about/' | relative_url }}" class="os-icon" data-open-panel="about" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-about" aria-hidden="true"></span><span>About Me</span></a>
         <a href="{{ '/journal/' | relative_url }}" class="os-icon" data-open-panel="journal" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-journal" aria-hidden="true"></span><span>Journal</span></a>
         <a href="{{ '/contact/' | relative_url }}" class="os-icon" data-open-panel="contact" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-contact" aria-hidden="true"></span><span>Contact</span></a>
@@ -31,13 +31,13 @@ desktop_home: true
             <span class="os-panel-eyebrow">HELLO, WORLD / START HERE</span>
             <h2>Bethel Adekogbe<span class="heading-dot">.</span></h2>
             <p>I'm Bethel — a multimedia professional working across educational storytelling, live production, and creative team development.</p>
-            <a class="os-panel-primary" href="{{ '/work/' | relative_url }}">See my portfolio <span aria-hidden="true">↗</span></a>
+            <a class="os-panel-primary" href="{{ '/work/' | relative_url }}">See my projects <span aria-hidden="true">↗</span></a>
             <p class="os-panel-help">Select a folder to explore, or go straight to my work.</p>
           </div>
 
           <div data-panel-content="work" class="os-panel" hidden>
-            <span class="os-panel-eyebrow">01 / PORTFOLIO</span>
-            <h2>Selected work<span class="heading-dot">.</span></h2>
+            <span class="os-panel-eyebrow">01 / PROJECTS</span>
+            <h2>Projects<span class="heading-dot">.</span></h2>
             <p>Projects spanning production leadership and educational storytelling.</p>
             <div class="os-file-list">
               {% assign desktop_projects = site.projects | sort: 'order' %}
@@ -45,7 +45,7 @@ desktop_home: true
               <a href="{{ project.url | relative_url }}" class="os-file-link"><span class="os-mini-file" aria-hidden="true"></span><span>{{ project.title }}<small>{{ project.category }} / {{ project.year }}</small></span><span aria-hidden="true">↗</span></a>
               {% endfor %}
             </div>
-            <a class="os-panel-primary" href="{{ '/work/' | relative_url }}">View full portfolio <span aria-hidden="true">↗</span></a>
+            <a class="os-panel-primary" href="{{ '/work/' | relative_url }}">View all projects <span aria-hidden="true">↗</span></a>
           </div>
 
           <div data-panel-content="about" class="os-panel" hidden>

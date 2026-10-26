@@ -9,12 +9,14 @@
   <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body id="top"{% if page.desktop_home %} class="home-desktop"{% endif %}>
+{% assign desktop_page = false %}
+{% if page.desktop_home or page.layout == "project" or page.layout == "post" or page.section == "work" or page.section == "journal" %}{% assign desktop_page = true %}{% endif %}
+<body id="top"{% if desktop_page %} class="home-desktop{% unless page.desktop_home %} os-inner-page{% endunless %}"{% endif %}>
   <a class="skip-link" href="#content">Skip to content</a>
   <div class="site-shell">
-    {% unless page.desktop_home %}{% include header.html %}{% endunless %}
+    {% unless desktop_page %}{% include header.html %}{% endunless %}
     <main id="content">{{ content }}</main>
-    {% unless page.desktop_home %}{% include footer.html %}{% endunless %}
+    {% unless desktop_page %}{% include footer.html %}{% endunless %}
   </div>
   <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
 </body>
