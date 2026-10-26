@@ -1,27 +1,114 @@
 ---
 layout: default
 ---
-<section class="hero" aria-labelledby="hero-title">
-  <div class="hero-topline"><span class="eyebrow">Independent creative portfolio / 2026</span><span class="live-signal"><i></i> Currently exploring new opportunities</span></div>
-  <div class="hero-grid">
-    <div class="hero-copy">
-      <p class="hero-kicker">Creative production <span>+</span> learning experiences</p>
-      <h1 id="hero-title">Media that connects.<br><em>Experiences that teach.</em></h1>
-      <p class="hero-description">I'm Bethel — a multimedia professional who brings together storytelling, production technology, and people development. I build the work and help teams grow around it.</p>
-      <div class="hero-actions"><a class="button button-dark" href="{{ '/work/' | relative_url }}">Explore my work <span>↗</span></a><a class="text-link" href="{{ '/about/' | relative_url }}">More about me ↗</a></div>
+<section class="desktop-page" aria-labelledby="desktop-title">
+  <div class="desktop-intro">
+    <div class="desktop-intro-copy">
+      <p class="eyebrow">Bethel Adekogbe / Multimedia • Educational Media • Leadership</p>
+      <h1 id="desktop-title">Media that connects.<br><em>Experiences that teach.</em></h1>
+      <p>I bring together storytelling, production technology, and people development to make meaningful media — and build capable teams around it.</p>
     </div>
-    <div class="desktop-composition" aria-label="Desktop-inspired navigation to work and journal">
-      <div class="desktop-toolbar"><span>PORTFOLIO.OS</span><span><span class="status-square"></span> ONLINE</span></div>
-      <div class="desktop-body">
-        <div class="file-stack" aria-hidden="true"><span class="folder-shape f-blue"></span><span class="folder-shape f-orange"></span></div>
-        <a class="os-shortcut shortcut-work" href="{{ '/work/' | relative_url }}"><span class="shortcut-glyph">▦</span><span>Selected<br>work</span><small>01</small></a>
-        <a class="os-shortcut shortcut-journal" href="{{ '/journal/' | relative_url }}"><span class="shortcut-glyph">✎</span><span>Field<br>notes</span><small>02</small></a>
-        <div class="floating-window" aria-hidden="true"><div class="window-top"><span class="window-dots"><i></i><i></i><i></i></span><span>about_this_portfolio.txt</span><span>↗</span></div><div class="window-content"><span class="window-label">CURRENT FOCUS</span><strong>Stories.<br>Systems.<br>People.</strong><span class="window-tag">Creative leadership / Educational media</span></div></div>
-      </div>
-      <div class="desktop-bottom"><span>DESIGNED FOR CURIOSITY</span><span>↘ BROWSE FILES</span></div>
+    <div class="desktop-intro-actions">
+      <a class="button button-dark" href="{{ '/work/' | relative_url }}">View selected work <span aria-hidden="true">↗</span></a>
+      <a class="text-link" href="{{ '/about/' | relative_url }}">About me ↗</a>
     </div>
   </div>
+
+  <div class="os-frame" id="portfolio-desktop" aria-label="Interactive portfolio desktop">
+    <div class="os-menubar">
+      <div class="os-menu-left"><span class="os-menu-logo" aria-hidden="true">✳</span><strong>Portfolio Desktop</strong><span class="os-menu-divider" aria-hidden="true"></span><span class="os-menu-hint">Single-click to explore</span></div>
+      <span class="os-menu-right">BETHEL / 2026 <span class="os-menu-indicator" aria-hidden="true"></span></span>
+    </div>
+
+    <div class="os-wallpaper">
+      <div class="os-sun" aria-hidden="true"></div>
+      <div class="os-hill os-hill-one" aria-hidden="true"></div>
+      <div class="os-hill os-hill-two" aria-hidden="true"></div>
+      <div class="os-wallpaper-label" aria-hidden="true">IDEAS / PRODUCTION / PEOPLE</div>
+
+      <nav class="os-icons" aria-label="Desktop folders">
+        <a href="{{ '/work/' | relative_url }}" class="os-icon" data-open-panel="work" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-work" aria-hidden="true"></span><span>Selected Work</span></a>
+        <a href="{{ '/about/' | relative_url }}" class="os-icon" data-open-panel="about" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-about" aria-hidden="true"></span><span>About Me</span></a>
+        <a href="{{ '/journal/' | relative_url }}" class="os-icon" data-open-panel="journal" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-journal" aria-hidden="true"></span><span>Journal</span></a>
+        <a href="{{ '/contact/' | relative_url }}" class="os-icon" data-open-panel="contact" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-contact" aria-hidden="true"></span><span>Contact</span></a>
+      </nav>
+
+      <section class="os-window" id="desktop-window" tabindex="-1" aria-label="Portfolio preview window">
+        <div class="os-window-titlebar">
+          <div class="os-window-actions">
+            <button class="os-close" type="button" data-close-panel aria-label="Close window">×</button>
+            <span class="os-control-dot" aria-hidden="true"></span>
+            <span class="os-control-dot" aria-hidden="true"></span>
+          </div>
+          <strong id="desktop-window-title">Welcome</strong>
+          <span class="os-window-filetype">PORTFOLIO</span>
+        </div>
+        <div class="os-window-body">
+          <div data-panel-content="welcome" class="os-panel">
+            <span class="os-panel-eyebrow">HELLO, WORLD / START HERE</span>
+            <h2>Welcome to my workspace<span class="heading-dot">.</span></h2>
+            <p>I'm Bethel — a multimedia professional working across educational storytelling, live production, and creative team development.</p>
+            <a class="os-panel-primary" href="{{ '/work/' | relative_url }}">See my portfolio <span aria-hidden="true">↗</span></a>
+            <p class="os-panel-help">Choose a folder to preview a section, or use the navigation above.</p>
+          </div>
+
+          <div data-panel-content="work" class="os-panel" hidden>
+            <span class="os-panel-eyebrow">01 / PORTFOLIO</span>
+            <h2>Selected work<span class="heading-dot">.</span></h2>
+            <p>Projects spanning production leadership and educational storytelling.</p>
+            <div class="os-file-list">
+              {% assign desktop_projects = site.projects | sort: 'order' %}
+              {% for project in desktop_projects limit: 3 %}
+              <a href="{{ project.url | relative_url }}" class="os-file-link"><span class="os-mini-file" aria-hidden="true"></span><span>{{ project.title }}<small>{{ project.category }} / {{ project.year }}</small></span><span aria-hidden="true">↗</span></a>
+              {% endfor %}
+            </div>
+            <a class="os-panel-primary" href="{{ '/work/' | relative_url }}">View full portfolio <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div data-panel-content="about" class="os-panel" hidden>
+            <span class="os-panel-eyebrow">02 / ABOUT</span>
+            <h2>Storytelling meets systems<span class="heading-dot">.</span></h2>
+            <p>My experience spans professional AV, nonprofit education, creative production, live events, and developing teams. I care about work that helps people connect and learn.</p>
+            <a class="os-panel-primary" href="{{ '/about/' | relative_url }}">Read my background <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div data-panel-content="journal" class="os-panel" hidden>
+            <span class="os-panel-eyebrow">03 / JOURNAL</span>
+            <h2>Field notes<span class="heading-dot">.</span></h2>
+            <p>Reflections on production, teaching, creative leadership, and meaningful projects.</p>
+            {% if site.posts.size > 0 %}
+            <div class="os-file-list">
+              {% for post in site.posts limit: 2 %}
+              <a class="os-file-link" href="{{ post.url | relative_url }}"><span class="os-mini-file" aria-hidden="true"></span><span>{{ post.title }}<small>{{ post.date | date: '%b %d, %Y' }}</small></span><span aria-hidden="true">↗</span></a>
+              {% endfor %}
+            </div>
+            {% else %}
+            <div class="os-empty-note">The journal is ready for its first post.</div>
+            {% endif %}
+            <a class="os-panel-primary" href="{{ '/journal/' | relative_url }}">Open journal <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div data-panel-content="contact" class="os-panel" hidden>
+            <span class="os-panel-eyebrow">04 / CONTACT</span>
+            <h2>Let's connect<span class="heading-dot">.</span></h2>
+            <p>For educational media, creative production, technical leadership, and collaboration opportunities.</p>
+            <a class="os-panel-primary" href="{{ '/contact/' | relative_url }}">Contact information <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="os-dock" aria-label="Desktop quick links">
+        <span class="os-dock-tag">QUICK ACCESS</span>
+        <a href="{{ '/work/' | relative_url }}" title="Full portfolio">Work ↗</a>
+        <a href="{{ '/about/' | relative_url }}" title="Professional background">About ↗</a>
+        <a href="{{ '/journal/' | relative_url }}" title="Blog">Journal ↗</a>
+      </div>
+    </div>
+
+    <div class="os-bottom-bar"><span><span class="os-bottom-dot" aria-hidden="true"></span> DESKTOP READY</span><span>Explore the folders — or use the regular menu above</span></div>
+  </div>
 </section>
+
 <section class="section work-section" id="selected-work">
   <div class="section-heading"><div><p class="eyebrow">01 / Featured projects</p><h2>Selected work<span class="heading-dot">.</span></h2></div><a class="inline-arrow" href="{{ '/work/' | relative_url }}">View all projects ↗</a></div>
   <div class="project-grid">
