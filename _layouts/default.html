@@ -9,12 +9,12 @@
   <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body id="top">
+<body id="top"{% if page.desktop_home %} class="home-desktop"{% endif %}>
   <a class="skip-link" href="#content">Skip to content</a>
   <div class="site-shell">
-    {% include header.html %}
+    {% unless page.desktop_home %}{% include header.html %}{% endunless %}
     <main id="content">{{ content }}</main>
-    {% include footer.html %}
+    {% unless page.desktop_home %}{% include footer.html %}{% endunless %}
   </div>
   <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
 </body>
