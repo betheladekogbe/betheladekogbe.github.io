@@ -9,7 +9,7 @@ summary: "An eight-part video devotional series created with a six-person crew f
 featured: true
 order: 1
 art: series
-image: "https://static.wixstatic.com/media/aacd86_029e00401407411aa6202e2167ec8897~mv2.jpg"
+image: "/assets/images/photography/holy-week-cover.jpg"
 image_alt: "A Holy Week devotional speaker gesturing in front of colorful stained-glass windows."
 ---
 
