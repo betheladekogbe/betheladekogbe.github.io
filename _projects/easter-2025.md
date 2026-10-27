@@ -56,6 +56,12 @@ These weren't just schedules. They were shared operational documents connecting 
 - **Team coordination:** Built coverage plans for 22 assignments across six, seven, and nine positions per service.
 - **Communication:** Distributed call times and department cues to help audio, worship, media, and stage teams work in sync.
 
-One member of PT leadership later wrote to thank me for the quality and consistency of the team's work. I value that feedback because it came in response to the actual preparation required for a demanding service schedule.
+In response to the Easter run-of-show plans, a PT leadership member sent this feedback:
+
+> I want you to know how much I appreciate the excellent job you’ve been doing. It is a blessing that PT’s services have maintained excellence.
+>
+> — Elder Roy M. Ray Jr., April 18, 2025
+
+That feedback was meaningful because it acknowledged work that most audiences never see: the preparation required for a demanding service schedule.
 
 This project represents a part of creative leadership that isn't always visible in the finished livestream: the preparation and people coordination that make complex live events possible.
