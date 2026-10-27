@@ -1,0 +1,130 @@
+[
+  {
+    "group": "primary",
+    "company": "Pentecostal Tabernacle",
+    "role": "Interim Director of Media & Production Lead",
+    "dates": "Jan 2024 – Oct 2026",
+    "location": "Cambridge, MA",
+    "summary": "Led multimedia and livestream production for services, conferences, and special events. Coordinated volunteers, trained operators, directed creative video projects, and managed production schedules and technical delivery."
+  },
+  {
+    "group": "primary",
+    "company": "Red Thread",
+    "role": "Onsite AV Technician",
+    "dates": "Jan 2024 – Present",
+    "location": "Boston, MA",
+    "summary": "Support corporate meetings and hybrid conferencing across Teams, Zoom, Webex, and Google Meet. Troubleshoot AV systems, maintain room technology, document issues, and guide users."
+  },
+  {
+    "group": "primary",
+    "company": "Encore Global",
+    "role": "Event Technical Supervisor & AV Technical Lead",
+    "dates": "Sep 2022 – Oct 2023",
+    "location": "Boston, MA",
+    "summary": "Supervised technical crews and live-event operations, coordinating audio, video, staging, equipment, and freelancers. Trained technicians and resolved production problems under tight event deadlines."
+  },
+  {
+    "group": "primary",
+    "company": "JCCI Glory Tabernacle",
+    "role": "Media Lead",
+    "dates": "Aug 2020 – Aug 2022",
+    "location": "Powder Springs, GA",
+    "summary": "Directed camera operators and coordinated livestream audio and video for recurring services. Collaborated with photographers and videographers and supported equipment setup and takedown."
+  },
+  {
+    "group": "primary",
+    "company": "Roxbury Tenants of Harvard",
+    "role": "Health Education & Wellness Intern",
+    "dates": "Jun 2020 – Aug 2020",
+    "location": "Roxbury, MA",
+    "summary": "Created presentations and infographics and facilitated interactive workshops for high school students on health, media literacy, career readiness, and self-care. Supported youth participation in a community garden."
+  },
+  {
+    "group": "primary",
+    "company": "Tufts Medical Center",
+    "role": "Human Resources Coordinator",
+    "dates": "Jun 2019 – Jan 2020",
+    "location": "Boston, MA",
+    "summary": "Worked with subject-matter experts on multimedia compliance education, creating scripts, storyboards, narration, video, graphics, animation, and interactive learning materials."
+  },
+  {
+    "group": "primary",
+    "company": "Brandeis University — Sound and Image Media Studios",
+    "role": "Student Support Specialist",
+    "dates": "Aug 2018 – May 2020",
+    "location": "Waltham, MA",
+    "summary": "Coached students and community members in video, audio, photography, design, and animation. Provided troubleshooting, one-on-one consultations, and hands-on project support."
+  },
+  {
+    "group": "primary",
+    "company": "Proper Bantah (Brandeis University)",
+    "role": "Technical Director",
+    "dates": "Oct 2018 – Jan 2020",
+    "location": "Waltham, MA",
+    "summary": "Produced videos, animation, graphics, and promotions highlighting underrepresented communities. Directed studio camera work, supported production sound, and helped deliver two seasons of digital storytelling."
+  },
+  {
+    "group": "additional",
+    "company": "Freelance",
+    "role": "Music Composer & Producer",
+    "dates": "Oct 2017 – Present",
+    "location": "Independent",
+    "summary": "Compose and arrange music for advertisements, podcasts, documentaries, and short films. Oversee recording, editing, mixing, and mastering using digital audio workstations."
+  },
+  {
+    "group": "additional",
+    "company": "ABC’s Everything’s Trash",
+    "role": "Location Assistant",
+    "dates": "Apr 2022 – May 2022",
+    "location": "Brooklyn, NY",
+    "summary": "Supported television production on set, helped locate holding areas for background performers, and assisted with shoot-day preparation and wrap."
+  },
+  {
+    "group": "additional",
+    "company": "ADMA Biologics",
+    "role": "Phlebotomist",
+    "dates": "Oct 2020 – Aug 2021",
+    "location": "Kennesaw, GA",
+    "summary": "Collected plasma specimens according to procedures, monitored donors throughout collection, and responded to equipment issues or unexpected donor reactions."
+  },
+  {
+    "group": "additional",
+    "company": "Birthmark Podcast",
+    "role": "Audio Editor",
+    "dates": "Jun 2020 – Jan 2021",
+    "location": "Remote",
+    "summary": "Edited and quality-checked podcast audio, diagnosed recording and equipment issues, and helped deliver completed episodes on short timelines."
+  },
+  {
+    "group": "additional",
+    "company": "Pentecostal Tabernacle",
+    "role": "Sound Engineer",
+    "dates": "Oct 2017 – Aug 2020",
+    "location": "Cambridge, MA",
+    "summary": "Mixed live sound for services and streams, operated cameras, and supported sermon recordings and audio distribution."
+  },
+  {
+    "group": "additional",
+    "company": "Basement Records",
+    "role": "President",
+    "dates": "Oct 2017 – May 2020",
+    "location": "Waltham, MA",
+    "summary": "Led the student record label’s executive board and organized events and meetings to develop members’ production and promotional skills and grow their audiences."
+  },
+  {
+    "group": "additional",
+    "company": "Georgia Kidney Associates",
+    "role": "Intern",
+    "dates": "May 2018 – Jul 2018",
+    "location": "Atlanta, GA",
+    "summary": "Shadowed a nephrologist during clinical rounds and helped cross-check demographic information using patient records."
+  },
+  {
+    "group": "additional",
+    "company": "Health Occupations Students of America",
+    "role": "Volunteer Worker",
+    "dates": "Oct 2013 – Aug 2014",
+    "location": "Mableton, GA",
+    "summary": "Participated in volunteer activities and created visual presentations to support fellow members."
+  }
+]

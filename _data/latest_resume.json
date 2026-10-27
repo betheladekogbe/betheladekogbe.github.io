@@ -1,0 +1,118 @@
+{
+  "name": "Bethel Adekogbe",
+  "location": "Boston, MA",
+  "email": "thedkob@gmail.com",
+  "phone": "(470) 564-4431",
+  "portfolio": "betheladekogbe.github.io",
+  "source": "Most recent educational-media resume uploaded on October 26, 2026. Layout regenerated for online delivery; portfolio URL updated.",
+  "summary": "Multimedia production leader experienced in developing instructional media, training students and production teams, and delivering digital content across educational, healthcare, nonprofit, and live-event settings. Combines creative direction and hands-on production expertise with collaborative project management, technical problem-solving, and learner-centered communication.",
+  "competencies": [
+    "Educational Media & Training",
+    "Multimedia Content Development",
+    "Team Leadership & Coaching",
+    "Creative Direction",
+    "Video Production & Editing",
+    "Digital Storytelling",
+    "Cross-functional Coordination",
+    "Livestream & Hybrid AV"
+  ],
+  "roles": [
+    {
+      "company": "Pentecostal Tabernacle",
+      "location": "Cambridge, MA",
+      "title": "Interim Director of Media & Production Lead",
+      "dates": "Jan 2024 – Oct 2026",
+      "bullets": [
+        "Led and coordinated a production team for weekly services, conferences, and special events, assigning responsibilities and aligning volunteers, schedules, creative teams, and technical delivery.",
+        "Trained and onboarded production team members through a four-service, hands-on volunteer onboarding program, pairing new team members with experienced operators in camera, switching, and live production.",
+        "Conceptualized, scripted, and directed an eight-part video series with a six-person crew; completed filming in one day and post-production in one week, generating 27,500+ combined YouTube and Instagram views within four weeks.",
+        "Produced digital video and promotional content while coordinating filming logistics, talent, equipment needs, and cross-department communication."
+      ]
+    },
+    {
+      "company": "Red Thread",
+      "location": "Boston, MA",
+      "title": "Onsite AV Technician",
+      "dates": "Jan 2024 – Present",
+      "bullets": [
+        "Support live and hybrid meetings across Microsoft Teams, Zoom, Webex, and Google Meet, troubleshooting room AV systems and resolving end-user technical issues.",
+        "Maintain reliable conference-room technology through preventative checks, equipment tracking, support documentation, and user guidance.",
+        "Support AV and furniture installations by checking setups, troubleshooting issues within scope, and coordinating with technicians when repairs or additional support are needed."
+      ]
+    },
+    {
+      "company": "Encore Global",
+      "location": "Boston, MA",
+      "title": "Event Technical Supervisor & AV Technical Lead",
+      "dates": "Sep 2022 – Oct 2023",
+      "bullets": [
+        "Supervised technical production crews and on-site operations for live events, coordinating audio, video, staging, equipment, and freelance contributors.",
+        "Delivered hands-on technical training and resolved time-sensitive AV issues while aligning production execution with client and venue requirements."
+      ]
+    },
+    {
+      "company": "JCCI Glory Tabernacle",
+      "location": "Powder Springs, GA",
+      "title": "Media Lead",
+      "dates": "Aug 2020 – Aug 2022",
+      "bullets": [
+        "Led camera crews and coordinated livestream video and audio production for recurring services; collaborated with photographers and videographers on recorded content."
+      ]
+    },
+    {
+      "company": "Roxbury Tenants of Harvard",
+      "location": "Roxbury, MA",
+      "title": "Health Education & Wellness Intern",
+      "dates": "Jun 2020 – Aug 2020",
+      "bullets": [
+        "Designed and facilitated weekly educational workshops for high school students on health, media literacy, career readiness, and self-care.",
+        "Created instructional presentations and infographics to help young learners engage with complex topics through accessible visual communication."
+      ]
+    },
+    {
+      "company": "Tufts Medical Center",
+      "location": "Boston, MA",
+      "title": "Human Resources Coordinator",
+      "dates": "Jun 2019 – Jan 2020",
+      "bullets": [
+        "Collaborated with subject matter experts to create compliance training through storyboards, scripts, narration, video, graphics, animation, and interactive simulations.",
+        "Translated complex healthcare policies and training requirements into clear, engaging multimedia learning materials."
+      ]
+    },
+    {
+      "company": "Brandeis University, Sound and Image Media Studios",
+      "location": "Waltham, MA",
+      "title": "Student Support Specialist",
+      "dates": "Aug 2018 – May 2020",
+      "bullets": [
+        "Coached students and community members in video, audio, photography, graphic design, and animation through individual instruction and consultations.",
+        "Provided walk-in troubleshooting and project support, guiding users through technical issues and helping learners develop technical skills and complete creative media work."
+      ]
+    },
+    {
+      "company": "Proper Bantah (Brandeis University)",
+      "location": "Waltham, MA",
+      "title": "Technical Director",
+      "dates": "Oct 2018 – Jan 2020",
+      "bullets": [
+        "Created videos, infographics, animations, and promotional media highlighting underrepresented communities; directed studio camera work and supported audio production.",
+        "Produced music and video promotions for two seasons, contributing to narrative-driven digital storytelling."
+      ]
+    }
+  ],
+  "education": "Brandeis University  |  Waltham, MA  |  Bachelor of Arts, Health: Science, Society, and Policy  |  2020",
+  "skills": [
+    [
+      "Video & Design",
+      "Adobe Premiere Pro, Final Cut Pro, Photoshop, Illustrator, InDesign, Lightroom; camera operation; digital video editing"
+    ],
+    [
+      "Audio & Live Production",
+      "Adobe Audition, Logic Pro, Ableton Live, OBS, Wirecast, ProPresenter; audio editing and podcast production"
+    ],
+    [
+      "Collaboration & AV",
+      "Zoom, Microsoft Teams, Webex, Google Meet; videoconferencing and AV systems troubleshooting"
+    ]
+  ]
+}

@@ -11,6 +11,7 @@ desktop_home: true
 
       <nav class="os-icons" aria-label="Desktop folders">
         <a href="{{ '/work/' | relative_url }}" class="os-icon" data-open-panel="work" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-work" aria-hidden="true"></span><span>Projects</span></a>
+        <a href="{{ '/resume/' | relative_url }}" class="os-icon" data-open-panel="resume" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-resume" aria-hidden="true"></span><span>Résumé</span></a>
         <a href="{{ '/about/' | relative_url }}" class="os-icon" data-open-panel="about" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-about" aria-hidden="true"></span><span>About Me</span></a>
         <a href="{{ '/photography/' | relative_url }}" class="os-icon" data-open-panel="photography" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-photography" aria-hidden="true"></span><span>Photography</span></a>
         <a href="{{ '/contact/' | relative_url }}" class="os-icon" data-open-panel="contact" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-contact" aria-hidden="true"></span><span>Contact</span></a>
@@ -46,6 +47,10 @@ desktop_home: true
               {% endfor %}
             </div>
             <a class="os-panel-primary" href="{{ '/work/' | relative_url }}">View all projects <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div data-panel-content="resume" class="os-panel os-resume-panel" hidden>
+            {% include resume-history.html %}
           </div>
 
           <div data-panel-content="about" class="os-panel" hidden>

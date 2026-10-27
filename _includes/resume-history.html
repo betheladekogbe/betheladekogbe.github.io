@@ -1,0 +1,47 @@
+<div class="resume-quickbar">
+  <span class="resume-quickbar-label"><span class="resume-live-dot" aria-hidden="true"></span> PROFILE.EXE / WORK HISTORY</span>
+  <a class="resume-download" href="{{ '/assets/resume/Bethel_Adekogbe_Educational_Media_Resume.pdf' | relative_url }}" download="Bethel_Adekogbe_Educational_Media_Resume.pdf">↓ Download résumé (PDF)</a>
+</div>
+<div class="resume-introduction">
+  <p class="os-article-kicker">Professional history / Educational media &amp; production</p>
+  <h2>Experience<span class="heading-dot">.</span></h2>
+  <p>Creative direction, educational storytelling, AV production, and helping teams do their best work.</p>
+</div>
+<div class="resume-summary-strip">
+  <span>Brandeis University · BA, HSSP · 2020</span>
+  <span>Media · Education · Leadership</span>
+</div>
+<div class="resume-section-label"><span>Selected professional experience</span><span>01 — 08</span></div>
+<div class="resume-history">
+  {% assign resume_primary = site.data.resume_experience | where: "group", "primary" %}
+  {% for job in resume_primary %}
+  <div class="resume-job">
+    <span class="resume-job-date">{{ job.dates }}</span>
+    <div class="resume-job-main">
+      <h3>{{ job.role }}</h3>
+      <p class="resume-job-company">{{ job.company }} <span>· {{ job.location }}</span></p>
+      <p class="resume-job-summary">{{ job.summary }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% assign resume_additional = site.data.resume_experience | where: "group", "additional" %}
+<details class="resume-archive">
+  <summary>Earlier &amp; additional experience <span>{{ resume_additional.size }} more roles <span aria-hidden="true">⌄</span></span></summary>
+  <div class="resume-history">
+    {% for job in resume_additional %}
+    <div class="resume-job">
+      <span class="resume-job-date">{{ job.dates }}</span>
+      <div class="resume-job-main">
+        <h3>{{ job.role }}</h3>
+        <p class="resume-job-company">{{ job.company }} <span>· {{ job.location }}</span></p>
+        <p class="resume-job-summary">{{ job.summary }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</details>
+<div class="resume-download-footer">
+  <p>Looking for the conventional two-page version?</p>
+  <a class="resume-download" href="{{ '/assets/resume/Bethel_Adekogbe_Educational_Media_Resume.pdf' | relative_url }}" download="Bethel_Adekogbe_Educational_Media_Resume.pdf">↓ Download résumé (PDF)</a>
+</div>

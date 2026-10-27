@@ -183,3 +183,53 @@ body.home-desktop{background:#85c2de;overflow-x:hidden}
 .os-contact-bottom{border-top:1px solid #d6ded6;padding-top:23px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
 .os-contact-bottom p{font-size:13px;color:#66756b;margin:0}
 @media(max-width:740px){.os-contact-grid{grid-template-columns:1fr}.os-contact-card{padding:23px}.os-contact-bottom{align-items:flex-start;flex-direction:column}}
+
+/* Resume app: native desktop-folder interaction and a readable, scrollable retro document. */
+.os-folder-resume{background:linear-gradient(140deg,#fff2cc,#f7c96b);border-color:#b08d42}
+.os-folder-resume::before{border-color:#b08d42}
+.home-desktop .os-window.os-window-resume{width:min(77%,910px);margin-right:clamp(18px,5vw,92px);margin-top:clamp(18px,5vh,62px);max-height:calc(100dvh - clamp(18px,5vh,62px) - 20px);overflow-y:auto}
+.os-window-resume .os-window-body{padding:clamp(16px,2.7vw,30px);min-height:0}
+.os-window-resume .os-panel h2{font-size:clamp(30px,3.6vw,48px)}
+.os-resume-panel{font-family:'DM Sans',sans-serif}
+.resume-quickbar{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#ebefe8;border:1px solid #c5d1c8;padding:11px 13px;margin-bottom:28px;border-radius:7px}
+.resume-quickbar-label{font:700 10px 'DM Sans',sans-serif;color:#52655d;letter-spacing:.13em}
+.resume-live-dot{display:inline-block;background:#71ae8b;width:7px;height:7px;border-radius:50%;margin-right:6px}
+.resume-download{display:inline-flex;gap:10px;align-items:center;justify-content:center;padding:10px 14px;background:#243c48;border:1px solid #243c48;color:#fff!important;border-radius:7px;font:700 12px 'DM Sans',sans-serif;text-decoration:none!important;white-space:nowrap}
+.resume-download:hover,.resume-download:focus-visible{background:#3c5a78;color:white}
+.resume-introduction .os-article-kicker{margin-bottom:10px;font-size:10px;color:#6f7870}
+.resume-introduction h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(31px,3.8vw,48px);letter-spacing:-.055em;line-height:1.05;margin:0 0 12px}
+.resume-introduction>p:last-child{font-size:14px;color:#5a685f;line-height:1.6;max-width:640px;margin:0 0 19px}
+.resume-summary-strip{display:flex;flex-wrap:wrap;gap:8px 18px;border-top:1px solid #d4dfd5;border-bottom:1px solid #d4dfd5;padding:13px 0;margin:21px 0 23px;font-size:11px;color:#587065;font-weight:700}
+.resume-section-label{display:flex;justify-content:space-between;gap:12px;margin:0 0 12px;color:#728074;font:700 10px 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.resume-history{border-top:1px solid #d8e0d7}
+.resume-job{display:grid;grid-template-columns:minmax(108px,24%) minmax(0,1fr);gap:15px;padding:18px 0;border-bottom:1px solid #d8e0d7}
+.resume-job-date{font-size:11px;font-weight:700;color:#708078;line-height:1.5;padding-top:3px}
+.resume-job-main h3{font-family:'Space Grotesk',sans-serif;font-size:clamp(15px,1.6vw,19px);line-height:1.32;letter-spacing:-.015em;margin:0 0 5px;color:#253c40}
+.resume-job-company{margin:0 0 9px!important;font-size:12px!important;font-weight:700;color:#3e5554!important}
+.resume-job-company span{font-weight:500;color:#78847b}
+.resume-job-summary{font-size:12px!important;line-height:1.65!important;color:#57665e!important;margin:0!important}
+.resume-archive{margin:30px 0 22px;border:1px solid #c7d5cd;background:#f2f5f0;border-radius:8px;overflow:hidden}
+.resume-archive summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;color:#2d4647;font-size:13px;font-weight:700}
+.resume-archive summary>span{color:#69796b;font-size:11px;white-space:nowrap}
+.resume-archive[open] summary{border-bottom:1px solid #c7d5cd}
+.resume-archive .resume-history{margin:0 20px 14px}
+.resume-download-footer{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:20px 0 5px;border-top:1px solid #d9dfd9}
+.resume-download-footer p{font-size:12px;margin:0!important;color:#596a62}
+.os-resume-page-window{width:min(calc(100vw - 215px),1050px)!important}
+.os-resume-page-content{padding-top:clamp(23px,3vw,42px)!important}
+.os-resume-page-content .os-article-back{margin-bottom:18px}
+.os-resume-page-window .resume-archive .resume-history{background:#f2f5f0}
+@media(max-width:900px) and (min-width:681px){.home-desktop .os-window.os-window-resume{width:calc(100% - 175px);margin-right:18px}}
+@media(max-width:680px){
+ .home-desktop .os-window.os-window-resume{width:calc(100% - 24px);margin:14px 12px 20px;max-height:none;overflow:visible}
+ .resume-quickbar{flex-direction:column;align-items:stretch}
+ .resume-download{width:100%;white-space:normal}
+ .resume-job{grid-template-columns:1fr;gap:5px;padding:15px 0}
+ .resume-job-date{font-size:10px;padding-top:0}
+ .resume-archive summary{padding:15px;line-height:1.4}
+ .resume-archive summary>span{white-space:normal;text-align:right}
+ .resume-archive .resume-history{margin:0 14px 12px}
+ .home-desktop.os-inner-page .os-page-icons{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .home-desktop.os-inner-page .os-resume-page-window{width:calc(100% - 20px)!important}
+}
+@media(min-width:681px) and (max-height:680px){.home-desktop .os-icons:not(.os-page-icons){gap:0;top:14px}.home-desktop .os-icons:not(.os-page-icons) .os-icon{min-height:80px}}

@@ -7,12 +7,14 @@
   const triggers = [...desktop.querySelectorAll("[data-open-panel]")];
   const panels = [...desktop.querySelectorAll("[data-panel-content]")];
   const close = desktop.querySelector("[data-close-panel]");
-  const labels = {welcome:"Welcome",work:"Projects",about:"About Me",photography:"Photography",contact:"Contact"};
+  const labels = {welcome:"Welcome",work:"Projects",resume:"Résumé",about:"About Me",photography:"Photography",contact:"Contact"};
   let lastTrigger = null;
   function openPanel(name, focusWindow) {
     if (!Object.prototype.hasOwnProperty.call(labels,name)) return;
     win.hidden = false;
     title.textContent = labels[name];
+    win.classList.toggle("os-window-resume", name === "resume");
+    win.querySelector(".os-window-filetype").textContent = name === "resume" ? "DOCUMENT" : "PORTFOLIO";
     panels.forEach(panel => {panel.hidden = panel.dataset.panelContent !== name;});
     triggers.forEach(link => {
       const active = link.dataset.openPanel === name;

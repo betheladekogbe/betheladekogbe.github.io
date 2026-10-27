@@ -32,6 +32,7 @@ description: About Bethel Adekogbe — educational media, creative production, A
                 <p>My experience has taken me from directing media teams and producing digital content to supporting professional audiovisual environments and leading educational workshops. What connects all of it is a desire to make experiences meaningful for the people on both sides of the camera.</p>
                 <div class="about-profile-links">
                   <a class="os-panel-primary" href="{{ '/work/' | relative_url }}">Explore my projects <span aria-hidden="true">↗</span></a>
+                  <a class="about-profile-text-link" href="{{ '/resume/' | relative_url }}">Résumé ↗</a>
                   <a class="about-profile-text-link" href="{{ '/contact/' | relative_url }}">Get in touch ↗</a>
                 </div>
               </div>
