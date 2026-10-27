@@ -1,0 +1,51 @@
+name: Import Photography Portfolio Photos
+on:
+  push:
+    paths:
+      - 'photography-upload-*.zip'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: photography-import-main
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Extract and publish prepared photo files
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          archives=(photography-upload-*.zip)
+          if [ "${#archives[@]}" -eq 0 ]; then
+            echo "No photography uploads were found."
+            exit 0
+          fi
+          mkdir -p assets/images/photography
+          for archive in "${archives[@]}"; do
+            unzip -o "$archive" -d assets/images/photography
+            git rm -f "$archive"
+          done
+          # Once the supplied cover is in our repository, use the local asset.
+          if [ -f assets/images/photography/holy-week-cover.jpg ]; then
+            python3 - <<'PY'
+          from pathlib import Path
+          p = Path("_projects/holy-week.md")
+          old = "https://static.wixstatic.com/media/aacd86_029e00401407411aa6202e2167ec8897~mv2.jpg"
+          new = "/assets/images/photography/holy-week-cover.jpg"
+          if p.exists():
+              p.write_text(p.read_text().replace(old, new))
+          PY
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/images/photography _projects/holy-week.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish categorized photography portfolio images"
+            git push origin HEAD:main
+          fi

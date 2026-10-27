@@ -134,3 +134,13 @@ body.home-desktop{background:#85c2de;overflow-x:hidden}
 .photography-lightbox button:hover{background:#ffffff36}
 @media(max-width:680px){.photography-gallery{columns:2 130px;column-gap:8px}.photography-tile{margin-bottom:8px}.photography-lightbox{width:100vw;max-height:100dvh;height:100dvh;border-radius:0}.photography-lightbox-image{grid-template-columns:32px minmax(0,1fr) 32px;gap:1px;padding:6px}.photography-lightbox-image button{width:30px;height:52px;font-size:26px}.photography-empty{padding:26px}}
 @media(prefers-reduced-motion:reduce){.photography-tile img{transition:none}}
+
+/* Category filtering for the photography portfolio */
+.photography-filters{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 18px}
+.photography-filter{border:1px solid #bacac5;border-radius:999px;background:#f4f7f1;padding:9px 14px;color:#374940;cursor:pointer;font-size:12px;font-weight:700;font-family:inherit;white-space:nowrap;transition:background .15s,color .15s}
+.photography-filter:hover{background:#e3ece7}
+.photography-filter.is-selected{background:#22343e;color:#fff;border-color:#22343e}
+.photography-filter span{margin-left:3px;opacity:.7;font-size:10px}
+.photography-filter:focus-visible{outline:3px solid #526ccd;outline-offset:2px}
+.photography-tile[hidden]{display:none!important}
+@media(max-width:680px){.photography-filters{gap:6px}.photography-filter{padding:8px 11px;font-size:11px}}
