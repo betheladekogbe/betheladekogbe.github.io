@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 {% assign desktop_page = false %}
-{% if page.desktop_home or page.layout == "project" or page.layout == "post" or page.section == "work" or page.section == "journal" %}{% assign desktop_page = true %}{% endif %}
+{% if page.desktop_home or page.layout == "project" or page.layout == "post" or page.section == "work" or page.section == "journal" or page.section == "photography" %}{% assign desktop_page = true %}{% endif %}
 <body id="top"{% if desktop_page %} class="home-desktop{% unless page.desktop_home %} os-inner-page{% endunless %}"{% endif %}>
   <a class="skip-link" href="#content">Skip to content</a>
   <div class="site-shell">

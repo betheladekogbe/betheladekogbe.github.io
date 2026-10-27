@@ -1,0 +1,78 @@
+---
+layout: default
+title: Photography
+permalink: /photography/
+section: photography
+description: Photography portfolio, featuring a shuffled collection of photographs.
+---
+<section class="desktop-page" aria-label="Photography gallery">
+  <div class="os-frame">
+    <div class="os-wallpaper">
+      <div class="os-sun" aria-hidden="true"></div>
+      <div class="os-hill os-hill-one" aria-hidden="true"></div>
+      <div class="os-hill os-hill-two" aria-hidden="true"></div>
+      {% include os-page-icons.html %}
+
+      <section class="os-window os-article-window os-directory-window os-photography-window" aria-labelledby="photography-heading">
+        <div class="os-window-titlebar os-article-titlebar">
+          <div class="os-window-actions">
+            <a class="os-close" href="{{ '/' | relative_url }}" aria-label="Close gallery and return to desktop">×</a>
+            <span class="os-control-dot" aria-hidden="true"></span>
+            <span class="os-control-dot" aria-hidden="true"></span>
+          </div>
+          <strong>Photography</strong><span class="os-window-filetype">GALLERY</span>
+        </div>
+        <div class="os-article-scroll">
+          <div class="os-article-content">
+            <a class="os-article-back" href="{{ '/' | relative_url }}">← Desktop</a>
+            <p class="os-article-kicker">Portfolio / Photography</p>
+            <h1 id="photography-heading">Photography<span class="heading-dot">.</span></h1>
+            <p class="os-article-lede">A collection of images, moments, and visual stories. The arrangement changes each time you open this page.</p>
+
+            {% assign photo_files = site.static_files | where_exp: 'file', 'file.path contains "/assets/images/photography/"' %}
+            {% assign photograph_count = 0 %}
+            {% capture photo_tiles %}
+              {% for photo in photo_files %}
+                {% assign extension = photo.extname | downcase %}
+                {% if extension == '.jpg' or extension == '.jpeg' or extension == '.png' or extension == '.webp' or extension == '.avif' %}
+                  {% assign photograph_count = photograph_count | plus: 1 %}
+                  <a href="{{ photo.path | relative_url }}" class="photography-tile" data-photo-card
+                     aria-label="Open photograph {{ photograph_count }} at full size">
+                    <img src="{{ photo.path | relative_url }}" alt="Portfolio photograph {{ photograph_count }}" loading="lazy" decoding="async">
+                  </a>
+                {% endif %}
+              {% endfor %}
+            {% endcapture %}
+
+            {% if photograph_count > 0 %}
+              <p class="photography-count"><span>{{ photograph_count }} photographs</span><span>Shuffled on each visit</span></p>
+              <div class="photography-gallery" id="photography-gallery">{{ photo_tiles }}</div>
+              <div class="photography-gallery-actions">
+                <button type="button" class="photography-reshuffle" id="photography-reshuffle">Shuffle photos ↻</button>
+              </div>
+            {% else %}
+              <div class="photography-empty">
+                <span class="photography-empty-icon" aria-hidden="true">▧</span>
+                <h2>Photo collection</h2>
+                <p>I'm preparing a selection of images for this gallery. In the meantime, you can view the original collection below.</p>
+                <a class="os-panel-primary" href="https://photos.app.goo.gl/FPHsx2YpiCnzfHR88" target="_blank" rel="noopener noreferrer">View shared photo album ↗</a>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+<dialog class="photography-lightbox" id="photography-lightbox" aria-label="Enlarged photograph">
+  <div class="photography-lightbox-controls">
+    <span class="photography-lightbox-count" id="photography-lightbox-count"></span>
+    <button type="button" data-lightbox-close aria-label="Close enlarged photograph">×</button>
+  </div>
+  <div class="photography-lightbox-image">
+    <button type="button" data-lightbox-previous aria-label="Previous photograph">‹</button>
+    <img id="photography-lightbox-image" src="" alt="Enlarged portfolio photograph">
+    <button type="button" data-lightbox-next aria-label="Next photograph">›</button>
+  </div>
+</dialog>
+<script src="{{ '/assets/js/photography.js' | relative_url }}" defer></script>

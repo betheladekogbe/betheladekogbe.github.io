@@ -7,7 +7,7 @@
   const triggers = [...desktop.querySelectorAll("[data-open-panel]")];
   const panels = [...desktop.querySelectorAll("[data-panel-content]")];
   const close = desktop.querySelector("[data-close-panel]");
-  const labels = {welcome:"Welcome",work:"Projects",about:"About Me",journal:"Journal",contact:"Contact"};
+  const labels = {welcome:"Welcome",work:"Projects",about:"About Me",photography:"Photography",contact:"Contact"};
   let lastTrigger = null;
   function openPanel(name, focusWindow) {
     if (!Object.prototype.hasOwnProperty.call(labels,name)) return;

@@ -12,7 +12,7 @@ desktop_home: true
       <nav class="os-icons" aria-label="Desktop folders">
         <a href="{{ '/work/' | relative_url }}" class="os-icon" data-open-panel="work" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-work" aria-hidden="true"></span><span>Projects</span></a>
         <a href="{{ '/about/' | relative_url }}" class="os-icon" data-open-panel="about" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-about" aria-hidden="true"></span><span>About Me</span></a>
-        <a href="{{ '/journal/' | relative_url }}" class="os-icon" data-open-panel="journal" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-journal" aria-hidden="true"></span><span>Journal</span></a>
+        <a href="{{ '/photography/' | relative_url }}" class="os-icon" data-open-panel="photography" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-photography" aria-hidden="true"></span><span>Photography</span></a>
         <a href="{{ '/contact/' | relative_url }}" class="os-icon" data-open-panel="contact" aria-controls="desktop-window" aria-expanded="false"><span class="os-folder os-folder-contact" aria-hidden="true"></span><span>Contact</span></a>
       </nav>
 
@@ -55,20 +55,11 @@ desktop_home: true
             <a class="os-panel-primary" href="{{ '/about/' | relative_url }}">Read my background <span aria-hidden="true">↗</span></a>
           </div>
 
-          <div data-panel-content="journal" class="os-panel" hidden>
-            <span class="os-panel-eyebrow">03 / JOURNAL</span>
-            <h2>Field notes<span class="heading-dot">.</span></h2>
-            <p>Reflections on production, teaching, creative leadership, and meaningful projects.</p>
-            {% if site.posts.size > 0 %}
-            <div class="os-file-list">
-              {% for post in site.posts limit: 2 %}
-              <a class="os-file-link" href="{{ post.url | relative_url }}"><span class="os-mini-file" aria-hidden="true"></span><span>{{ post.title }}<small>{{ post.date | date: '%b %d, %Y' }}</small></span><span aria-hidden="true">↗</span></a>
-              {% endfor %}
-            </div>
-            {% else %}
-            <div class="os-empty-note">The journal is ready for its first post.</div>
-            {% endif %}
-            <a class="os-panel-primary" href="{{ '/journal/' | relative_url }}">Open journal <span aria-hidden="true">↗</span></a>
+          <div data-panel-content="photography" class="os-panel" hidden>
+            <span class="os-panel-eyebrow">03 / PHOTOGRAPHY</span>
+            <h2>Photography<span class="heading-dot">.</span></h2>
+            <p>A selection of photographs from my creative work, presented in a gallery that changes its arrangement each time you visit.</p>
+            <a class="os-panel-primary" href="{{ '/photography/' | relative_url }}">Open photo gallery <span aria-hidden="true">↗</span></a>
           </div>
 
           <div data-panel-content="contact" class="os-panel" hidden>

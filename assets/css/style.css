@@ -105,3 +105,32 @@ body.home-desktop{background:#85c2de;overflow-x:hidden}
 .os-feature-cover img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center;border-radius:7px}
 .os-directory-thumb{display:block;width:92px;height:62px;object-fit:cover;object-position:70% center;border-radius:6px;flex:none;border:1px solid #d2d9d2}
 @media(max-width:680px){.os-directory-thumb{width:62px;height:54px}}
+
+/* Photography desktop folder and gallery */
+.os-folder-photography{background:linear-gradient(145deg,#d8d1ff,#9b8ed6);border-color:#7468a7}
+.os-folder-photography::before{border-color:#7468a7}
+.photography-count{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #d8ded8;padding-top:13px;margin:6px 0 18px;font-size:11px;color:#687872;font-weight:700}
+.photography-gallery{columns:3 180px;column-gap:12px}
+.photography-tile{position:relative;display:block;break-inside:avoid;overflow:hidden;margin:0 0 12px;border-radius:7px;background:#e1e6e0;box-shadow:0 1px 3px #22374416}
+.photography-tile img{display:block;width:100%;height:auto;transition:transform .22s ease,filter .22s ease}
+.photography-tile:hover img{transform:scale(1.035);filter:brightness(.94)}
+.photography-tile:focus-visible{outline:3px solid #4761bd;outline-offset:2px}
+.photography-gallery-actions{margin-top:20px;display:flex;justify-content:center}
+.photography-reshuffle{font:700 12px 'DM Sans',sans-serif;padding:11px 18px;border-radius:7px;cursor:pointer;border:1px solid #aabbb6;color:#32483d;background:#f4f8f3}
+.photography-reshuffle:hover{background:#e5ede7}
+.photography-empty{border:1px dashed #b7c9c0;background:#f1f5f0;border-radius:9px;padding:clamp(28px,5vw,55px);margin-top:24px;max-width:600px}
+.photography-empty-icon{display:block;font-size:40px;color:#7d99a6;margin-bottom:15px}
+.photography-empty h2{font-size:30px;margin:0 0 13px}
+.photography-empty p{font-size:14px;color:#687b72;line-height:1.7;margin:0 0 22px}
+.photography-lightbox{position:fixed;width:min(96vw,1200px);max-width:1200px;height:min(95dvh,950px);max-height:95dvh;margin:auto;padding:0;border:1px solid #8c9da1;border-radius:11px;background:#17252c;color:white;box-shadow:0 20px 70px #09111690;overflow:hidden}
+.photography-lightbox::backdrop{background:#071116df;backdrop-filter:blur(9px)}
+.photography-lightbox-controls{height:54px;display:flex;align-items:center;justify-content:space-between;padding:5px 20px;background:#20343e}
+.photography-lightbox-count{font-size:12px;font-weight:700;letter-spacing:.12em}
+.photography-lightbox-controls button,.photography-lightbox-image button{color:white;background:#ffffff20;border:1px solid #ffffff35;border-radius:6px;cursor:pointer}
+.photography-lightbox-controls button{font-size:24px;width:35px;height:35px}
+.photography-lightbox-image{height:calc(100% - 54px);display:grid;grid-template-columns:50px minmax(0,1fr) 50px;gap:8px;place-items:center;padding:12px}
+.photography-lightbox-image img{min-width:0;min-height:0;max-width:100%;max-height:100%;height:auto;width:auto;object-fit:contain}
+.photography-lightbox-image button{font-size:34px;width:42px;height:60px}
+.photography-lightbox button:hover{background:#ffffff36}
+@media(max-width:680px){.photography-gallery{columns:2 130px;column-gap:8px}.photography-tile{margin-bottom:8px}.photography-lightbox{width:100vw;max-height:100dvh;height:100dvh;border-radius:0}.photography-lightbox-image{grid-template-columns:32px minmax(0,1fr) 32px;gap:1px;padding:6px}.photography-lightbox-image button{width:30px;height:52px;font-size:26px}.photography-empty{padding:26px}}
+@media(prefers-reduced-motion:reduce){.photography-tile img{transition:none}}
