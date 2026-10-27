@@ -1,0 +1,26 @@
+name: Validate About profile image
+on:
+  push:
+    paths:
+      - "assets/images/about/**"
+      - ".github/workflows/validate-about-photo.yml"
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode uploaded headshot
+        run: |
+          python3 -m pip install --quiet Pillow
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          file=Path("assets/images/about/bethel-headshot.webp")
+          with Image.open(file) as im:
+              print("Format:", im.format, "Size:", im.size)
+              im.load()
+              if im.width < 280 or im.height < 350:
+                  raise RuntimeError("Headshot resolution unexpectedly low")
+          print("Verified",file.stat().st_size,"bytes")
+          PY
