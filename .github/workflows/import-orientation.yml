@@ -1,0 +1,69 @@
+name: Import 2026 media orientation slides
+on:
+  push:
+    paths:
+      - 'orientation-2026-upload.zip'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-orientation-2026
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install image tools
+        run: python3 -m pip install --quiet Pillow pypdf
+      - name: Process the orientation deck
+        run: |
+          python3 - <<'PY'
+          from io import BytesIO
+          from pathlib import Path
+          from zipfile import ZipFile
+          from PIL import Image
+          import os
+          archive=Path("orientation-2026-upload.zip")
+          if not archive.exists():
+              raise SystemExit("Orientation source ZIP is missing")
+          destination=Path("assets/images/orientation-2026")
+          destination.mkdir(parents=True,exist_ok=True)
+          pdf_dir=Path("assets/docs")
+          pdf_dir.mkdir(parents=True,exist_ok=True)
+          images=[]
+          with ZipFile(archive) as z:
+              for number in range(1,12):
+                  name=f"{number}.png"
+                  data=z.read(name)
+                  with Image.open(BytesIO(data)) as original:
+                      picture=original.convert("RGB")
+                  picture.thumbnail((1700,1000),Image.Resampling.LANCZOS)
+                  filename=destination/f"orientation-{number:02d}.webp"
+                  picture.save(filename,"WEBP",quality=83,method=6)
+                  print(str(filename),filename.stat().st_size)
+                  images.append(picture)
+          output=pdf_dir/"media-team-orientation-2026.pdf"
+          images[0].save(output,"PDF",save_all=True,append_images=images[1:],resolution=150,quality=83)
+          print("Created full orientation PDF",output.stat().st_size)
+          from pypdf import PdfReader
+          assert len(PdfReader(str(output)).pages)==11
+          assert len(list(destination.glob("orientation-*.webp")))==11
+          print("Validated eleven web images and 11-page PDF")
+          PY
+      - name: Commit optimized image files and full orientation PDF
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/images/orientation-2026 assets/docs/media-team-orientation-2026.pdf
+          git rm -f orientation-2026-upload.zip
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish 2026 orientation slides and downloadable guide"
+            git push origin HEAD:main
+          fi
