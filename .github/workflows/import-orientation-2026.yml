@@ -1,0 +1,79 @@
+name: Import 2026 volunteer orientation slides
+on:
+  push:
+    paths:
+      - '.github/workflows/import-orientation-2026.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: orientation-images-2026
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image and Drive helpers
+        run: python -m pip install --quiet 'gdown>=5,<6' 'Pillow>=10,<13'
+      - name: Download the user-provided, publicly shared orientation ZIP
+        run: |
+          python - <<'PY'
+          import gdown, zipfile, os
+          source_id="1C4NN67_3j1nEUwXJbdneoNQFSPz68e2S"
+          output="/tmp/orientation-2026.zip"
+          result=gdown.download(id=source_id, output=output, quiet=False)
+          if not result or not os.path.isfile(output):
+              raise RuntimeError("Could not download the shared Google Drive orientation ZIP")
+          with zipfile.ZipFile(output) as z:
+              bad=z.testzip()
+              if bad: raise RuntimeError("ZIP integrity check failed: " + bad)
+              print("Verified source archive:", len(z.namelist()), "items", os.path.getsize(output), "bytes")
+              for slide in ("1.png","2.png","9.png","10.png"):
+                  if slide not in z.namelist():
+                      raise RuntimeError("Required orientation slide missing: " + slide)
+          PY
+      - name: Export selected original slides as optimized website images
+        run: |
+          python - <<'PY'
+          import zipfile,io
+          from pathlib import Path
+          from PIL import Image
+          src="/tmp/orientation-2026.zip"
+          out=Path("assets/images/projects/media-orientation-2026")
+          out.mkdir(parents=True,exist_ok=True)
+          selection={
+              "1.png":"orientation-cover.jpg",
+              "2.png":"media-departments.jpg",
+              "9.png":"professional-training.jpg",
+              "10.png":"shadowing-progress.jpg",
+          }
+          with zipfile.ZipFile(src) as z:
+              for original,target in selection.items():
+                  with Image.open(io.BytesIO(z.read(original))) as opened:
+                      im=opened.convert("RGB")
+                      im.thumbnail((1600,900),Image.Resampling.LANCZOS)
+                      save_to=out/target
+                      im.save(save_to,"JPEG",quality=86,optimize=True,progressive=True,subsampling=0)
+                      with Image.open(save_to) as test:
+                          test.verify()
+                      print(original,"->",save_to,im.size,save_to.stat().st_size,"bytes")
+          PY
+      - name: Commit published orientation artifacts
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/images/projects/media-orientation-2026
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish selected 2026 media orientation slides"
+            git push origin HEAD:main
+          fi
