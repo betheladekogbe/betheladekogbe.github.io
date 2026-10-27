@@ -25,6 +25,44 @@ This gave incoming team members a chance to learn in context: seeing how camera 
 
 It also gave existing volunteers a meaningful role in developing the next group of operators. That kind of peer-to-peer support was important to how I approached the team.
 
+
+## Inside the orientation guide
+
+The onboarding program was supported by an **11-slide orientation guide** introducing the media team's responsibilities, expectations, training opportunities, and day-to-day operations. The material covered production, audio, and social media and communications, so volunteers could see how their work fit into the broader team.
+
+One of the most useful visuals was a shadowing model with four stages marked **0%, 30%, 70%, and 100%**. It illustrated a gradual increase in hands-on participation rather than expecting a first-time operator to take over immediately. These percentages describe the training stages shown in the guide, not measured completion rates.
+
+<div class="os-orientation-gallery" aria-label="Selected slides from the 2026 media orientation">
+  <figure>
+    <a href="{{ '/assets/images/orientation-2026/orientation-01.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open orientation cover slide in a new tab">
+      <img src="{{ '/assets/images/orientation-2026/orientation-01.webp' | relative_url }}" alt="Orientation cover with the media team gathered together, featuring bold white typography on a dark background." loading="lazy" decoding="async">
+    </a>
+    <figcaption>01 · Introduction to the media team</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/assets/images/orientation-2026/orientation-02.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open team roles slide in a new tab">
+      <img src="{{ '/assets/images/orientation-2026/orientation-02.webp' | relative_url }}" alt="Orientation guide sections for Media, Social Media and Communications, and Audio, illustrated with team photographs." loading="lazy" decoding="async">
+    </a>
+    <figcaption>02 · How the production teams fit together</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/assets/images/orientation-2026/orientation-09.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open training opportunities slide in a new tab">
+      <img src="{{ '/assets/images/orientation-2026/orientation-09.webp' | relative_url }}" alt="Slide titled Professional Training with Local Experts, showing two production professionals." loading="lazy" decoding="async">
+    </a>
+    <figcaption>09 · Additional learning opportunities</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/assets/images/orientation-2026/orientation-10.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open shadowing model slide in a new tab">
+      <img src="{{ '/assets/images/orientation-2026/orientation-10.webp' | relative_url }}" alt="Four photographs of media operators arranged in a two-by-two grid labeled 0, 30, 70, and 100 percent for the shadowing stages." loading="lazy" decoding="async">
+    </a>
+    <figcaption>10 · The four-stage shadowing model</figcaption>
+  </figure>
+</div>
+<p class="os-orientation-links">
+  <a href="{{ '/assets/docs/media-team-orientation-2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" class="os-orientation-pdf">↓ View or download the full 11-slide orientation (PDF)</a>
+  <span>Click any slide to inspect it at a larger size.</span>
+</p>
+
 ## Creating opportunities to learn
 
 Beyond regular onboarding, I organized dedicated learning opportunities for media volunteers. In May 2026, those included camera-operator workshop sessions scheduled for **May 7 and May 14**, along with a **photography workshop on May 9**.
