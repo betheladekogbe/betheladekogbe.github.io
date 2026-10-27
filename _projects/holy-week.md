@@ -127,10 +127,14 @@ We pulled off this very quick job within a single day with PT's stellar media te
 - **Talent Relations Manager:** Anna Adekogbe
 - **Lead Production Coordinator:** Joshua Ikegwu
 
-<figure class="os-story-photo">
-  <a href="https://static.wixstatic.com/media/aacd86_8b4604b20ea24029ac79c044a0f6401d~mv2.png/v1/fill/w_1920,h_1280,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/aacd86_8b4604b20ea24029ac79c044a0f6401d~mv2.png" target="_blank" rel="noopener noreferrer"><img src="https://static.wixstatic.com/media/aacd86_8b4604b20ea24029ac79c044a0f6401d~mv2.png/v1/fill/w_1920,h_1280,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/aacd86_8b4604b20ea24029ac79c044a0f6401d~mv2.png" alt="Behind-the-scenes production photograph inside Pentecostal Tabernacle's sanctuary, showing a crew member preparing a speaker for filming." loading="lazy" decoding="async"></a>
-  <figcaption>Behind the scenes during the Holy Week devotional production.</figcaption>
-</figure>
+<div class="os-project-media-note">
+  <span class="os-project-media-icon" aria-hidden="true">▣</span>
+  <div>
+    <strong>Production photographs and background</strong>
+    <p>The original project gallery includes behind-the-scenes images from the sanctuary shoot; the complete public-facing production plan and scripts are archived above.</p>
+    <a href="https://thedkob.wixsite.com/betheladekogbe/post/holy-week-devotional-video-series" target="_blank" rel="noopener noreferrer">View the original behind-the-scenes gallery ↗</a>
+  </div>
+</div>
 
 ## Post-Production
 
