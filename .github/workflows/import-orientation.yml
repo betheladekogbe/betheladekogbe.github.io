@@ -2,7 +2,7 @@ name: Import 2026 media orientation slides
 on:
   push:
     paths:
-      - 'orientation-2026-upload.zip'
+      - 'orientation-2026-part*.b64'
   workflow_dispatch:
 
 permissions:
@@ -19,6 +19,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
+      - name: Reconstruct orientation upload from parts
+        run: |
+          cat orientation-2026-part*.b64 | base64 --decode > orientation-2026-upload.zip
+          unzip -t orientation-2026-upload.zip
       - name: Install image tools
         run: python3 -m pip install --quiet Pillow pypdf
       - name: Process the orientation deck
@@ -62,7 +66,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/images/orientation-2026 assets/docs/media-team-orientation-2026.pdf
-          git rm -f orientation-2026-upload.zip
+          git rm -f orientation-2026-part*.b64
           if ! git diff --cached --quiet; then
             git commit -m "Publish 2026 orientation slides and downloadable guide"
             git push origin HEAD:main
