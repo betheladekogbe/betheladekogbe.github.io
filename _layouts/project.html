@@ -19,7 +19,11 @@ layout: default
 <div class="os-article-facts">
 <div><span>Role</span><strong>{{ page.role }}</strong></div><div><span>Field</span><strong>{{ page.category }}</strong></div><div><span>Year</span><strong>{{ page.year }}</strong></div>
 </div>
-{% if page.image %}<figure class="os-feature-media"><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}" loading="lazy"></figure>{% endif %}
+{% if page.image %}<figure class="os-feature-media os-feature-cover">
+  {% assign image_source = page.image %}
+  {% unless page.image contains '://' %}{% assign image_source = page.image | relative_url %}{% endunless %}
+  <img src="{{ image_source }}" alt="{{ page.image_alt | default: page.title | escape }}" loading="eager" fetchpriority="high" decoding="async">
+</figure>{% endif %}
 <div class="os-article-prose">{{ content }}</div>
 <div class="os-article-end"><a href="{{ '/work/' | relative_url }}">← Back to projects</a><a href="{{ '/' | relative_url }}">Desktop ↗</a></div>
 </div></div></article>

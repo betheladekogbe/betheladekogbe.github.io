@@ -21,7 +21,11 @@ section: work
 <p class="os-article-lede">Creative production, educational media, live events, and team development.</p>
 <div class="os-directory-list">{% assign sorted_projects = site.projects | sort: 'order' %}{% for project in sorted_projects %}
 <a class="os-directory-entry" href="{{ project.url | relative_url }}">
-<span class="os-directory-symbol" aria-hidden="true">▤</span>
+{% if project.image %}
+  {% assign thumbnail_source = project.image %}
+  {% unless project.image contains '://' %}{% assign thumbnail_source = project.image | relative_url %}{% endunless %}
+  <img class="os-directory-thumb" src="{{ thumbnail_source }}" alt="" loading="lazy" decoding="async">
+{% else %}<span class="os-directory-symbol" aria-hidden="true">▤</span>{% endif %}
 <span class="os-directory-text"><strong>{{ project.title }}</strong><small>{{ project.organization }} · {{ project.category }} · {{ project.year }}</small><span>{{ project.summary }}</span></span>
 <span class="os-directory-open" aria-hidden="true">↗</span></a>
 {% endfor %}</div>

@@ -99,3 +99,9 @@ body.home-desktop{background:#85c2de;overflow-x:hidden}
 .os-article-prose .os-story-photo img{display:block;width:100%;height:auto;border-radius:7px}
 .os-article-prose .os-story-video figcaption,.os-article-prose .os-story-photo figcaption{font-size:12px;color:#69756e;line-height:1.5;margin-top:10px}
 .os-article-prose .os-story-video figcaption a{font-size:12px}
+
+/* Project cover photo — preserve composition and include a thumbnail in the Projects list. */
+.os-feature-cover{margin:6px 0 30px;max-width:100%}
+.os-feature-cover img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center;border-radius:7px}
+.os-directory-thumb{display:block;width:92px;height:62px;object-fit:cover;object-position:70% center;border-radius:6px;flex:none;border:1px solid #d2d9d2}
+@media(max-width:680px){.os-directory-thumb{width:62px;height:54px}}

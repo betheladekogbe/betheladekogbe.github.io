@@ -9,6 +9,8 @@ summary: "An eight-part video devotional series created with a six-person crew f
 featured: true
 order: 1
 art: series
+image: "https://static.wixstatic.com/media/aacd86_029e00401407411aa6202e2167ec8897~mv2.jpg"
+image_alt: "A Holy Week devotional speaker gesturing in front of colorful stained-glass windows."
 ---
 
 This past Holy Week, I had the privilege of directing a six-person crew to produce an eight-part video devotional series for Pentecostal Tabernacle. We crafted a daily sequence of reflections designed to guide the community through the biggest week in the Christian calendar.
