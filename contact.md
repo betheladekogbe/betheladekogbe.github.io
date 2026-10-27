@@ -44,7 +44,6 @@ description: Contact Bethel Adekogbe for opportunities in educational media, cre
                 <p>For professional opportunities, creative collaborations, or questions about my work, feel free to reach out by email.</p>
                 <a class="os-contact-link" href="mailto:thedkob@gmail.com">thedkob@gmail.com <span aria-hidden="true">↗</span></a>
                 <a class="os-contact-link" href="https://www.linkedin.com/in/bethel-adekogbe/" target="_blank" rel="noopener noreferrer">LinkedIn profile <span aria-hidden="true">↗</span></a>
-                <a class="os-contact-link" href="https://github.com/betheladekogbe" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
                 <a class="os-contact-link" href="{{ '/about/' | relative_url }}">More about me <span aria-hidden="true">↗</span></a>
               </section>
             </div>
