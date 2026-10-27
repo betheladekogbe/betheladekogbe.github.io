@@ -27,7 +27,7 @@ description: Photography portfolio, featuring a shuffled collection of photograp
             <a class="os-article-back" href="{{ '/' | relative_url }}">← Desktop</a>
             <p class="os-article-kicker">Portfolio / Photography</p>
             <h1 id="photography-heading">Photography<span class="heading-dot">.</span></h1>
-            <p class="os-article-lede">A selection of portraits, performances, outdoor experiences, and the people behind the productions. Photographs appear in a new order each time you visit.</p>
+            <p class="os-article-lede">A selection of portraits, performances, outdoor experiences, and the people behind the productions.</p>
 
             {% assign photo_files = site.static_files | where_exp: 'file', 'file.path contains "/assets/images/photography/"' %}
             {% assign photograph_count = 0 %}
