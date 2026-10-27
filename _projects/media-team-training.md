@@ -19,7 +19,7 @@ At Pentecostal Tabernacle, I helped lead a volunteer media team supporting weekl
 
 ## Training in a live-production environment
 
-One part of that work was developing a **four-service, hands-on onboarding program**. Instead of relying only on an initial explanation of the equipment, the approach paired new volunteers with experienced operators during actual services.
+One part of that work was developing a **four-service, hands-on onboarding program** that introduced approximately **15 volunteers** to live media production. Instead of relying only on an initial explanation of the equipment, the approach paired new volunteers with experienced operators during actual services.
 
 This gave incoming team members a chance to learn in context: seeing how camera operation, video switching, and live-production responsibilities fit together, while having someone experienced nearby to guide them.
 
