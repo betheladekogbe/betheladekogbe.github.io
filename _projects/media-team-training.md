@@ -46,4 +46,4 @@ That combination of people development and day-to-day production coordination sh
 
 A well-run production matters, but helping someone become capable of running one is just as meaningful to me. This experience brought together two parts of my work that I want to keep developing: **creative and technical production**, and **teaching and mentoring people**.
 
-The value of this project is in the training approach and leadership work. I haven't attached numerical results such as volunteer retention or numbers of people trained because those figures have not yet been verified.
+The four-service onboarding structure and the dedicated workshop opportunities reflect the kind of work I want to keep doing: creating learning experiences while supporting the people who make productions happen.
