@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" role="img" aria-label="Live operations / April 20, 2025: Easter Sunday Three services">
+ <defs><pattern id="grid" patternUnits="userSpaceOnUse" width="46" height="46"><path d="M46 0H0V46" fill="none" stroke="#fff" stroke-opacity=".07"/></pattern><linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#122b39"/><stop offset="1" stop-color="#254b58"/></linearGradient></defs>
+ <rect width="1280" height="620" fill="url(#back)"/><rect width="1280" height="620" fill="url(#grid)"/>
+ <circle cx="1154" cy="135" r="270" fill="#f0bf79" opacity=".075"/>
+ <path d="M1010 0V620M0 520H1280" stroke="#fff" stroke-opacity=".16"/>
+ <rect x="73" y="74" rx="5" width="21" height="21" fill="#f0bf79"/>
+ <text x="107" y="91" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="17" letter-spacing="3" fill="#f0bf79">PRODUCTION CASE STUDY</text>
+ <text x="75" y="158" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#c4d2ce">LIVE OPERATIONS / APRIL 20, 2025</text>
+ <text x="73" y="262" font-family="Arial,Helvetica,sans-serif" font-size="67" font-weight="800" letter-spacing="-2.5" fill="#e9f0e8">Easter Sunday</text><text x="73" y="345" font-family="Arial,Helvetica,sans-serif" font-size="67" font-weight="800" letter-spacing="-2.5" fill="#e9f0e8">Three services</text>
+ <text x="76" y="480" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#c0d0ce">Technical direction  /  live production  /  team coordination</text>
+ <rect x="932" y="80" width="267" height="143" rx="12" fill="#ffffff" fill-opacity=".07" stroke="#f0bf79" stroke-opacity=".65"/>
+ <text x="957" y="160" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="800" fill="#f0bf79">03</text>
+ <text x="958" y="194" font-family="Arial,Helvetica,sans-serif" font-size="12" letter-spacing="2" font-weight="700" fill="#d2dfd8">SERVICE PRODUCTIONS</text>
+ <text x="958" y="286" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#c9d8d2">09:00  —  6 assignments</text><text x="958" y="324" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#c9d8d2">10:30  —  7 assignments</text><text x="958" y="362" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#c9d8d2">12:00  —  9 assignments</text>
+ <text x="75" y="580" font-family="Arial,Helvetica,sans-serif" font-size="14" letter-spacing="1.5" fill="#b9c9c2">BETHEL ADEKOGBE  ·  SELECTED WORK</text>
+ </svg>

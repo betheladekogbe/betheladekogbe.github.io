@@ -65,20 +65,58 @@ One of the most useful visuals was a shadowing model with four stages marked **0
 
 ## Creating opportunities to learn
 
-Beyond regular onboarding, I organized dedicated learning opportunities for media volunteers. In May 2026, those included camera-operator workshop sessions scheduled for **May 7 and May 14**, along with a **photography workshop on May 9**.
+Beyond regular onboarding, I coordinated a **photography workshop on May 9, 2026**, facilitated by photographer Wesley Morris, and a **camera-operator workshop scheduled for May 14**, led by Jeffrey Douyon. Both learning opportunities were organized for volunteers with different levels of experience.
 
-The planning involved more than picking dates. I coordinated volunteer communications, schedules, and workshop information so participants knew what was happening and how to take part.
+The planning involved more than picking dates. I coordinated volunteer communications, registrations, venue arrangements, instructor coordination, and payment requests so participants and facilitators had what they needed. The photography workshop was also open to PT's social media and partner teams.
 
 <figure class="os-story-photo">
   <img src="{{ '/assets/images/photography/photo-059.jpg' | relative_url }}" alt="A photographer examining the controls of a camera during an indoor media-production session." loading="lazy" decoding="async">
   <figcaption>A camera-focused production moment from my photography collection.</figcaption>
 </figure>
 
+## Supporting volunteers beyond the building
+
+Not every volunteer could attend Thursday rehearsals in Cambridge. In June 2026, I welcomed a volunteer who participated remotely as a **livestream content host**, sending written guidance, a prepared hosting script, moderation instructions, and a point of contact for technical escalation. That made it possible for someone living out of state to contribute to live digital engagement.
+
+The role had a real operational purpose: facilitating a welcoming conversation during broadcasts, monitoring chat, and responding appropriately when moderation was needed. To make it sustainable, I helped connect the volunteer to team communications rather than depending on individual reminders.
+
+<div class="portfolio-artifact">
+  <div class="portfolio-artifact-head"><span>EXAMPLE / REMOTE-VOLUNTEER HANDOFF</span><span>JUNE 2026</span></div>
+  <div class="portfolio-artifact-grid">
+    <div><strong>01 / Prepare</strong><p>Supply a clear hosting script, prompts, and expectations before service.</p></div>
+    <div><strong>02 / Equip</strong><p>Assign chat-moderation access and explain when to remove inappropriate comments.</p></div>
+    <div><strong>03 / Support</strong><p>Provide a designated backup contact for issues during the livestream.</p></div>
+    <div><strong>04 / Integrate</strong><p>Include remote team members in recurring schedules and communications.</p></div>
+  </div>
+  <p class="portfolio-artifact-foot">Recreated from the volunteer handoff; private email addresses, scripts, and access details are omitted.</p>
+</div>
+
+## Building repeatable production standards
+
+My approach to volunteer development was reinforced by a broader effort to document how the production team worked. For instance, I drafted **sermon presentation submission guidelines** in October 2024: speakers were asked to send a title, scriptures, and key points three days ahead of their presentation; the media team would return formatted slides the following day, leaving a review window before the event.
+
+This is a small example of instructional design applied to operations. A clear process reduces last-minute ambiguity and helps volunteers and speakers understand what information makes a successful production possible.
+
+<div class="portfolio-steps" aria-label="Recreated sermon presentation submission process">
+  <div><span>T−3</span><strong>Speaker input</strong><small>Title, key points, scriptures, and technical needs</small></div>
+  <div><span>T−2</span><strong>Production draft</strong><small>Media team formats and shares presentation</small></div>
+  <div><span>T−1</span><strong>Review</strong><small>Corrections, quality checks, and final handoff</small></div>
+</div>
+
 ## Leadership behind the scenes
 
 The training work was connected to my broader production leadership responsibilities. I coordinated volunteer schedules and assignments, helped prepare teams for services and events, and communicated across production, worship, and creative teams.
 
 That combination of people development and day-to-day production coordination shaped how I approached the role: a team should be prepared for the next service, but its members should also have room to build skills that will serve them beyond it.
+
+## Documented scope
+
+- **Approximately 15 volunteers** participated in the four-service onboarding program.
+- **11 orientation slides** explained production roles, expectations, and the progression from observation to hands-on operation.
+- **Two specialist workshop opportunities** were coordinated in May 2026, along with ongoing rehearsals and volunteer scheduling.
+- **Remote participation** extended the team's reach beyond the in-person production crew.
+
+These are program activities and materials, not measured retention or placement outcomes.
 
 ## What I took from the experience
 
