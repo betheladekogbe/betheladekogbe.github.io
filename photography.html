@@ -38,9 +38,13 @@ description: Photography portfolio, featuring a shuffled collection of photograp
                   {% assign info = site.data.photography | where: "src", photo.path | first %}
                   {% assign photograph_count = photograph_count | plus: 1 %}
                   <a href="{{ photo.path | relative_url }}" class="photography-tile" data-photo-card
-                     data-categories="{% if info %}{{ info.categories | join: ' ' }}{% else %}events{% endif %}"
-                     aria-label="Enlarge photograph">
+                     data-categories="{% if info %}{{ info.categories | join: ' ' }}{% if info.edit_only == true %} edit-only{% endif %}{% else %}events{% endif %}"
+                     data-edit-only="{% if info.edit_only == true %}true{% else %}false{% endif %}"
+                     aria-label="{% if info.edit_only == true %}Enlarge edit-only photograph{% else %}Enlarge photograph{% endif %}">
                     <img src="{{ photo.path | relative_url }}" alt="{% if info %}{{ info.alt | escape }}{% else %}Portfolio photograph{% endif %}" loading="lazy" decoding="async">
+                    {% if info.edit_only == true %}
+                      <span class="photography-edit-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>Edit only</span>
+                    {% endif %}
                   </a>
                 {% endif %}
               {% endfor %}
@@ -55,6 +59,7 @@ description: Photography portfolio, featuring a shuffled collection of photograp
               <button type="button" class="photography-filter" data-photo-filter="outdoors" aria-pressed="false">Outdoors <span data-filter-count="outdoors"></span></button>
               <button type="button" class="photography-filter" data-photo-filter="events" aria-pressed="false">Events <span data-filter-count="events"></span></button>
               <button type="button" class="photography-filter" data-photo-filter="behind-the-scenes" aria-pressed="false">Behind the Scenes <span data-filter-count="behind-the-scenes"></span></button>
+              <button type="button" class="photography-filter" data-photo-filter="edit-only" aria-pressed="false" hidden>✎ Edit only <span data-filter-count="edit-only"></span></button>
               </div>
               <p class="photography-count"><span id="photography-showing" role="status" aria-live="polite">{{ photograph_count }} photographs</span><span>Randomized collection</span></p>
               <div class="photography-gallery" id="photography-gallery">{{ photo_tiles }}</div>
@@ -78,6 +83,7 @@ description: Photography portfolio, featuring a shuffled collection of photograp
 <dialog class="photography-lightbox" id="photography-lightbox" aria-label="Enlarged photograph">
   <div class="photography-lightbox-controls">
     <span class="photography-lightbox-count" id="photography-lightbox-count"></span>
+    <span class="photography-lightbox-edit-badge" id="photography-lightbox-edit-badge" hidden>✎ Edit only</span>
     <button type="button" data-lightbox-close aria-label="Close enlarged photograph">×</button>
   </div>
   <div class="photography-lightbox-image">
