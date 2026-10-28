@@ -52,10 +52,9 @@ description: Photography portfolio, featuring a shuffled collection of photograp
 
             {% if photograph_count > 0 %}
               <div class="photography-filters" role="group" aria-label="Filter photographs by genre">
-                <button type="button" class="photography-filter is-selected" data-photo-filter="all" aria-pressed="true">All Photos <span data-filter-count="all"></span></button>
-              <button type="button" class="photography-filter" data-photo-filter="portraits" aria-pressed="false">Portraits <span data-filter-count="portraits"></span></button>
+                <button type="button" class="photography-filter" data-photo-filter="portraits" aria-pressed="false">Portraits <span data-filter-count="portraits"></span></button>
               <button type="button" class="photography-filter" data-photo-filter="events-outdoors" aria-pressed="false">Events &amp; Outdoors <span data-filter-count="events-outdoors"></span></button>
-              <button type="button" class="photography-filter" data-photo-filter="studio-bts" aria-pressed="false">Studio &amp; Behind the Scenes <span data-filter-count="studio-bts"></span></button>
+              <button type="button" class="photography-filter" data-photo-filter="behind-the-scenes" aria-pressed="false" aria-label="Behind the Scenes">BTS <span data-filter-count="behind-the-scenes"></span></button>
               <button type="button" class="photography-filter" data-photo-filter="edit-only" aria-pressed="false" hidden>✎ Edit only <span data-filter-count="edit-only"></span></button>
               </div>
               <p class="photography-count"><span id="photography-showing" role="status" aria-live="polite">{{ photograph_count }} photographs</span><span>Randomized collection</span></p>
