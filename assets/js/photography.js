@@ -8,6 +8,7 @@
   const dialog = document.getElementById("photography-lightbox");
   const image = document.getElementById("photography-lightbox-image");
   const count = document.getElementById("photography-lightbox-count");
+  const lightboxEditBadge = document.getElementById("photography-lightbox-edit-badge");
   const showing = document.getElementById("photography-showing");
   const shuffleButton = document.getElementById("photography-reshuffle");
   let shuffled = cards.slice();
@@ -46,6 +47,7 @@
     const img = card.querySelector("img");
     image.alt = img ? img.alt : "Portfolio photograph";
     count.textContent = (index + 1) + " / " + visible.length;
+    if (lightboxEditBadge) lightboxEditBadge.hidden = card.dataset.editOnly !== "true";
   }
 
   function close() { if (dialog.open) dialog.close(); }
@@ -63,6 +65,10 @@
     const kind = span.dataset.filterCount;
     const total = kind === "all" ? cards.length : cards.filter(card => (card.dataset.categories || "").split(" ").includes(kind)).length;
     span.textContent = "(" + total + ")";
+    if (kind === "edit-only") {
+      const button = span.closest("[data-photo-filter]");
+      if (button) button.hidden = total === 0;
+    }
   });
 
   shuffle();
