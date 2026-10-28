@@ -20,8 +20,8 @@ My responsibilities included **directing the video production, switching the liv
 ## The finished livestream
 
 <figure class="os-story-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/JIyUJ-5qfXk" title="Pentecostal Tabernacle Worship Night Hallelujah livestream recorded November 8, 2025" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <figcaption>Original public livestream, November 8, 2025. <a href="https://www.youtube.com/watch?v=JIyUJ-5qfXk" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a></figcaption>
+  <iframe src="https://www.youtube-nocookie.com/embed/FRrcfCBnN2U" title="Pentecostal Tabernacle Worship Night Hallelujah livestream recorded November 8, 2025" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <figcaption>Original public livestream, November 8, 2025. <a href="https://www.youtube.com/watch?v=FRrcfCBnN2U" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a></figcaption>
 </figure>
 
 ## Preparing a full evening of live content
