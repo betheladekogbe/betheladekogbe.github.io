@@ -28,8 +28,22 @@
     filter(selected ? selected.dataset.photoFilter : "all");
   }
 
+  // Broader gallery filters preserve existing fine-grained categories on every image.
+  const filterGroups = {
+    "portraits": ["portraits"],
+    "events-outdoors": ["events", "concerts", "outdoors"],
+    "studio-bts": ["studio", "behind-the-scenes"],
+    "edit-only": ["edit-only"]
+  };
+
+  function matchesFilter(card, category) {
+    if (category === "all") return true;
+    const categories = (card.dataset.categories || "").split(" ");
+    return (filterGroups[category] || []).some(tag => categories.includes(tag));
+  }
+
   function filter(category) {
-    visible = shuffled.filter(card => category === "all" || (card.dataset.categories || "").split(" ").includes(category));
+    visible = shuffled.filter(card => matchesFilter(card, category));
     shuffled.forEach(card => { card.hidden = !visible.includes(card); });
     buttons.forEach(button => {
       const active = button.dataset.photoFilter === category;
@@ -63,7 +77,7 @@
   buttons.forEach(button => button.addEventListener("click", () => filter(button.dataset.photoFilter)));
   document.querySelectorAll("[data-filter-count]").forEach(span => {
     const kind = span.dataset.filterCount;
-    const total = kind === "all" ? cards.length : cards.filter(card => (card.dataset.categories || "").split(" ").includes(kind)).length;
+    const total = cards.filter(card => matchesFilter(card, kind)).length;
     span.textContent = "(" + total + ")";
     if (kind === "edit-only") {
       const button = span.closest("[data-photo-filter]");
