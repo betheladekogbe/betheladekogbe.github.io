@@ -1787,5 +1787,232 @@
       "events"
     ],
     "edit_only": true
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-001.jpg",
+    "alt": "Production crew member seated backstage with camera equipment",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-002.jpg",
+    "alt": "Production team members talking together near musical instruments",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-003.jpg",
+    "alt": "Two crew members monitoring video equipment during a live production",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-004.jpg",
+    "alt": "Camera operator adjusting equipment backstage",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-005.jpg",
+    "alt": "Production technician examining equipment under stage lighting",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-006.jpg",
+    "alt": "Camera crew working on equipment during event preparations",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-007.jpg",
+    "alt": "Camera operator holding a camera and light during production",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-008.jpg",
+    "alt": "Keyboard and other instruments arranged onstage before a performance",
+    "categories": [
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-009.jpg",
+    "alt": "Guitar and keyboards prepared on a stage",
+    "categories": [
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-010.jpg",
+    "alt": "Black-and-white view of a production technician operating the mixing console",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-011.jpg",
+    "alt": "Black-and-white view of a technician working at a production console",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-012.jpg",
+    "alt": "Empty stage with drums, keyboards, guitars and performance equipment",
+    "categories": [
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-013.jpg",
+    "alt": "Bass guitar resting onstage during equipment setup",
+    "categories": [
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-014.jpg",
+    "alt": "Keyboard instrument and notes under purple stage lighting",
+    "categories": [
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-015.jpg",
+    "alt": "Production crew member carrying camera equipment backstage",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-016.jpg",
+    "alt": "Technician working with a production console and monitor displays",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-017.jpg",
+    "alt": "Production staff member at the production desk backstage",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-018.jpg",
+    "alt": "Black-and-white view of live production monitor wall and crew",
+    "categories": [
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-019.jpg",
+    "alt": "Multi-camera video monitors and a production cue sheet",
+    "categories": [
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-020.jpg",
+    "alt": "Black-and-white candid of production personnel near the control station",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-021.jpg",
+    "alt": "Production crew member smiling at a backstage workstation",
+    "categories": [
+      "portraits",
+      "events",
+      "behind-the-scenes"
+    ],
+    "edit_only": false
+  },
+  {
+    "src": "/assets/images/photography/moments-bts-022.jpg",
+    "alt": "Glowing production control interfaces in a dark booth",
+    "categories": [
+      "events",
+      "behind-the-scenes",
+      "studio"
+    ],
+    "edit_only": false
   }
 ]
