@@ -32,7 +32,7 @@
   const filterGroups = {
     "portraits": ["portraits"],
     "events-outdoors": ["events", "concerts", "outdoors"],
-    "studio-bts": ["studio", "behind-the-scenes"],
+    "behind-the-scenes": ["behind-the-scenes"],
     "edit-only": ["edit-only"]
   };
 
@@ -74,7 +74,11 @@
     dialog.showModal();
   }));
 
-  buttons.forEach(button => button.addEventListener("click", () => filter(button.dataset.photoFilter)));
+  // Selecting an already-active filter clears it and restores the full gallery.
+  buttons.forEach(button => button.addEventListener("click", () => {
+    const category = button.getAttribute("aria-pressed") === "true" ? "all" : button.dataset.photoFilter;
+    filter(category);
+  }));
   document.querySelectorAll("[data-filter-count]").forEach(span => {
     const kind = span.dataset.filterCount;
     const total = cards.filter(card => matchesFilter(card, kind)).length;
