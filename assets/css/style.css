@@ -296,3 +296,10 @@ body.home-desktop{background:#85c2de;overflow-x:hidden}
 .portfolio-disclosure-body p:last-child{margin-bottom:0}
 .portfolio-disclosure-body ul{margin:6px 0;padding-left:20px}
 @media(max-width:720px){.portfolio-stat-grid{gap:7px}.portfolio-stat{min-height:82px;padding:14px 7px}.portfolio-stat strong{font-size:27px}.portfolio-stat span{font-size:9px}.portfolio-steps{grid-template-columns:1fr}.portfolio-artifact-grid{grid-template-columns:1fr}.portfolio-artifact-grid>div:nth-child(odd){border-right:0}.portfolio-pipeline{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolio-timeline>div{grid-template-columns:1fr;gap:4px}.portfolio-artifact-head{font-size:9px}}
+
+/* Photo editing credits: only shown for images explicitly marked edit_only in _data/photography.json. */
+.photography-edit-badge{position:absolute;top:9px;left:9px;z-index:1;display:inline-flex;align-items:center;gap:5px;padding:6px 8px;border-radius:6px;background:#faf9f5ed;color:#253c3f;box-shadow:0 1px 5px #142b3040;font-size:10px;font-weight:700;line-height:1;letter-spacing:.01em;white-space:nowrap;pointer-events:none}
+.photography-edit-badge svg{width:12px;height:12px;flex:none}
+.photography-lightbox-edit-badge{margin-left:auto;margin-right:16px;padding:5px 9px;border:1px solid #ffffff55;border-radius:5px;background:#ffffff20;font-size:11px;font-weight:700;white-space:nowrap}
+.photography-lightbox-edit-badge[hidden],.photography-filter[hidden]{display:none!important}
+@media(max-width:680px){.photography-edit-badge{top:6px;left:6px;padding:5px 6px;font-size:9px}.photography-lightbox-edit-badge{margin-right:9px;font-size:10px}}
