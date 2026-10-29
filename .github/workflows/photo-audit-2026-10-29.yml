@@ -1,0 +1,55 @@
+name: Photography one-time dimensions and similarity audit
+on:
+  push:
+    paths:
+      - '.github/workflows/photo-audit-2026-10-29.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compute dimensions, hashes and duplicates
+        run: |
+          python -m pip install --quiet Pillow ImageHash
+          python - <<'PY'
+          import json,collections
+          from pathlib import Path
+          from PIL import Image,ImageOps
+          import imagehash
+          base=Path('assets/images/photography')
+          photos=json.loads(Path('_data/photography.json').read_text())
+          hashes={};dimensions={};sizes={};errors=[]
+          for x in photos:
+            src=x['src']; p=Path(src.lstrip('/'))
+            try:
+              with Image.open(p) as im:
+                upright=ImageOps.exif_transpose(im)
+                width,height=upright.size
+                dimensions[src]=[width,height]
+                hashes[src]=imagehash.phash(upright)
+                sizes[src]=p.stat().st_size
+            except Exception as exc:errors.append((src,str(exc)))
+          print('MANIFEST_START')
+          print(json.dumps({k:v for k,v in dimensions.items()},separators=(',',':')))
+          print('MANIFEST_END')
+          print('TOTAL',len(photos),'LOADED',len(dimensions),'ERRORS',json.dumps(errors))
+          seen={}
+          for x in photos:
+            p=Path(x['src'].lstrip('/'))
+            data=p.read_bytes()
+            import hashlib
+            d=hashlib.sha256(data).hexdigest()
+            if d in seen:print('EXACT_DUP',x['src'],seen[d])
+            else:seen[d]=x['src']
+          srcs=list(hashes)
+          candidates=[]
+          for i,a in enumerate(srcs):
+            for b in srcs[:i]:
+              dist=hashes[a]-hashes[b]
+              if dist<=7:candidates.append((dist,a,b))
+          print('NEAR_DUPLICATE_CANDIDATES',len(candidates))
+          for dist,a,b in sorted(candidates):
+            print('NEAR_DUP',dist,a,b)
+          PY
