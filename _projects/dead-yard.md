@@ -47,6 +47,18 @@ The musical score connects the work's spiritual, cultural, and familial themes. 
   <img src="/assets/images/projects/dead-yard-inscription.webp" loading="lazy" alt="Text about the seen and unseen incorporated into the installation" style="width:100%;height:auto;border-radius:8px">
 </div>
 
+## From Dead Yard to Some Sweet Day
+
+The documentary material from Rasheed Peters's *Dead Yard* installation later evolved into ***Some Sweet Day***, a **19-minute, 36-second experimental documentary** focusing on the filmmaker and his mother, Camille, after the death of his father. The film was completed in 2023 and presented in 2024.
+
+I am credited for **original music on the film alongside Shelice Brown-Sanni**, building on the preceding EP production. These are distinct credits: I produced, recorded, arranged, mixed, and mastered the *Dead Yard EP*; **Ye Xi is credited for the finished film's sound design and mix**. The documentary received six official festival or program selections, including Black Harvest, Windrush Caribbean, and Conch Shell International.
+
+<div class="portfolio-links">
+  <a class="portfolio-link" href="/#project/some-sweet-day/full">Explore Some Sweet Day in this portfolio ↗</a>
+  <a class="portfolio-link" href="https://vimeo.com/996693751" target="_blank" rel="noopener noreferrer">Watch the documentary trailer ↗</a>
+  <a class="portfolio-link" href="https://www.rasheedpeters.com/ant-honey/some-sweet-day" target="_blank" rel="noopener noreferrer">Official film page ↗</a>
+</div>
+
 ## Exhibition
 
 *Dead Yard* was presented on **June 9, 2023**, as part of **Northwestern University's Documentary Media MFA Showcase**. It appeared in *Binding Domains*, a showcase presentation alongside Laura Gede's *Passive Transport*. Marquise Mays's contemporary review also describes the installation in Northwestern University's Abbot Hall.
