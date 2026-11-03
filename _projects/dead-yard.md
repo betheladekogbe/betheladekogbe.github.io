@@ -9,7 +9,7 @@ summary: "I composed, produced, recorded, arranged, mixed, and mastered the musi
 featured: false
 order: 12
 art: series
-image: "/assets/images/projects/dead-yard-draft.svg"
+image: "/assets/images/projects/dead-yard-cover.jpg"
 image_alt: "Dead Yard EP artwork"
 ---
 
@@ -33,6 +33,18 @@ The musical score connects the work's spiritual, cultural, and familial themes. 
 </div>
 
 <iframe title="Dead Yard EP — SoundCloud playlist" width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fbethelade%2Fsets%2Fdead-yard&amp;color=%2341d9f0&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false"></iframe>
+
+
+## Inside the installation
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:18px 0">
+  <img src="/assets/images/projects/dead-yard-installation-wide.webp" loading="lazy" alt="Wide view of the Dead Yard installation, including multiple screens and a memorial environment" style="width:100%;height:auto;border-radius:8px">
+  <img src="/assets/images/projects/dead-yard-visitors.webp" loading="lazy" alt="Visitors experiencing the multi-screen Dead Yard installation" style="width:100%;height:auto;border-radius:8px">
+  <img src="/assets/images/projects/dead-yard-memorial-video.webp" loading="lazy" alt="Display monitor surrounded by flowers, dominoes, and family memorial items" style="width:100%;height:auto;border-radius:8px">
+  <img src="/assets/images/projects/dead-yard-floral-speaker.webp" loading="lazy" alt="White flowers and a family photograph above a speaker" style="width:100%;height:auto;border-radius:8px">
+  <img src="/assets/images/projects/dead-yard-memorial-detail.webp" loading="lazy" alt="Memorial detail with family photographs, flowers, and bottles" style="width:100%;height:auto;border-radius:8px">
+  <img src="/assets/images/projects/dead-yard-inscription.webp" loading="lazy" alt="Text about the seen and unseen incorporated into the installation" style="width:100%;height:auto;border-radius:8px">
+</div>
 
 ## Exhibition
 
