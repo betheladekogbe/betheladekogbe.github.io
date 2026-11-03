@@ -1,49 +1,38 @@
-# Bethel Adekogbe · Portfolio
+# Bethel Adekogbe — Nintendo Switch-style Portfolio
 
-A lightweight Jekyll portfolio website built for GitHub Pages, with traditional project case studies and a journal. The homepage uses a desktop-computer-inspired visual language. No paid theme, backend, or account required beyond GitHub.
+**Canonical live portfolio:** https://betheladekogbe.github.io/
 
-## Publish for free
+**Authoritative design:** The Nintendo Switch-inspired interface in the root `index.html`. This replaced the earlier desktop-computer/Jekyll homepage in October 2026. **Do not use legacy standalone `/work/<slug>/` pages as the primary portfolio experience or send them as project links.**
 
-1. Log in to GitHub and create a **public** repository named `YOURUSERNAME.github.io` (replace with your exact GitHub username, lowercased).
-2. Click **Add file → Upload files** on the repository's **Code** tab.
-3. **Open this ZIP on your computer first.** Upload the files and folders *inside* `portfolio_starter`, not the enclosing folder and not the ZIP itself.
-4. In **Settings → Pages**, select **Deploy from a branch**, then choose **main** and **/(root)**. Click **Save**.
-5. Visit `https://YOURUSERNAME.github.io` after GitHub finishes deploying (often several minutes).
+## Source of truth
 
-If you already created the repository with a README, that's fine; upload the site files and let the provided README overwrite it.
+- **`index.html`** — the active Switch-style homepage, eShop-like projects directory, project detail screen, inline full-case-study panel, photography, résumé, About, and contact.
+- **`assets/js/switch-data.js`** — core project, media, and UI data.
+- **`assets/js/portfolio-projects.js`** — additional project entries and overrides, including project images, roles, categories, audio/video links, and media carousels. Loaded after `switch-data.js`.
+- **`_projects/<project-slug>.md`** — full case-study content. The Switch homepage compiles these Markdown files into hidden HTML templates and displays them **within** the Switch project's “Read full case study” section. These Markdown files are **content sources** even if a legacy `/work/` page also exists.
+- **`assets/images/projects/`** — project-specific artwork and case-study photographs. Ensure the Switch data object's `cover` and `media` refer to the actual assets.
+- **`_data/photography.yml` and `assets/images/photography/`** — photography gallery data and assets.
+- **`_layouts/`, `work.html`, `assets/css/style.css`** — largely legacy Jekyll layouts/pages. Do not use their appearance to evaluate the current Switch site.
 
-## Edit the site's content
+## Project links and navigation
 
-- **Brand/name and description:** `_config.yml`.
-- **Homepage:** `index.html`.
-- **Project pages:** files in `_projects/`. Duplicate one, change the top `---` metadata, and write the content in Markdown. Use `featured: true` to display it on the homepage.
-- **Blog posts:** create a new Markdown file in `_posts/` with the filename `YYYY-MM-DD-title.md`. Start it with `---` front matter containing `title`, `date`, `summary`, and `---`; below, write your article in Markdown.
-- **About:** `about.md`. **Contact:** `contact.md`. **Work directory:** `work.html`.
-- **Design:** `assets/css/style.css`. **Site navigation:** `_includes/header.html`.
-- **Photos/videos:** place image files in `assets/images/`, then set `image: /assets/images/yourfile.jpg` inside a project file. You can paste a YouTube iframe in a Markdown case study for video embeds.
+Use **Switch deep links**, not standalone articles:
 
-## Add a journal post (template)
+- **Projects directory:** https://betheladekogbe.github.io/#projects
+- **Dead Yard project:** https://betheladekogbe.github.io/#project/dead-yard
+- **Dead Yard complete case study:** https://betheladekogbe.github.io/#project/dead-yard/full
 
-Filename: `_posts/2026-11-01-my-first-post.md`
+The Switch homepage handles `#project/<id>` and `#project/<id>/full`; the latter opens the full case study directly. Project-card selection and the “Read full case study” button update the URL to match. The historical `/work/dead-yard/` address redirects to the Switch view.
 
-```md
----
-title: "What I Learned From a Production"
-date: 2026-11-01
-summary: "A short overview for the journal index."
----
+## Editing workflow
 
-Write your article here. Use ## for headings, **bold** for emphasis.
-```
+1. Review the user's latest approval and project information. **Do not publish unapproved changes.**
+2. For a project, update **both** its `_projects/<slug>.md` write-up and the Switch project entry in `assets/js/portfolio-projects.js` (or core data if the entry is defined there). Do not treat the standalone Jekyll page as the finished UI.
+3. Use original project imagery: set the `cover`, `media`, and `mediaNote` properties appropriately. Never silently replace project media with unrelated portfolio photos.
+4. If audio/video is central, include a working project-specific listening or viewing action. The case-study Markdown can contain an embedded player as well.
+5. Confirm that the project is not erroneously marked as `draft`. Keep the established newest-to-oldest sorting and filter categories.
+6. After writing, verify the main-branch commit, successful GitHub Pages deployment, real asset paths, working Switch navigation, in-page full-case-study content, and shareable `#project/<id>/full` link. Preserve the other site sections.
 
-The homepage currently includes three **draft case studies** built from prior discussion, with clearly marked areas for replacement footage, images, and verified metrics. They should be reviewed for accuracy and confidentiality before sharing the site with recruiters.
+## Historic implementation notes
 
-The Journal is intentionally empty until you publish your first real article. The Contact page has an explicit placeholder rather than an invented email address.
-
-## Preview
-
-The included `preview/homepage.html` is a standalone homepage preview that opens in a browser without installing Jekyll. It is **not** the full compiled site. The live website uses the Jekyll files in the project root. This page is excluded from deployment.
-
-## Optional local preview with Jekyll
-
-If you have Ruby/Bundler installed, add a Gemfile, install the GitHub Pages gem or Jekyll, and run a Jekyll server. You do **not** need local Ruby to publish through GitHub.
+The repository began as a desktop/Jekyll template, and older files and instructions remain for archival compatibility. Those are **not** the design currently selected by the user. GitHub Pages still uses Jekyll to compile the collection content into the Switch homepage.
