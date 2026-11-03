@@ -61,7 +61,7 @@ These are festival or screening selections, **not award wins**.
 - **Editor and film sound design/mix:** Ye Xi (also credited as Xi Ye in the FilmFreeway materials)
 - **Story editor:** Maya Wanner
 - **Original music:** Bethel Adekogbe and Shelice Brown-Sanni
-- **Color and graphics:** Ella (Eleanor) Harmon
+- **Color and graphics:** Ella Harmon (EPK credit); Eleanor Harmon (FilmFreeway listing)
 - **Featured:** Camille Peters
 
 The film is dedicated to the memory of **Owen Anthony Peters**.
