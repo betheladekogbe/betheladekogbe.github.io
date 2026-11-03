@@ -1,4 +1,5 @@
 ---
+layout: dead-yard-switch-redirect
 title: "Dead Yard — Music Production & Sound"
 organization: "Dead Yard · A project by Rasheed Peters"
 year: "2023"
