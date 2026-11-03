@@ -11,7 +11,7 @@
 - **`assets/js/portfolio-projects.js`** — additional project entries and overrides, including project images, roles, categories, audio/video links, and media carousels. Loaded after `switch-data.js`.
 - **`_projects/<project-slug>.md`** — full case-study content. The Switch homepage compiles these Markdown files into hidden HTML templates and displays them **within** the Switch project's “Read full case study” section. These Markdown files are **content sources** even if a legacy `/work/` page also exists.
 - **`assets/images/projects/`** — project-specific artwork and case-study photographs. Ensure the Switch data object's `cover` and `media` refer to the actual assets.
-- **`_data/photography.yml` and `assets/images/photography/`** — photography gallery data and assets.
+- **`_data/photography.json` and `assets/images/photography/`** — photography gallery data and assets.
 - **`_layouts/`, `work.html`, `assets/css/style.css`** — largely legacy Jekyll layouts/pages. Do not use their appearance to evaluate the current Switch site.
 
 ## Project links and navigation
