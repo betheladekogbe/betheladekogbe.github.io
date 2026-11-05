@@ -270,6 +270,13 @@ content:
           - name: url
             label: URL
             type: string
+      - name: fullCaseHtml
+        label: Full case study (formatted text, photos, video embeds)
+        type: rich-text
+        options:
+          format: html
+          media: project_images
+          switcher: true
       - name: draft
         label: Hide unfinished project
         type: boolean
