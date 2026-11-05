@@ -98,4 +98,15 @@
       for(const a of qa('a[href^="mailto:"]'))a.href="mailto:"+d.contact.email;
     }
   }
+  // Site identity and social links (existing buttons and icons remain unchanged).
+  if(d.brand){
+    set(q(".status .identity strong"),d.brand.name);
+    set(q(".status .identity small"),d.brand.subtitle);
+    picture(q(".status .avatar"),d.brand.avatar);
+    set(q(".footer .foot-brand > span:last-child"),d.brand.footer);
+    for(const [name,url] of [["LinkedIn",d.brand.linkedin],["Instagram",d.brand.instagram],["YouTube",d.brand.youtube]]){
+      const a=qa(".status .social-link").find(el=>el.title===name);
+      if(a&&url)a.href=url;
+    }
+  }
 })();
