@@ -15,6 +15,12 @@ media:
     output: /assets/images/photography
     categories: [image]
     rename: safe
+  - name: resume_files
+    label: Resume PDFs
+    input: assets/resume
+    output: /assets/resume
+    categories: [document]
+    rename: safe
   - name: documents
     label: Resume and documents
     input: assets/documents
@@ -23,6 +29,156 @@ media:
     rename: safe
 
 content:
+  - name: site_pages
+    label: Home, About, Resume and Contact
+    type: file
+    path: _data/site_content.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: home
+        label: Home page
+        type: object
+        fields:
+          - name: tiles
+            label: Navigation tiles
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: page
+                label: Navigation destination (keep existing value)
+                type: string
+                readonly: true
+              - name: title
+                label: Tile title
+                type: string
+              - name: description
+                label: Subtitle
+                type: text
+              - name: image
+                label: Cover image (blank keeps current artwork)
+                type: image
+                options:
+                  media: photography
+      - name: about
+        label: About page
+        type: object
+        fields:
+          - name: eyebrow
+            label: Intro categories
+            type: string
+          - name: heading
+            label: Headline
+            type: string
+          - name: intro
+            label: Introduction paragraphs
+            type: text
+            list: true
+          - name: portrait
+            label: Headshot
+            type: image
+            options:
+              media: photography
+          - name: blocks
+            label: Experience and background blocks
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                type: string
+              - name: text
+                type: text
+          - name: location
+            label: Location text
+            type: string
+      - name: resume
+        label: Resume page
+        type: object
+        fields:
+          - name: eyebrow
+            label: Resume subtitle
+            type: string
+          - name: heading
+            label: Headline
+            type: string
+          - name: description
+            label: Introduction
+            type: text
+          - name: tags
+            label: Focus areas
+            type: string
+            list: true
+          - name: pdf
+            label: Downloadable PDF resume
+            type: file
+            options:
+              media: resume_files
+          - name: entries
+            label: Work experience
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title} — {employer}"
+            fields:
+              - name: extra
+                label: Place in additional experience
+                type: boolean
+              - name: date
+                label: Employment dates
+                type: string
+              - name: title
+                label: Role
+                type: string
+              - name: employer
+                label: Employer
+                type: string
+              - name: highlights
+                label: Accomplishment bullets
+                type: text
+                list: true
+              - name: image
+                label: Optional role photo (blank keeps existing)
+                type: image
+                options:
+                  media: photography
+          - name: education
+            label: Education and skills cards
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: category
+                type: string
+              - name: title
+                type: string
+              - name: lines
+                label: Details
+                type: text
+                list: true
+      - name: contact
+        label: Contact modal
+        type: object
+        fields:
+          - name: heading
+            label: Headline
+            type: string
+          - name: message
+            label: Invitation
+            type: text
+          - name: email
+            label: Contact email
+            type: string
+
   - name: project_directory
     label: Projects tab (cards and detail pages)
     type: file
@@ -66,7 +222,7 @@ content:
         type: select
         options:
           multiple: true
-          values: [Direction, Video Editing, Educational Media, Audio, Photography, Graphic Design, Production]
+          values: [Direction, Video Editing, Educational Media, Audio, Photography, Graphic Design, Production, Color Grading]
       - name: img
         label: Fallback image key (legacy)
         type: string
