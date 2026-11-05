@@ -276,5 +276,14 @@
     "heading": "Let's connect.",
     "message": "Interested in educational media, creative production, or collaborating on a project?",
     "email": "thedkob@gmail.com"
+  },
+  "brand": {
+    "name": "Bethel Adekogbe",
+    "subtitle": "CREATIVE PRODUCTION / EDUCATIONAL MEDIA",
+    "avatar": "/assets/images/about/bethel-headshot.webp",
+    "footer": "PORTFOLIO SYSTEM",
+    "linkedin": "https://www.linkedin.com/in/bethel-adekogbe/",
+    "instagram": "https://www.instagram.com/betheladekogbe/",
+    "youtube": "https://www.youtube.com/@betheladekogbe"
   }
 }
