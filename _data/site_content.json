@@ -5,7 +5,7 @@
         "page": "projects",
         "title": "Projects",
         "description": "Selected case studies",
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "page": "photos",
@@ -23,13 +23,13 @@
         "page": "resume",
         "title": "Résumé",
         "description": "Experience and education",
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "page": "contact",
         "title": "Contact",
         "description": "Get in touch",
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       }
     ]
   },
@@ -91,7 +91,7 @@
           "Coordinated production schedules, recruited and trained volunteers, maintained media workflows, and prepared weekly ProPresenter playlists.",
           "Collaborated on equipment purchasing and maintenance, booked external creative talent, proposed original content, and supported filming and editing."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": false,
@@ -103,7 +103,7 @@
           "Respond to help-desk tickets, document support procedures, provide daily user assistance, and conduct preventive maintenance.",
           "Maintain room and equipment inventories and support local and remote meetings and events."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": false,
@@ -115,7 +115,7 @@
           "Provided hands-on technician training, coordinated freelancers and venue requirements, and resolved urgent AV issues.",
           "Managed equipment inventory and supported administrative processes for live-event delivery."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": false,
@@ -126,7 +126,7 @@
           "Led camera crews and collaborated with photographers and videographers for recorded and live-streamed services.",
           "Operated cameras, coordinated video capture, supported equipment setup and breakdown, and mixed live audio for services and streams."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": false,
@@ -137,7 +137,7 @@
           "Designed and led educational workshops for high school students on health, careers, nutrition, media literacy, and self-care.",
           "Created infographics and presentations and supported students' work in a community garden."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": false,
@@ -148,7 +148,7 @@
           "Worked with subject-matter experts to develop interactive healthcare compliance training.",
           "Created storyboards, scripts, narration, videos, graphics, animation, and simulations for instructional content."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": false,
@@ -159,7 +159,7 @@
           "Trained students and community members in video, audio, photography, graphic design, and animation.",
           "Provided walk-in technical troubleshooting and in-depth one-on-one consultations to support creative projects."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": false,
@@ -170,7 +170,7 @@
           "Produced digital storytelling content highlighting underrepresented communities, including video, infographics, animations, and promotional media.",
           "Directed studio camera work, managed equipment and sound setup, and produced music and video promotions for two seasons."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": true,
@@ -181,7 +181,7 @@
           "Composed and arranged music for advertisements, podcasts, documentaries, and short films.",
           "Managed recording, editing, mixing, and mastering using digital audio workstations."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": true,
@@ -191,7 +191,7 @@
         "highlights": [
           "Supported on-set logistics, background performer holding areas, and shoot-day preparation and wrap for a television production."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": true,
@@ -201,7 +201,7 @@
         "highlights": [
           "Collected plasma specimens according to established procedures and monitored donors for equipment issues or reactions."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": true,
@@ -211,7 +211,7 @@
         "highlights": [
           "Edited and quality-checked podcast audio, diagnosed recording issues, and delivered completed episodes on short timelines."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": true,
@@ -221,7 +221,7 @@
         "highlights": [
           "Mixed live audio for services and livestreams, operated cameras, and helped distribute sermon recordings."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": true,
@@ -231,7 +231,7 @@
         "highlights": [
           "Led the student record label's executive board and organized events to help members develop music-production and promotional skills."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": true,
@@ -241,7 +241,7 @@
         "highlights": [
           "Observed clinical rounds and helped verify demographic data in patient records."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       },
       {
         "extra": true,
@@ -251,7 +251,7 @@
         "highlights": [
           "Participated in volunteer activities and created visual presentations supporting other members."
         ],
-        "image": "/assets/images/photography/photo-056.jpg"
+        "image": ""
       }
     ],
     "education": [
