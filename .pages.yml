@@ -37,6 +37,33 @@ content:
     operations:
       delete: false
     fields:
+      - name: brand
+        label: Site identity and social links
+        type: object
+        fields:
+          - name: name
+            label: Display name
+            type: string
+          - name: subtitle
+            label: Professional subtitle
+            type: string
+          - name: avatar
+            label: Profile photograph
+            type: image
+            options:
+              media: photography
+          - name: footer
+            label: Footer label
+            type: string
+          - name: linkedin
+            label: LinkedIn URL
+            type: string
+          - name: instagram
+            label: Instagram URL
+            type: string
+          - name: youtube
+            label: YouTube URL
+            type: string
       - name: home
         label: Home page
         type: object
