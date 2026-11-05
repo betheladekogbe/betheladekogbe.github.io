@@ -1,0 +1,280 @@
+{
+  "home": {
+    "tiles": [
+      {
+        "page": "projects",
+        "title": "Projects",
+        "description": "Selected case studies",
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "page": "photos",
+        "title": "Photography",
+        "description": "Images and post-production",
+        "image": "/assets/images/photography/photography-cover-2026.webp"
+      },
+      {
+        "page": "about",
+        "title": "About Me",
+        "description": "Creative media and leadership",
+        "image": "/assets/images/about/bethel-headshot.webp"
+      },
+      {
+        "page": "resume",
+        "title": "Résumé",
+        "description": "Experience and education",
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "page": "contact",
+        "title": "Contact",
+        "description": "Get in touch",
+        "image": "/assets/images/photography/photo-056.jpg"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "CREATIVE PRODUCTION · EDUCATION · LEADERSHIP",
+    "heading": "Hi, I'm Bethel.",
+    "intro": [
+      "I’m a multimedia professional who brings together creative storytelling, production technology, and a commitment to helping people learn and grow.",
+      "My experience spans directing media teams, producing digital content, supporting professional AV environments, and building interactive educational workshops. The common thread is creating meaningful experiences for people on both sides of the camera."
+    ],
+    "portrait": "/assets/images/about/bethel-headshot.webp",
+    "blocks": [
+      {
+        "title": "Educational media",
+        "text": "At Roxbury Tenants of Harvard, I developed lessons, presentations, infographics and interactive workshops, helping young people learn and explore a community garden."
+      },
+      {
+        "title": "Production leadership",
+        "text": "At Pentecostal Tabernacle, I led livestream and creative production, team coordination, volunteer onboarding, camera training, and cross-department projects."
+      },
+      {
+        "title": "AV & creative technology",
+        "text": "Work with Red Thread, Encore Global, and Proper Bantah has brought together technical troubleshooting, live events, and digital storytelling."
+      },
+      {
+        "title": "Brandeis University",
+        "text": "Bachelor of Arts, Health: Science, Society, and Policy · 2020."
+      },
+      {
+        "title": "Team development",
+        "text": "Mentorship, coaching, instructional design, volunteer training, and making creative technology accessible."
+      },
+      {
+        "title": "Creative focus",
+        "text": "Visual storytelling, media production leadership, documentary and fiction development, and education through media."
+      }
+    ],
+    "location": "Cambridge / Boston, Massachusetts"
+  },
+  "resume": {
+    "eyebrow": "CREATIVE PRODUCTION · EDUCATIONAL MEDIA",
+    "heading": "Experience, education & production.",
+    "description": "Multimedia production leadership, creative direction, audiovisual technology, and helping people learn through media.",
+    "tags": [
+      "Production",
+      "Education",
+      "Team leadership",
+      "AV technology"
+    ],
+    "pdf": "/assets/resume/Bethel_Adekogbe_Educational_Media_Resume.pdf",
+    "entries": [
+      {
+        "extra": false,
+        "date": "2024 – 2026",
+        "title": "Interim Director of Media & Production Lead",
+        "employer": "Pentecostal Tabernacle",
+        "highlights": [
+          "Managed production for services, conferences, and special events while aligning volunteers, worship, welcome, and creative teams.",
+          "Coordinated production schedules, recruited and trained volunteers, maintained media workflows, and prepared weekly ProPresenter playlists.",
+          "Collaborated on equipment purchasing and maintenance, booked external creative talent, proposed original content, and supported filming and editing."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": false,
+        "date": "2024 – Present",
+        "title": "Onsite AV Technician",
+        "employer": "Red Thread",
+        "highlights": [
+          "Support hybrid meetings across Webex, Zoom, Microsoft Teams, and Google Meet; operate and troubleshoot room AV systems.",
+          "Respond to help-desk tickets, document support procedures, provide daily user assistance, and conduct preventive maintenance.",
+          "Maintain room and equipment inventories and support local and remote meetings and events."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": false,
+        "date": "2022 – 2023",
+        "title": "Event Technical Supervisor & AV Technical Lead",
+        "employer": "Encore Global",
+        "highlights": [
+          "Supervised on-site event technical crews and operations across audio, video, staging, and equipment.",
+          "Provided hands-on technician training, coordinated freelancers and venue requirements, and resolved urgent AV issues.",
+          "Managed equipment inventory and supported administrative processes for live-event delivery."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": false,
+        "date": "2020 – 2022",
+        "title": "Media Lead",
+        "employer": "JCCI Glory Tabernacle",
+        "highlights": [
+          "Led camera crews and collaborated with photographers and videographers for recorded and live-streamed services.",
+          "Operated cameras, coordinated video capture, supported equipment setup and breakdown, and mixed live audio for services and streams."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": false,
+        "date": "2020",
+        "title": "Health Education & Wellness Intern",
+        "employer": "Roxbury Tenants of Harvard",
+        "highlights": [
+          "Designed and led educational workshops for high school students on health, careers, nutrition, media literacy, and self-care.",
+          "Created infographics and presentations and supported students' work in a community garden."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": false,
+        "date": "2019 – 2020",
+        "title": "Human Resources Coordinator",
+        "employer": "Tufts Medical Center",
+        "highlights": [
+          "Worked with subject-matter experts to develop interactive healthcare compliance training.",
+          "Created storyboards, scripts, narration, videos, graphics, animation, and simulations for instructional content."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": false,
+        "date": "2018 – 2020",
+        "title": "Student Support Specialist",
+        "employer": "Brandeis University — Sound and Image Media Studios",
+        "highlights": [
+          "Trained students and community members in video, audio, photography, graphic design, and animation.",
+          "Provided walk-in technical troubleshooting and in-depth one-on-one consultations to support creative projects."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": false,
+        "date": "2018 – 2020",
+        "title": "Technical Director",
+        "employer": "Proper Bantah",
+        "highlights": [
+          "Produced digital storytelling content highlighting underrepresented communities, including video, infographics, animations, and promotional media.",
+          "Directed studio camera work, managed equipment and sound setup, and produced music and video promotions for two seasons."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": true,
+        "date": "2017 – Present",
+        "title": "Music Composer & Producer",
+        "employer": "Freelance",
+        "highlights": [
+          "Composed and arranged music for advertisements, podcasts, documentaries, and short films.",
+          "Managed recording, editing, mixing, and mastering using digital audio workstations."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": true,
+        "date": "2022",
+        "title": "Location Assistant",
+        "employer": "ABC’s Everything’s Trash",
+        "highlights": [
+          "Supported on-set logistics, background performer holding areas, and shoot-day preparation and wrap for a television production."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": true,
+        "date": "2020 – 2021",
+        "title": "Phlebotomist",
+        "employer": "ADMA Biologics",
+        "highlights": [
+          "Collected plasma specimens according to established procedures and monitored donors for equipment issues or reactions."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": true,
+        "date": "2020 – 2021",
+        "title": "Audio Editor",
+        "employer": "Birthmark Podcast",
+        "highlights": [
+          "Edited and quality-checked podcast audio, diagnosed recording issues, and delivered completed episodes on short timelines."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": true,
+        "date": "2017 – 2020",
+        "title": "Sound Engineer",
+        "employer": "Pentecostal Tabernacle",
+        "highlights": [
+          "Mixed live audio for services and livestreams, operated cameras, and helped distribute sermon recordings."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": true,
+        "date": "2017 – 2020",
+        "title": "President",
+        "employer": "Basement Records",
+        "highlights": [
+          "Led the student record label's executive board and organized events to help members develop music-production and promotional skills."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": true,
+        "date": "2018",
+        "title": "Intern",
+        "employer": "Georgia Kidney Associates",
+        "highlights": [
+          "Observed clinical rounds and helped verify demographic data in patient records."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      },
+      {
+        "extra": true,
+        "date": "2013 – 2014",
+        "title": "Volunteer Worker",
+        "employer": "Health Occupations Students of America",
+        "highlights": [
+          "Participated in volunteer activities and created visual presentations supporting other members."
+        ],
+        "image": "/assets/images/photography/photo-056.jpg"
+      }
+    ],
+    "education": [
+      {
+        "category": "EDUCATION",
+        "title": "Brandeis University",
+        "lines": [
+          "Bachelor of Arts · Health: Science, Society, and Policy",
+          "Waltham, MA · 2020"
+        ]
+      },
+      {
+        "category": "CREATIVE & TECHNICAL SKILLS",
+        "title": "Production Toolkit",
+        "lines": [
+          "Premiere Pro, Final Cut Pro, Photoshop, Illustrator, Lightroom, Adobe Audition, Logic Pro, Ableton Live, OBS, Wirecast, ProPresenter; hybrid conferencing and AV troubleshooting."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Let's connect.",
+    "message": "Interested in educational media, creative production, or collaborating on a project?",
+    "email": "thedkob@gmail.com"
+  }
+}
