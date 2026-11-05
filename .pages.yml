@@ -23,6 +23,101 @@ media:
     rename: safe
 
 content:
+  - name: project_directory
+    label: Projects tab (cards and detail pages)
+    type: file
+    path: _data/projects.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - name: id
+        label: Unique project slug (lowercase and hyphens)
+        type: string
+        required: true
+      - name: case
+        label: Matching case-study slug
+        type: string
+      - name: caseurl
+        label: Legacy project URL
+        type: string
+      - name: title
+        label: Project title
+        type: string
+        required: true
+      - name: short
+        label: Short project title
+        type: string
+      - name: org
+        label: Organization or client
+        type: string
+      - name: year
+        label: Display year
+        type: string
+      - name: date
+        label: Sorting date
+        type: date
+      - name: role
+        label: My role
+        type: string
+      - name: categories
+        label: Project filters
+        type: select
+        options:
+          multiple: true
+          values: [Direction, Video Editing, Educational Media, Audio, Photography, Graphic Design, Production]
+      - name: img
+        label: Fallback image key (legacy)
+        type: string
+      - name: cover
+        label: Project card cover
+        type: image
+        options:
+          media: project_images
+      - name: summary
+        label: Card and detail summary
+        type: text
+      - name: facts
+        label: Project highlights
+        type: string
+        list: true
+      - name: media
+        label: Project photo gallery
+        type: image
+        list: true
+        options:
+          media: project_images
+      - name: mediaContain
+        label: Fit full image inside gallery frame
+        type: boolean
+      - name: mediaNote
+        label: Photo gallery caption
+        type: text
+      - name: video
+        label: Video URL
+        type: string
+      - name: audio
+        label: Audio URL
+        type: string
+      - name: extraLinks
+        label: Additional links
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}"
+        fields:
+          - name: label
+            label: Link text
+            type: string
+          - name: url
+            label: URL
+            type: string
+      - name: draft
+        label: Hide unfinished project
+        type: boolean
+
   - name: case_studies
     label: Project case studies
     type: collection
