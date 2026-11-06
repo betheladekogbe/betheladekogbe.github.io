@@ -13,13 +13,52 @@
       "Graphic Design"
     ],
     "img": "",
-    "cover": "/assets/images/projects/asco-apparel-design-draft.svg",
-    "summary": "Two racing-inspired shirt design assignments involving multiple concepts, client revisions, and final artwork.",
+    "cover": "https://drive.google.com/thumbnail?id=133LiP7c6tcA95shCJY0lyPeKrOyLXVHu&sz=w1600",
+    "summary": "Two racing-inspired apparel graphic commissions developed through concept variations, brand integration, and client-led revisions.",
     "facts": [
-      "NASCAR-inspired graphic tee and Pit Stop designs were separate commissions for ASCOU",
-      "The client selected preferred concepts after reviewing variations, and final PNGs and production files were delivered"
+      "Two separate commissioned shirt designs: ASCO 101 and ASCOU Pit Stop",
+      "Multiple concept options and client-directed revisions",
+      "Final digital artwork delivered; physical shirt production not confirmed"
     ],
-    "draft": true
+    "draft": false,
+    "coverFit": "contain",
+    "coverX": 50,
+    "coverY": 50,
+    "media": [
+      "https://drive.google.com/thumbnail?id=133LiP7c6tcA95shCJY0lyPeKrOyLXVHu&sz=w1600",
+      "https://drive.google.com/thumbnail?id=1HOF5b1xhlARKAWxeujp2e8mONG8-BX0v&sz=w1600"
+    ],
+    "mediaContain": true,
+    "mediaFrames": [
+      {
+        "index": 1,
+        "fit": "contain",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "index": 2,
+        "fit": "contain",
+        "x": 50,
+        "y": 50
+      }
+    ],
+    "mediaNote": "Final digital designs: ASCO 101 (first) and ASCOU Pit Stop (second). Artwork is not a photograph of a manufactured shirt.",
+    "extraLinks": [
+      {
+        "label": "View original ASCO 101 artwork",
+        "url": "https://drive.google.com/file/d/133LiP7c6tcA95shCJY0lyPeKrOyLXVHu/view"
+      },
+      {
+        "label": "View original Pit Stop artwork",
+        "url": "https://drive.google.com/file/d/1HOF5b1xhlARKAWxeujp2e8mONG8-BX0v/view"
+      },
+      {
+        "label": "Review ASCO 101 concept variations",
+        "url": "https://drive.google.com/file/d/1FGXfu8HtyKqGsicCZz44fkJ4KiM4xs9S/view"
+      }
+    ],
+    "fullCaseHtml": "<p>For <strong>ASCOU at Allison-Smith Company</strong>, I completed two racing-inspired T-shirt graphic commissions in summer 2026: an <strong>ASCO 101</strong> design and an <strong>ASCOU Pit Stop</strong> design.</p>\n<p>My contribution focused on <strong>graphic composition, adapting and manipulating existing visual assets, typography, layout, branding, and revisions</strong>. I did not hand-illustrate the cars, people, or other graphics from scratch. I developed alternative treatments, responded to client feedback, and prepared the selected digital artwork for delivery.</p>\n<h2>Commission 01: ASCO 101 Racing Graphic</h2>\n<p>The first brief called for a NASCAR-inspired front-and-back shirt graphic featuring “ASCO 101,” “Learn. Apply. Lead.,” a No. 43 race car, and ASCOU branding. I presented multiple treatments and mockups. After a client request to change the car style, I revised the composition around a red vintage-inspired car and provided additional variations. The client selected a preferred option, and I delivered the final transparent artwork in August 2026.</p>\n<figure><img src=\"https://drive.google.com/thumbnail?id=133LiP7c6tcA95shCJY0lyPeKrOyLXVHu&sz=w1600\" alt=\"Client-selected ASCO 101 racing shirt graphic with red vintage car, checkered flags, and ASCO 101 lettering\" style=\"width:100%;max-height:640px;object-fit:contain;background:#161616\" loading=\"lazy\"><figcaption>Client-selected ASCO 101 front artwork · <a href=\"https://drive.google.com/file/d/133LiP7c6tcA95shCJY0lyPeKrOyLXVHu/view\" target=\"_blank\" rel=\"noopener noreferrer\">View original</a></figcaption></figure>\n<h2>Commission 02: ASCOU Pit Stop</h2>\n<p>The second assignment allowed a more open-ended pit stop and racetrack direction. I presented three initial concepts for review. The client selected a direction and requested revisions to figures, racing details, lettering, and a separate “ASCOU PIT STOP” back-of-shirt graphic. I refined the No. 43 car and other details in subsequent revisions and delivered the final artwork on September 2, 2026.</p>\n<figure><img src=\"https://drive.google.com/thumbnail?id=1HOF5b1xhlARKAWxeujp2e8mONG8-BX0v&sz=w1600\" alt=\"Final ASCOU Pit Stop racing artwork showing branded racetrack, car number 43 and pit crew\" style=\"width:100%;max-height:640px;object-fit:contain;background:#161616\" loading=\"lazy\"><figcaption>Final Pit Stop front artwork · <a href=\"https://drive.google.com/file/d/1HOF5b1xhlARKAWxeujp2e8mONG8-BX0v/view\" target=\"_blank\" rel=\"noopener noreferrer\">View original</a></figcaption></figure>\n<h2>Design Approach and Delivery</h2>\n<p>Both commissions required translating visual references into branded compositions through asset selection, image manipulation, typography, layout, and client-directed revisions. The result was <strong>two client-approved digital design commissions</strong> with final artwork delivered. Physical shirt manufacturing has not been confirmed, so this page presents the digital designs rather than claiming a completed merchandise run.</p>"
   },
   {
     "id": "postprod",

@@ -271,9 +271,56 @@ content:
         list: true
         options:
           media: project_images
+      - name: coverFit
+        label: Project cover display
+        description: Crop to fill, or show the complete image in the project card. The original photo is never changed.
+        type: select
+        options:
+          values:
+            - {name: cover, label: Fill frame (crop edges)}
+            - {name: contain, label: Show entire image}
+      - name: coverX
+        label: Cover focus — left/right (0–100)
+        description: 0 shows the left, 50 centers, 100 shows the right. Used when cropped to fill.
+        type: number
+        options: {min: 0, max: 100}
+      - name: coverY
+        label: Cover focus — top/bottom (0–100)
+        description: 0 shows the top, 50 centers, 100 shows the bottom. Used when cropped to fill.
+        type: number
+        options: {min: 0, max: 100}
       - name: mediaContain
-        label: Fit full image inside gallery frame
+        label: Fit full image inside gallery frame (legacy default)
         type: boolean
+      - name: mediaFrames
+        label: Individual project gallery image framing
+        description: Optional rules for each gallery image above. Use its position (1 = first photo, 2 = second). Framing adjusts display only, never the original.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "Gallery photo #{index}"
+        fields:
+          - name: index
+            label: Gallery image number (1 = first)
+            type: number
+            required: true
+            options: {min: 1}
+          - name: fit
+            label: Display
+            type: select
+            options:
+              values:
+                - {name: cover, label: Fill frame (crop edges)}
+                - {name: contain, label: Show entire image}
+          - name: x
+            label: Image focus — left/right (0–100)
+            type: number
+            options: {min: 0, max: 100}
+          - name: y
+            label: Image focus — top/bottom (0–100)
+            type: number
+            options: {min: 0, max: 100}
       - name: mediaNote
         label: Photo gallery caption
         type: text

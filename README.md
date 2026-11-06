@@ -63,3 +63,14 @@ The Switch interface remains the front-end. Pages CMS edits data/media files in 
 ### Important limitations
 
 Pages CMS is a content and media editor, not pixel-level page design. It cannot change layouts or add new project filter controls without code changes. Embedded custom HTML in historic Markdown case studies needs careful testing in the rich-text editor. The hosted Pages CMS login/authorization is an owner-only step; the GitHub connector cannot perform that third-party authorization on your behalf.
+
+
+### Project image framing controls (November 2026)
+
+Pages CMS → **Projects tab (cards and detail pages)** now exposes non-destructive image framing settings:
+
+- **Project cover display**: choose **Fill frame (crop edges)** or **Show entire image**; change **Cover focus** horizontal and vertical percentages, 0–100. Set 50/50 to center.
+- **Individual project gallery image framing**: add an item to `mediaFrames`, enter its **Gallery image number** from the **Project photo gallery** list (1 = first), then choose fill vs full image and horizontal/vertical focal points.
+- These settings change the Switch-style **project card**, **media viewer**, and **thumbnail** presentation only. They do not cut, replace, or modify the underlying files.
+- The existing `mediaContain` legacy option remains as a default; any per-image setting overrides it. Older projects without framing metadata retain their previous display and Some Sweet Day's original cover behavior.
+- To adjust image positioning, save in Pages CMS and inspect the public project after GitHub Pages redeploys. This is a metadata-based editor, **not a drag-to-crop UI**. Images manually embedded in rich-text case-study HTML have their own layout and are not affected by these gallery controls.
