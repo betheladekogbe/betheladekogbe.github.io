@@ -299,7 +299,7 @@ content:
         list:
           collapsible:
             collapsed: true
-            summary: "Gallery photo #{index}"
+            summary: "Gallery image #{fields.index}"
         fields:
           - name: index
             label: Gallery image number (1 = first)
