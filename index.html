@@ -179,6 +179,56 @@ layout: null
   .status .identity strong{font-size:12px}
   .status .social-link{width:25px;height:25px}
 }
+
+/* Mobile home screen: give the five tiles and dock a real vertical scroll area.
+   Avoid centering oversized content inside a clipped full-height panel. */
+@media (max-width:720px){
+  #screen-home{min-height:0;min-width:0}
+  #screen-home .screen-inner{
+    box-sizing:border-box;
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    height:100%;
+    min-height:0;
+    justify-content:flex-start;
+    align-items:stretch;
+    overflow-y:auto;
+    overflow-x:hidden;
+    overscroll-behavior-y:contain;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    padding:14px clamp(13px,4vw,20px) max(24px,env(safe-area-inset-bottom));
+  }
+  #screen-home .home-tiles{
+    flex:0 0 auto;
+    width:100%;
+    max-width:460px;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:11px 12px;
+    align-items:start;
+  }
+  #screen-home .home-tile{min-width:0;width:100%}
+  #screen-home .tile-art{width:100%;aspect-ratio:1.43/1}
+  #screen-home .tile-descriptor{margin-top:6px;min-height:0}
+  #screen-home .home-dock{
+    flex:0 0 auto;
+    width:100%;
+    max-width:460px;
+    margin:20px auto 0;
+    padding-top:0;
+    gap:4px;
+  }
+  #screen-home .dock-item{min-width:0;max-width:100%}
+  #screen-home .home-line{flex:0 0 auto;margin-top:16px}
+  /* Touch visitors do not need the desktop keyboard shortcut guide. */
+  #screen-home .home-keyboard-guide{display:none}
+}
+@media (max-width:370px){
+  #screen-home .home-tiles{gap:9px 10px}
+  #screen-home .tile-title{font-size:14px}
+  #screen-home .dock-icon{width:35px;height:35px}
+}
 </style></head><body>
 <div id="app">
 <header class="status"><div class="identity"><button aria-label="Open About Me from profile picture" class="avatar-action" data-go="about" title="About Me" type="button"><img alt="Bethel Adekogbe" class="avatar" data-image-key="t6" src="/assets/images/about/bethel-headshot.webp"/></button><div><strong>Bethel Adekogbe</strong><small>CREATIVE PRODUCTION / EDUCATIONAL MEDIA</small></div></div><div class="socials"><a aria-label="Send an email" class="social-link" href="mailto:thedkob@gmail.com" title="Email"><svg aria-hidden="true" class="icon" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24" width="19"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m3 7 9 7 9-7"></path></svg></a><a aria-label="LinkedIn profile" class="social-link" href="https://www.linkedin.com/in/bethel-adekogbe/" rel="noopener noreferrer" target="_blank" title="LinkedIn"><svg aria-hidden="true" class="icon" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24" width="19"><rect height="18" rx="4" width="18" x="3" y="3"></rect><path d="M8 10v7M8 7v.1M12 17v-7M12 13a3 3 0 0 1 6 0v4"></path></svg></a><a aria-label="Instagram profile" class="social-link" href="https://www.instagram.com/betheladekogbe/" rel="noopener noreferrer" target="_blank" title="Instagram"><svg aria-hidden="true" class="icon" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24" width="19"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01"></path></svg></a><a aria-label="YouTube profile" class="social-link" href="https://www.youtube.com/@betheladekogbe" rel="noopener noreferrer" target="_blank" title="YouTube"><svg aria-hidden="true" class="icon" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24" width="19"><rect height="14" rx="4" width="20" x="2" y="5"></rect><path d="m10 9 5 3-5 3Z"></path></svg></a></div></header>
@@ -223,7 +273,7 @@ const overlays=['contact-overlay','notice-overlay','lightbox-overlay'];
 function selectTile(idx,withFocus=false){selected=(idx+tileButtons.length)%tileButtons.length;tileButtons.forEach((b,i)=>b.classList.toggle('selected',i===selected));if(withFocus)tileButtons[selected].focus({preventScroll:true});}
 function closeModal(){overlays.forEach(x=>$(x).classList.remove('open'));if(lastFocus){try{lastFocus.focus({preventScroll:true})}catch{}}lastFocus=null;}
 function showModal(id){lastFocus=document.activeElement;overlays.forEach(x=>$(x).classList.toggle('open',x===id));const focus=$(id).querySelector('button,a');if(focus)setTimeout(()=>focus.focus({preventScroll:true}),0);}
-function go(name){if(name==='contact'){showModal('contact-overlay');return}if(!$("screen-"+name))return;closeModal();all('.screen').forEach(el=>el.classList.toggle('active',el.id==='screen-'+name));screen=name;document.title=(name==='home'?'Home':name[0].toUpperCase()+name.slice(1))+' · Bethel Adekogbe';if(name==='projects')renderProjects();if(name==='photos')renderPhotos();all('.main-scroll,.news-panel,.detail-shell,.resume-onepage').forEach(el=>el.scrollTop=0);if(name!=='detail')history.replaceState(null,'','#'+(name==='photos'?'photography':name));}
+function go(name){if(name==='contact'){showModal('contact-overlay');return}if(!$("screen-"+name))return;closeModal();all('.screen').forEach(el=>el.classList.toggle('active',el.id==='screen-'+name));screen=name;document.title=(name==='home'?'Home':name[0].toUpperCase()+name.slice(1))+' · Bethel Adekogbe';if(name==='projects')renderProjects();if(name==='photos')renderPhotos();all('.main-scroll,.news-panel,.detail-shell,.resume-onepage,#screen-home .screen-inner').forEach(el=>el.scrollTop=0);if(name!=='detail')history.replaceState(null,'','#'+(name==='photos'?'photography':name));}
 all('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
 tileButtons.forEach((b,i)=>{b.addEventListener('click',()=>{selectTile(i);go(b.dataset.home)});b.addEventListener('focus',()=>selectTile(i))});
 all('[data-unlinked]').forEach(b=>b.addEventListener('click',()=>{$('notice-title').textContent=b.dataset.unlinked+' preview';$('notice-text').textContent='The '+b.dataset.unlinked+' profile URL is not yet specified. The icon is a design placeholder, not an active profile link.';showModal('notice-overlay')}));
