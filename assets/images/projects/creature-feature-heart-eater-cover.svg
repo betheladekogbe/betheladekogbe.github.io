@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">Creature Feature Heart Eater — original horror score, 2022</title>
+<desc id="desc">Original portfolio project title card, not an official film poster. Burgundy and black cinematic art with a stylized fractured heart and soundwave.</desc>
+<defs>
+<linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#230d19"/><stop offset=".54" stop-color="#130b15"/><stop offset="1" stop-color="#080910"/></linearGradient>
+<radialGradient id="glow" cx="60%" cy="48%" r="58%"><stop stop-color="#aa1b3b" stop-opacity=".47"/><stop offset="1" stop-color="#aa1b3b" stop-opacity="0"/></radialGradient>
+<linearGradient id="heart" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d34a5b"/><stop offset=".55" stop-color="#681b36"/><stop offset="1" stop-color="#2b1629"/></linearGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="16"/></filter>
+</defs>
+<rect width="1200" height="720" fill="url(#bg)"/><rect width="1200" height="720" fill="url(#glow)"/>
+<circle cx="910" cy="320" r="230" fill="#9c183e" opacity=".12" filter="url(#blur)"/>
+<path d="M0 140H1200M0 580H1200" stroke="#f1b4bb" stroke-opacity=".12"/>
+<g fill="none" stroke="#9e4e62" stroke-opacity=".38"><path d="M0 440H200L225 425L250 465L277 345L312 518L345 438H475M740 437H855L884 397L915 475L942 345L980 452H1200" stroke-width="3"/></g>
+<path d="M854 210 C 772 142 700 203 700 277 C700 374 840 459 872 483 C915 454 1042 366 1042 276 C1042 198 965 144 885 207 L872 219Z" fill="url(#heart)" stroke="#b55771" stroke-width="3" opacity=".92"/>
+<path d="M878 222L842 285L897 307L860 373L905 400" stroke="#120912" stroke-width="15" fill="none" stroke-linecap="round"/>
+<path d="M878 222L842 285L897 307L860 373L905 400" stroke="#ffb3bc" stroke-opacity=".52" stroke-width="2" fill="none"/>
+<rect x="63" y="63" width="460" height="30" rx="15" fill="#a52d4c" opacity=".4"/>
+<text x="82" y="84" fill="#f5c6cf" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">COMPOSING FOR HORROR · 2022</text>
+<text x="62" y="254" fill="#e7e1e3" font-family="Arial,sans-serif" font-size="63" font-weight="800" letter-spacing="3">CREATURE</text>
+<text x="62" y="324" fill="#e7e1e3" font-family="Arial,sans-serif" font-size="63" font-weight="800" letter-spacing="3">FEATURE</text>
+<text x="64" y="406" fill="#f17188" font-family="Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="3">HEART EATER</text>
+<path d="M64 440H565" stroke="#b34b66" stroke-width="2"/>
+<text x="63" y="486" fill="#e5c1c9" font-family="Arial,sans-serif" font-size="22" letter-spacing="4">ORIGINAL MUSIC &amp; FILM SCORING</text>
+<text x="63" y="537" fill="#c7aab4" font-family="Arial,sans-serif" font-size="20">A film directed by Guinevere Thomas</text>
+<text x="63" y="635" fill="#98838f" font-family="Arial,sans-serif" font-size="16" letter-spacing="1.5">PORTFOLIO TITLE GRAPHIC  ·  NOT AN OFFICIAL FILM POSTER</text>
+</svg>
