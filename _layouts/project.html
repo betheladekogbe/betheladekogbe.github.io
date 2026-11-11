@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+{% assign cms_project = site.data.projects | where: "case", page.slug | first %}
+{% assign current_title = cms_project.title | default: page.title %}
+{% assign current_org = cms_project.org | default: page.organization %}
+{% assign current_year = cms_project.year | default: page.year %}
+{% assign current_role = cms_project.role | default: page.role %}
+{% assign current_summary = cms_project.summary | default: page.summary %}
+{% assign current_cover = cms_project.cover | default: page.image %}
+{% assign current_categories = cms_project.categories | join: ', ' %}
+{% assign current_category = current_categories | default: page.category %}
 <section class="desktop-page" aria-label="Project write-up"><div class="os-frame"><div class="os-wallpaper">
 <div class="os-sun" aria-hidden="true"></div>
 <div class="os-hill os-hill-one" aria-hidden="true"></div>
@@ -9,22 +18,22 @@ layout: default
 <article class="os-window os-article-window " aria-label="PROJECT">
 <div class="os-window-titlebar os-article-titlebar">
   <div class="os-window-actions"><a class="os-close" href="{{ '/work/' | relative_url }}" aria-label="Close and return">×</a><span class="os-control-dot" aria-hidden="true"></span><span class="os-control-dot" aria-hidden="true"></span></div>
-  <strong>{{ page.title | escape }}</strong><span class="os-window-filetype">PROJECT</span>
+  <strong>{{ current_title | escape }}</strong><span class="os-window-filetype">PROJECT</span>
 </div>
 <div class="os-article-scroll"><div class="os-article-content">
 <a class="os-article-back" href="{{ '/work/' | relative_url }}">← All projects</a>
-<p class="os-article-kicker">{{ page.organization }} / {{ page.year }}</p>
-<h1>{{ page.title }}</h1>
-{% if page.summary %}<p class="os-article-lede">{{ page.summary }}</p>{% endif %}
+<p class="os-article-kicker">{{ current_org }} / {{ current_year }}</p>
+<h1>{{ current_title }}</h1>
+{% if current_summary %}<p class="os-article-lede">{{ current_summary }}</p>{% endif %}
 <div class="os-article-facts">
-<div><span>Role</span><strong>{{ page.role }}</strong></div><div><span>Field</span><strong>{{ page.category }}</strong></div><div><span>Year</span><strong>{{ page.year }}</strong></div>
+<div><span>Role</span><strong>{{ current_role }}</strong></div><div><span>Field</span><strong>{{ current_category }}</strong></div><div><span>Year</span><strong>{{ current_year }}</strong></div>
 </div>
-{% if page.image %}<figure class="os-feature-media os-feature-cover">
-  {% assign image_source = page.image %}
-  {% unless page.image contains '://' %}{% assign image_source = page.image | relative_url %}{% endunless %}
-  <img src="{{ image_source }}" alt="{{ page.image_alt | default: page.title | escape }}" loading="eager" fetchpriority="high" decoding="async">
+{% if current_cover %}<figure class="os-feature-media os-feature-cover">
+  {% assign image_source = current_cover %}
+  {% unless current_cover contains '://' %}{% assign image_source = current_cover | relative_url %}{% endunless %}
+  <img src="{{ image_source }}" alt="{{ current_title | escape }}" loading="eager" fetchpriority="high" decoding="async">
 </figure>{% endif %}
-<div class="os-article-prose">{{ content }}</div>
+<div class="os-article-prose">{% if cms_project %}{{ cms_project.fullCaseHtml }}{% else %}{{ content }}{% endif %}</div>
 <div class="os-article-end"><a href="{{ '/work/' | relative_url }}">← Back to projects</a><a href="{{ '/' | relative_url }}">Desktop ↗</a></div>
 </div></div></article>
 </div></div></section>

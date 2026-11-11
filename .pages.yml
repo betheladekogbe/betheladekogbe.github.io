@@ -207,7 +207,7 @@ content:
             type: string
 
   - name: project_directory
-    label: Projects tab (cards and detail pages)
+    label: Projects (all content)
     type: file
     path: _data/projects.json
     format: json
@@ -346,6 +346,7 @@ content:
             type: string
       - name: fullCaseHtml
         label: Full case study (formatted text, photos, video embeds)
+        description: This is the sole editable case study for this project. Use Source mode for complex custom HTML such as embeds and interactive layouts.
         type: rich-text
         options:
           format: html
@@ -354,70 +355,6 @@ content:
       - name: draft
         label: Hide unfinished project
         type: boolean
-
-  - name: case_studies
-    label: Project case studies
-    type: collection
-    path: _projects
-    format: yaml-frontmatter
-    filename: "{primary}.md"
-    view:
-      primary: title
-      fields: [title, date, role, featured]
-      sort: [date, title]
-      default:
-        sort: date
-        order: desc
-    fields:
-      - name: layout
-        label: Page layout
-        type: string
-        hidden: true
-      - name: title
-        label: Project title
-        type: string
-        required: true
-      - name: organization
-        label: Organization or client
-        type: string
-      - name: year
-        label: Year
-        type: string
-      - name: date
-        label: Project date
-        type: date
-      - name: category
-        label: Category
-        type: string
-      - name: role
-        label: My role
-        type: string
-      - name: summary
-        label: Summary
-        type: text
-      - name: featured
-        label: Featured
-        type: boolean
-      - name: order
-        label: Display order
-        type: number
-      - name: art
-        label: Artwork style
-        type: string
-      - name: image
-        label: Cover artwork
-        type: image
-        options:
-          media: project_images
-      - name: image_alt
-        label: Image description
-        type: string
-      - name: body
-        label: Full case study
-        type: rich-text
-        options:
-          media: project_images
-          switcher: true
 
   - name: photo_gallery
     label: Photography gallery

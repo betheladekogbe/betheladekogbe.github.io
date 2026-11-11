@@ -1,15 +1,15 @@
 # Bethel Adekogbe — Nintendo Switch-style Portfolio
 
-**Canonical live portfolio:** https://betheladekogbe.github.io/
+**Canonical live portfolio:** https://betheladekogbe.com/
 
 **Authoritative design:** The Nintendo Switch-inspired interface in the root `index.html`. This replaced the earlier desktop-computer/Jekyll homepage in October 2026. **Do not use legacy standalone `/work/<slug>/` pages as the primary portfolio experience or send them as project links.**
 
 ## Source of truth
 
 - **`index.html`** — the active Switch-style homepage, eShop-like projects directory, project detail screen, inline full-case-study panel, photography, résumé, About, and contact.
-- **`assets/js/switch-data.js`** — core project, media, and UI data.
-- **`assets/js/portfolio-projects.js`** — additional project entries and overrides, including project images, roles, categories, audio/video links, and media carousels. Loaded after `switch-data.js`.
-- **`_projects/<project-slug>.md`** — full case-study content. The Switch homepage compiles these Markdown files into hidden HTML templates and displays them **within** the Switch project's “Read full case study” section. These Markdown files are **content sources** even if a legacy `/work/` page also exists.
+- **`_data/projects.json`** — **single source of truth** for project cards, galleries, full case-study HTML, media embeds, role, dates, categories, and visibility. Edit this from **Projects (all content)** in Pages CMS.
+- **`_projects/<project-slug>.md`** — preserved historical source articles for backup and Jekyll-compatible static project URLs; **not an editing source** for the Switch site. The legacy project pages now show the matching project content from `_data/projects.json`.
+- **`assets/js/switch-data.js` and `assets/js/portfolio-projects.js`** — legacy UI/project fallbacks. Do not edit project copy or metadata here.
 - **`assets/images/projects/`** — project-specific artwork and case-study photographs. Ensure the Switch data object's `cover` and `media` refer to the actual assets.
 - **`_data/photography.json` and `assets/images/photography/`** — photography gallery data and assets.
 - **`_layouts/`, `work.html`, `assets/css/style.css`** — largely legacy Jekyll layouts/pages. Do not use their appearance to evaluate the current Switch site.
@@ -27,15 +27,15 @@ The Switch homepage handles `#project/<id>` and `#project/<id>/full`; the latter
 ## Editing workflow
 
 1. Review the user's latest approval and project information. **Do not publish unapproved changes.**
-2. For a project, update **both** its `_projects/<slug>.md` write-up and the Switch project entry in `assets/js/portfolio-projects.js` (or core data if the entry is defined there). Do not treat the standalone Jekyll page as the finished UI.
+2. For a project, edit its **one** entry in `_data/projects.json` through **Projects (all content)** in Pages CMS. This includes both its media metadata and `fullCaseHtml` article. Do not independently edit `_projects/*.md`.
 3. Use original project imagery: set the `cover`, `media`, and `mediaNote` properties appropriately. Never silently replace project media with unrelated portfolio photos.
-4. If audio/video is central, include a working project-specific listening or viewing action. The case-study Markdown can contain an embedded player as well.
+4. If audio/video is central, include a project-specific listening or viewing link and, if appropriate, an embedded player in the project's `fullCaseHtml`.
 5. Confirm that the project is not erroneously marked as `draft`. Keep the established newest-to-oldest sorting and filter categories.
 6. After writing, verify the main-branch commit, successful GitHub Pages deployment, real asset paths, working Switch navigation, in-page full-case-study content, and shareable `#project/<id>/full` link. Preserve the other site sections.
 
 ## Historic implementation notes
 
-The repository began as a desktop/Jekyll template, and older files and instructions remain for archival compatibility. Those are **not** the design currently selected by the user. GitHub Pages still uses Jekyll to compile the collection content into the Switch homepage.
+The repository began as a desktop/Jekyll template, and older files and instructions remain for archival compatibility. Those are **not** the design currently selected by the user. GitHub Pages still uses Jekyll for legacy standalone project pages; the Switch homepage now renders all project case-study HTML from `_data/projects.json` directly.
 
 ## Pages CMS visual content editor (November 2026)
 
@@ -45,8 +45,8 @@ The Switch interface remains the front-end. Pages CMS edits data/media files in 
 
 ### Editor sections
 
-- **Projects tab (cards and detail pages)** → `_data/projects.json`. Edit titles, cover photos, project categories, links, role, highlights, visibility, video URL, gallery, and optional full case-study HTML. New entries need a unique lowercase hyphenated `id`; this creates `#project/<id>` and `#project/<id>/full` routes automatically. For a brand-new project, write the full article in **Full case study** instead of creating a separate Markdown file.
-- **Project case studies** → `_projects/*.md`. Existing older case studies continue to use their Markdown and embedded HTML. The rich-text editor may not preserve complex iframe or grid HTML when switching modes; use Source mode and compare before saving existing HTML-heavy entries. For a migrated case study, put new content in `fullCaseHtml` of the project directory entry to override the legacy Markdown display.
+- **Projects (all content)** → `_data/projects.json`. **The only project editor.** Edit titles, covers, galleries, categories, links, role, highlights, draft visibility, video URL, image framing, and the full case study for each project in one record. All prior case studies were migrated to `fullCaseHtml` without overwriting later CMS edits. For complex embeds and custom layouts, use **Source** in the rich-text field and check the saved result.
+- The old **Project case studies** sidebar section has been removed to avoid mismatched editing. Its `_projects/*.md` files remain in GitHub as historical backups and static page metadata, but all visible article content comes from the CMS project record.
 - **Photography gallery** → `_data/photography.json`. Add and remove gallery entries, upload images to `assets/images/photography/`, update captions, set categories including `behind-the-scenes`, and mark `edit_only`. Deleting an entry removes it from the gallery, not necessarily from GitHub media storage; delete the underlying media file separately if desired.
 - **Home, About, Resume and Contact** → `_data/site_content.json`. Includes Home tiles, profile, experience/education panels, editable résumé entries and bullets, PDF resume file path, contact details, footer and social profile links.
 
@@ -56,18 +56,18 @@ The Switch interface remains the front-end. Pages CMS edits data/media files in 
 
 1. Upload an image in the appropriate media library and select it in the project or photo field. Provide descriptive alt text for the gallery.
 2. Use project filters that already exist in the Switch UI. The photo gallery uses existing tags; `edit_only` is independent of photo categories.
-3. For a new project, add its card/detail entry in **Projects tab** with `fullCaseHtml` for the full article. You can embed YouTube/Vimeo through the video URL field; for complex embedded layouts, switch to the rich-text Source editor.
+3. For a new project, add its card/detail entry in **Projects (all content)** with `fullCaseHtml` for the full article. You can embed YouTube/Vimeo through the video URL field; for complex embedded layouts, switch to the rich-text Source editor.
 4. For the resume, edit experience records directly and upload PDF files through the résumé file manager. **Updating the website resume does not regenerate the PDF**; replace the PDF separately if the downloadable version should match.
 5. Save, then verify the live site at https://betheladekogbe.github.io/. Pages CMS edits create Git commits and GitHub Pages rebuilds the site. Use Git history to restore earlier content if necessary.
 
 ### Important limitations
 
-Pages CMS is a content and media editor, not pixel-level page design. It cannot change layouts or add new project filter controls without code changes. Embedded custom HTML in historic Markdown case studies needs careful testing in the rich-text editor. The hosted Pages CMS login/authorization is an owner-only step; the GitHub connector cannot perform that third-party authorization on your behalf.
+Pages CMS is a content and media editor, not pixel-level page design. It cannot change layouts or add new project filter controls without code changes. Embedded custom HTML in migrated case studies needs careful testing in the rich-text editor; use Source mode when modifying embeds or specialized layouts. The hosted Pages CMS login/authorization is an owner-only step; the GitHub connector cannot perform that third-party authorization on your behalf.
 
 
 ### Project image framing controls (November 2026)
 
-Pages CMS → **Projects tab (cards and detail pages)** now exposes non-destructive image framing settings:
+Pages CMS → **Projects (all content)** now exposes non-destructive image framing settings:
 
 - **Project cover display**: choose **Fill frame (crop edges)** or **Show entire image**; change **Cover focus** horizontal and vertical percentages, 0–100. Set 50/50 to center.
 - **Individual project gallery image framing**: add an item to `mediaFrames`, enter its **Gallery image number** from the **Project photo gallery** list (1 = first), then choose fill vs full image and horizontal/vertical focal points.
