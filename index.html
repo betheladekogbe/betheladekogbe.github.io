@@ -129,6 +129,56 @@ layout: null
 .resume-extra-entry h3{font-size:15px}.resume-extra-entry .resume-job-highlights{font-size:12px}
 @media(max-width:720px){.resume-entry{grid-template-columns:minmax(0,1fr) 85px;gap:6px 9px}.resume-entry-date{grid-column:1 / -1;font-size:10px}.resume-entry-copy{grid-column:1}.resume-job-image{grid-column:2;grid-row:2;width:85px;height:75px}.resume-job-highlights{font-size:11px;padding-left:14px}.resume-extra-entry .resume-job-highlights{font-size:10.5px}}
 .project-draft{display:inline-block;color:#a6e9f1;background:#24505b;padding:3px 6px;border-radius:4px;font-size:9px;font-weight:800;letter-spacing:.09em;margin:0 0 7px}
+
+/* Mobile project pages: keep the media, metadata and case study inside the phone viewport.
+   Grid min-content sizing previously let the thumbnail row and long text widen the page. */
+@media (max-width:720px){
+  .status{gap:7px;min-width:0}
+  .status .identity{flex:1 1 auto;min-width:0;gap:7px}
+  .status .identity>div{flex:1 1 auto;min-width:0}
+  .status .identity strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.2}
+  .status .identity small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.3;letter-spacing:.025em}
+  .status .socials{flex:0 0 auto;gap:2px}
+  .status .social-link{width:26px;height:26px}
+  #screen-detail .screen-inner{width:100%;min-width:0;max-width:100%}
+  #screen-detail .page-top{min-width:0;max-width:100%;gap:6px}
+  #screen-detail .page-top .back{flex:0 0 auto;padding:5px}
+  #screen-detail .page-top h1{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;font-size:clamp(13px,4vw,17px)}
+  #screen-detail .page-top .right-tag{flex:0 0 auto;margin-left:0;font-size:10px}
+  #screen-detail .detail-shell{box-sizing:border-box;width:100%;min-width:0;max-width:100%;overflow-x:hidden;overflow-y:auto;padding:15px clamp(12px,4vw,18px) 30px}
+  #screen-detail .detail-layout{width:100%;min-width:0;max-width:100%;grid-template-columns:minmax(0,1fr);gap:16px}
+  #screen-detail .detail-layout>.detail-media,
+  #screen-detail .detail-layout>.detail-meta{box-sizing:border-box;width:100%;min-width:0;max-width:100%}
+  #screen-detail .detail-media .stage{width:100%;min-width:0;max-width:100%;aspect-ratio:16/9;max-height:none}
+  #screen-detail .detail-media .stage img{display:block;max-width:100%;height:100%}
+  #screen-detail .media-strip{box-sizing:border-box;width:100%;min-width:0;max-width:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+  #screen-detail .media-strip .media-thumb{flex:0 0 clamp(90px,28vw,118px);width:clamp(90px,28vw,118px);min-width:0}
+  #screen-detail #detail-title{font-size:clamp(25px,7vw,30px);line-height:1.12;overflow-wrap:anywhere}
+  #screen-detail .detail-meta p,
+  #screen-detail .detail-note,
+  #screen-detail .fact{overflow-wrap:anywhere}
+  #screen-detail .detail-cta>*{min-width:0;max-width:100%;white-space:normal;text-align:center;overflow-wrap:anywhere}
+  #screen-detail .case-study-container{box-sizing:border-box;width:100%;min-width:0;max-width:100%}
+  #screen-detail .case-study-head{min-width:0;flex-wrap:wrap}
+  #screen-detail .case-study-prose{box-sizing:border-box;width:100%;min-width:0;max-width:100%;overflow-wrap:anywhere;font-size:13px}
+  #screen-detail .case-study-prose figure{max-width:100%;margin-left:0;margin-right:0}
+  #screen-detail .case-study-prose img,
+  #screen-detail .case-study-prose video,
+  #screen-detail .case-study-prose svg,
+  #screen-detail .case-study-prose canvas{max-width:100%;height:auto}
+  #screen-detail .case-study-prose iframe{max-width:100%;width:100%;min-height:0;aspect-ratio:16/9}
+  #screen-detail .case-study-prose pre,
+  #screen-detail .case-study-prose table{max-width:100%;overflow-x:auto}
+  #screen-detail .case-study-prose table{display:block}
+  #screen-detail .case-study-prose .portfolio-stat-grid,
+  #screen-detail .case-study-prose .portfolio-artifact-grid,
+  #screen-detail .case-study-prose .portfolio-steps,
+  #screen-detail .case-study-prose .portfolio-pipeline{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:380px){
+  .status .identity strong{font-size:12px}
+  .status .social-link{width:25px;height:25px}
+}
 </style></head><body>
 <div id="app">
 <header class="status"><div class="identity"><button aria-label="Open About Me from profile picture" class="avatar-action" data-go="about" title="About Me" type="button"><img alt="Bethel Adekogbe" class="avatar" data-image-key="t6" src="/assets/images/about/bethel-headshot.webp"/></button><div><strong>Bethel Adekogbe</strong><small>CREATIVE PRODUCTION / EDUCATIONAL MEDIA</small></div></div><div class="socials"><a aria-label="Send an email" class="social-link" href="mailto:thedkob@gmail.com" title="Email"><svg aria-hidden="true" class="icon" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24" width="19"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m3 7 9 7 9-7"></path></svg></a><a aria-label="LinkedIn profile" class="social-link" href="https://www.linkedin.com/in/bethel-adekogbe/" rel="noopener noreferrer" target="_blank" title="LinkedIn"><svg aria-hidden="true" class="icon" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24" width="19"><rect height="18" rx="4" width="18" x="3" y="3"></rect><path d="M8 10v7M8 7v.1M12 17v-7M12 13a3 3 0 0 1 6 0v4"></path></svg></a><a aria-label="Instagram profile" class="social-link" href="https://www.instagram.com/betheladekogbe/" rel="noopener noreferrer" target="_blank" title="Instagram"><svg aria-hidden="true" class="icon" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24" width="19"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01"></path></svg></a><a aria-label="YouTube profile" class="social-link" href="https://www.youtube.com/@betheladekogbe" rel="noopener noreferrer" target="_blank" title="YouTube"><svg aria-hidden="true" class="icon" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24" width="19"><rect height="14" rx="4" width="20" x="2" y="5"></rect><path d="m10 9 5 3-5 3Z"></path></svg></a></div></header>
