@@ -513,7 +513,7 @@
       "/assets/images/projects/creature-feature-heart-eater-still-05.jpg",
       "/assets/images/projects/creature-feature-heart-eater-still-07.jpg"
     ],
-    "coverFit": "cover",
+    "coverFit": "contain",
     "coverX": 50,
     "coverY": 20,
     "mediaContain": true,
