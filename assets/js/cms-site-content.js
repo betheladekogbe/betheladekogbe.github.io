@@ -40,6 +40,33 @@
         else block.remove();
       }
     }
+    const pressList=q(".about-press-list",a);
+    if(pressList&&Array.isArray(d.about.pressLinks)){
+      const valid=d.about.pressLinks.filter(item=>item&&typeof item.url==="string"&&/^https:\/\//i.test(item.url)&&item.title);
+      pressList.replaceChildren(...valid.map(item=>{
+        const link=document.createElement("a");
+        link.className="about-press-item";
+        link.href=item.url;
+        link.target="_blank";
+        link.rel="noopener noreferrer";
+        const line=(className,value)=>{
+          const el=document.createElement("span");
+          el.className=className;
+          el.textContent=value||"";
+          return el;
+        };
+        const publication=[item.publication,item.date].filter(Boolean).join(" · ");
+        if(publication)link.appendChild(line("about-press-meta",publication));
+        const heading=document.createElement("strong");
+        heading.textContent=item.title;
+        link.appendChild(heading);
+        if(item.description)link.appendChild(line("about-press-description",item.description));
+        link.appendChild(line("about-press-action","Read article ↗"));
+        return link;
+      }));
+      const section=q(".about-press",a);
+      if(section)section.hidden=valid.length===0;
+    }
   }
   // Resume: update live articles and allow adding/removing entries within each section.
   if(d.resume){

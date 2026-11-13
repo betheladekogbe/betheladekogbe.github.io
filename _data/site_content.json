@@ -67,7 +67,23 @@
         "text": "Visual storytelling, media production leadership, documentary and fiction development, and education through media."
       }
     ],
-    "location": "Cambridge / Boston, Massachusetts"
+    "location": "Cambridge / Boston, Massachusetts",
+    "pressLinks": [
+      {
+        "title": "Basement Records is bringing talent to the surface",
+        "publication": "BrandeisNOW",
+        "date": "April 26, 2019",
+        "description": "A university feature on Basement Records, its music-production community, and my role leading the organization.",
+        "url": "https://www.brandeis.edu/now/2019/april/basement-records.html"
+      },
+      {
+        "title": "Basement Records embraces the flow",
+        "publication": "The Brandeis Hoot",
+        "date": "October 5, 2018",
+        "description": "Coverage of our live music event, my performance as Bethlehem the Producer, and the community we were building.",
+        "url": "https://brandeishoot.com/basement-records-embraces-the-flow/"
+      }
+    ]
   },
   "resume": {
     "eyebrow": "CREATIVE PRODUCTION · EDUCATIONAL MEDIA",

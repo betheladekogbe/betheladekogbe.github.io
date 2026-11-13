@@ -125,6 +125,32 @@ content:
           - name: location
             label: Location text
             type: string
+          - name: pressLinks
+            label: Press and article links
+            description: External articles displayed at the bottom of your About Me page.
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                label: Article title
+                type: string
+                required: true
+              - name: publication
+                label: Publication
+                type: string
+              - name: date
+                label: Publication date (display text)
+                type: string
+              - name: description
+                label: Short context
+                type: text
+              - name: url
+                label: Article URL
+                type: string
+                required: true
       - name: resume
         label: Resume page
         type: object
