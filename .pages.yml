@@ -355,8 +355,8 @@ content:
             type: number
             options: {min: 0, max: 100}
       - name: projectVideos
-        label: Playable videos — top gallery and full case study
-        description: Add a video from YouTube, Vimeo, Google Drive or an MP4/WebM file. The same video can appear in the top media reel and below the full case study. Large full-length films are better hosted on YouTube or Vimeo.
+        label: Playable videos — top gallery and full project
+        description: Add a video from YouTube, Vimeo, Google Drive or an MP4/WebM file. The same video can appear in the top media reel and below the full project. Large full-length films are better hosted on YouTube or Vimeo.
         type: object
         list:
           collapsible:
@@ -391,7 +391,7 @@ content:
             type: boolean
             default: true
           - name: showInCaseStudy
-            label: Embed below full case study
+            label: Embed below full project
             type: boolean
             default: true
       - name: video
@@ -416,8 +416,8 @@ content:
             label: URL
             type: string
       - name: fullCaseHtml
-        label: Full case study (formatted text, photos, video embeds)
-        description: This is the sole editable case study for this project. Use Source mode for complex custom HTML such as embeds and interactive layouts.
+        label: Full project (formatted text, photos, video embeds)
+        description: This is the sole editable project for this project. Use Source mode for complex custom HTML such as embeds and interactive layouts.
         type: rich-text
         options:
           format: html
