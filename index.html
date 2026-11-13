@@ -242,6 +242,20 @@ layout: null
 #screen-about .about-press-description{font-size:12px;line-height:1.6;color:#bec0c9}
 #screen-about .about-press-action{margin-top:auto;padding-top:4px;color:#aee8f0;font-size:12px;font-weight:700}
 @media(max-width:720px){#screen-about .about-press-list{grid-template-columns:minmax(0,1fr)}#screen-about .about-press-item{padding:16px}}
+
+/* Playback in project media gallery and CMS-managed project case studies. */
+#screen-detail .project-video-player{width:100%;height:100%;min-width:0;min-height:0;background:#12131a}
+#screen-detail .project-video-player iframe,#screen-detail .project-video-player video{display:block;width:100%;height:100%;border:0;background:#12131a;object-fit:contain}
+#screen-detail .project-video-fallback{display:flex;align-items:center;justify-content:center;width:100%;height:100%;min-height:180px;background-color:#29252e;background-position:center;background-size:cover;color:#fff;font-size:16px;font-weight:800;text-align:center;text-decoration:none}
+#screen-detail .stage-label-video{top:9px;bottom:auto;left:10px;pointer-events:none}
+#screen-detail .media-thumb:not(:has(img)){background:linear-gradient(130deg,#3b2132,#181e2a)}
+#screen-detail .case-study-videos{width:100%;max-width:100%;margin:32px 0 12px}
+#screen-detail .case-study-videos>h2{margin:22px 0 16px}
+#screen-detail .case-study-video{margin:0 0 25px;min-width:0}
+#screen-detail .case-study-video>h3{margin:0 0 10px}
+#screen-detail .case-study-video .project-video-player{position:relative;aspect-ratio:16/9;height:auto;overflow:hidden;border:1px solid #555762;border-radius:10px}
+#screen-detail .case-study-video .portfolio-caption{margin:9px 0;font-size:12px;color:#c1c4ce}
+@media(max-width:720px){#screen-detail .case-study-video .project-video-player{max-width:100%}#screen-detail .stage-label-video{font-size:10px;padding:5px 7px}}
 </style></head><body>
 <div id="app">
 <header class="status"><div class="identity"><button aria-label="Open About Me from profile picture" class="avatar-action" data-go="about" title="About Me" type="button"><img alt="Bethel Adekogbe" class="avatar" data-image-key="t6" src="/assets/images/about/bethel-headshot.webp"/></button><div><strong>Bethel Adekogbe</strong><small>CREATIVE PRODUCTION / EDUCATIONAL MEDIA</small></div></div><div class="socials"><a aria-label="Send an email" class="social-link" href="mailto:thedkob@gmail.com" title="Email"><svg aria-hidden="true" class="icon" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24" width="19"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m3 7 9 7 9-7"></path></svg></a><a aria-label="LinkedIn profile" class="social-link" href="https://www.linkedin.com/in/bethel-adekogbe/" rel="noopener noreferrer" target="_blank" title="LinkedIn"><svg aria-hidden="true" class="icon" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24" width="19"><rect height="18" rx="4" width="18" x="3" y="3"></rect><path d="M8 10v7M8 7v.1M12 17v-7M12 13a3 3 0 0 1 6 0v4"></path></svg></a><a aria-label="Instagram profile" class="social-link" href="https://www.instagram.com/betheladekogbe/" rel="noopener noreferrer" target="_blank" title="Instagram"><svg aria-hidden="true" class="icon" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24" width="19"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01"></path></svg></a><a aria-label="YouTube profile" class="social-link" href="https://www.youtube.com/@betheladekogbe" rel="noopener noreferrer" target="_blank" title="YouTube"><svg aria-hidden="true" class="icon" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24" width="19"><rect height="14" rx="4" width="20" x="2" y="5"></rect><path d="m10 9 5 3-5 3Z"></path></svg></a></div></header>
@@ -286,7 +300,7 @@ const overlays=['contact-overlay','notice-overlay','lightbox-overlay'];
 function selectTile(idx,withFocus=false){selected=(idx+tileButtons.length)%tileButtons.length;tileButtons.forEach((b,i)=>b.classList.toggle('selected',i===selected));if(withFocus)tileButtons[selected].focus({preventScroll:true});}
 function closeModal(){overlays.forEach(x=>$(x).classList.remove('open'));if(lastFocus){try{lastFocus.focus({preventScroll:true})}catch{}}lastFocus=null;}
 function showModal(id){lastFocus=document.activeElement;overlays.forEach(x=>$(x).classList.toggle('open',x===id));const focus=$(id).querySelector('button,a');if(focus)setTimeout(()=>focus.focus({preventScroll:true}),0);}
-function go(name){if(name==='contact'){showModal('contact-overlay');return}if(!$("screen-"+name))return;closeModal();all('.screen').forEach(el=>el.classList.toggle('active',el.id==='screen-'+name));screen=name;document.title=(name==='home'?'Home':name[0].toUpperCase()+name.slice(1))+' · Bethel Adekogbe';if(name==='projects')renderProjects();if(name==='photos')renderPhotos();all('.main-scroll,.news-panel,.detail-shell,.resume-onepage,#screen-home .screen-inner').forEach(el=>el.scrollTop=0);if(name!=='detail')history.replaceState(null,'','#'+(name==='photos'?'photography':name));}
+function go(name){if(name==='contact'){showModal('contact-overlay');return}if(!$("screen-"+name))return;if(screen==='detail'&&name!=='detail'){$('detail-stage').replaceChildren();$('detail-case-prose').replaceChildren();}closeModal();all('.screen').forEach(el=>el.classList.toggle('active',el.id==='screen-'+name));screen=name;document.title=(name==='home'?'Home':name[0].toUpperCase()+name.slice(1))+' · Bethel Adekogbe';if(name==='projects')renderProjects();if(name==='photos')renderPhotos();all('.main-scroll,.news-panel,.detail-shell,.resume-onepage,#screen-home .screen-inner').forEach(el=>el.scrollTop=0);if(name!=='detail')history.replaceState(null,'','#'+(name==='photos'?'photography':name));}
 all('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
 tileButtons.forEach((b,i)=>{b.addEventListener('click',()=>{selectTile(i);go(b.dataset.home)});b.addEventListener('focus',()=>selectTile(i))});
 all('[data-unlinked]').forEach(b=>b.addEventListener('click',()=>{$('notice-title').textContent=b.dataset.unlinked+' preview';$('notice-text').textContent='The '+b.dataset.unlinked+' profile URL is not yet specified. The icon is a design placeholder, not an active profile link.';showModal('notice-overlay')}));
@@ -311,10 +325,175 @@ function coverFraming(project){
   return {fit:project?.coverFit,x:project?.coverX,y:project?.coverY};
 }
 function openProject(id){activeProject=PROJECTS.find(p=>p.id===id);activeMedia=0;if(!activeProject)return;go('detail');$('detail-header-label').textContent=activeProject.year;$('detail-year').textContent=activeProject.year.toUpperCase();$('detail-title').textContent=activeProject.title;$('detail-org').textContent=activeProject.org;$('detail-summary').textContent=activeProject.summary;$('detail-role').textContent='My role: '+activeProject.role+'.';$('detail-pills').innerHTML=activeProject.categories.map(c=>`<span class="pill">${escapeHtml(c)}</span>`).join('');$('detail-facts').innerHTML=activeProject.facts.map(f=>`<div class="fact">✓ &nbsp; ${escapeHtml(f)}</div>`).join('');$('detail-case-study').hidden=true;$('detail-case-prose').innerHTML='';$('detail-cta').innerHTML=(activeProject.audio?`<a class="primary" target="_blank" rel="noopener noreferrer" href="${activeProject.audio}">▶ Listen to the EP ↗</a>`:activeProject.video?`<a class="primary" target="_blank" rel="noopener noreferrer" href="${activeProject.video}">▶ Watch video ↗</a>`:'')+`<button type="button" id="show-full-case" class="secondary">Read full case study ↓</button>`;renderMedia();const note=document.querySelector('#screen-detail .detail-media .detail-note');if(note)note.textContent=activeProject.mediaNote||'Additional images illustrate my technical production work unless identified as project-specific media.';if(Array.isArray(activeProject.extraLinks)){for(const link of activeProject.extraLinks){const a=document.createElement('a');a.href=link.url;a.target='_blank';a.rel='noopener noreferrer';a.className='secondary';a.textContent=link.label;$('detail-cta').appendChild(a)}}const readButton=$('show-full-case');if(readButton)readButton.addEventListener('click',showFullCase);history.replaceState(null,'','#project/'+encodeURIComponent(activeProject.id))}
-function showFullCase(){const area=$('detail-case-study');const article=activeProject?.fullCaseHtml;$('detail-case-prose').innerHTML=typeof article==='string'&&article.trim()&&!/^<p>\s*<\/p>$/i.test(article.trim())?article:'<p>The full case study is not yet available in this portfolio view.</p>';area.hidden=false;history.replaceState(null,'','#project/'+encodeURIComponent(activeProject.id)+'/full');area.scrollIntoView({block:'start',behavior:'instant'})}
+
+/* Project video player: supported hosted streams and small locally uploaded videos. */
+function projectVideoSource(entry){
+  return typeof entry==='string'?entry:(entry?.file||entry?.url||'');
+}
+function projectVideoDescriptor(raw){
+  if(typeof raw!=='string'||!raw.trim())return null;
+  let url;
+  try{url=new URL(raw.trim(),location.origin)}catch(_){return null}
+  if(!['https:','http:'].includes(url.protocol))return null;
+  const host=url.hostname.toLowerCase();
+  const isHost=domain=>host===domain||host.endsWith('.'+domain);
+  const parts=url.pathname.split('/').filter(Boolean);
+  if(isHost('youtube.com')||isHost('youtube-nocookie.com')||host==='youtu.be'){
+    let id=host==='youtu.be'?parts[0]:url.searchParams.get('v')||(['shorts','embed','live'].includes(parts[0])?parts[1]:null);
+    if(id&&/^[a-zA-Z0-9_-]{11}$/.test(id))return {type:'iframe',src:'https://www.youtube-nocookie.com/embed/'+id,link:url.href};
+  }
+  if(isHost('vimeo.com')){
+    const id=(url.pathname.match(/(?:^\/(?:video\/)?)(\d+)/)||[])[1];
+    if(id){
+      const hash=url.searchParams.get('h')||(parts[0]==='video'?parts[2]:parts[1]);
+      const suffix=hash&&/^[a-zA-Z0-9]+$/.test(hash)?'?h='+encodeURIComponent(hash):'';
+      return {type:'iframe',src:'https://player.vimeo.com/video/'+id+suffix,link:url.href};
+    }
+  }
+  if(host==='drive.google.com'){
+    const id=(url.pathname.match(/^\/file\/d\/([a-zA-Z0-9_-]+)/)||[])[1];
+    if(id)return {type:'iframe',src:'https://drive.google.com/file/d/'+id+'/preview',link:url.href};
+  }
+  if(/\.(?:mp4|webm|ogg|ogv|mov)$/i.test(url.pathname))return {type:'native',src:url.href,link:url.href};
+  return {type:'link',src:url.href,link:url.href};
+}
+function createProjectPlayer(entry,poster){
+  const source=projectVideoDescriptor(projectVideoSource(entry));
+  if(!source)return null;
+  const wrap=document.createElement('div');
+  wrap.className='project-video-player';
+  const title=String(entry?.title||'Project video');
+  if(source.type==='iframe'){
+    const frame=document.createElement('iframe');
+    frame.src=source.src;
+    frame.title=title;
+    frame.loading='lazy';
+    frame.referrerPolicy='strict-origin-when-cross-origin';
+    frame.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen';
+    frame.allowFullscreen=true;
+    wrap.appendChild(frame);
+  }else if(source.type==='native'){
+    const video=document.createElement('video');
+    video.src=source.src;
+    video.controls=true;
+    video.playsInline=true;
+    video.preload='metadata';
+    if(poster)video.poster=poster;
+    video.setAttribute('aria-label',title);
+    wrap.appendChild(video);
+  }else{
+    const link=document.createElement('a');
+    link.className='project-video-fallback';
+    link.href=source.link;
+    link.target='_blank';
+    link.rel='noopener noreferrer';
+    link.textContent='▶ Open video ↗';
+    if(poster)link.style.backgroundImage='linear-gradient(#0008,#0009),url("'+poster.replace(/["()]/g,'')+'")';
+    wrap.appendChild(link);
+  }
+  return wrap;
+}
+function projectGalleryVideos(){
+  const allVideos=Array.isArray(activeProject?.projectVideos)?activeProject.projectVideos:[];
+  const shown=allVideos.filter(v=>v&&v.showInGallery!==false&&projectVideoSource(v));
+  if(activeProject?.video&&!allVideos.some(v=>projectVideoSource(v)===activeProject.video)){
+    shown.unshift({title:'Project video',url:activeProject.video,poster:activeProject.cover});
+  }
+  return shown;
+}
+
+function showFullCase(){
+  const area=$('detail-case-study'),prose=$('detail-case-prose'),article=activeProject?.fullCaseHtml;
+  prose.innerHTML=typeof article==='string'&&article.trim()&&!/^<p>\s*<\/p>$/i.test(article.trim())?article:'<p>The full case study is not yet available in this portfolio view.</p>';
+  const videos=(Array.isArray(activeProject?.projectVideos)?activeProject.projectVideos:[]).filter(v=>v&&v.showInCaseStudy!==false&&projectVideoSource(v));
+  if(videos.length){
+    const section=document.createElement('section');
+    section.className='case-study-videos';
+    const heading=document.createElement('h2');
+    heading.textContent='Project videos';
+    section.appendChild(heading);
+    for(const item of videos){
+      const player=createProjectPlayer(item,item.poster||activeProject?.cover);
+      if(!player)continue;
+      const block=document.createElement('div');
+      block.className='case-study-video';
+      if(item.title){
+        const h=document.createElement('h3');
+        h.textContent=item.title;block.appendChild(h);
+      }
+      block.appendChild(player);
+      if(item.caption){
+        const desc=document.createElement('p');
+        desc.className='portfolio-caption';
+        desc.textContent=item.caption;
+        block.appendChild(desc);
+      }
+      section.appendChild(block);
+    }
+    prose.appendChild(section);
+  }
+  area.hidden=false;
+  history.replaceState(null,'','#project/'+encodeURIComponent(activeProject.id)+'/full');
+  area.scrollIntoView({block:'start',behavior:'instant'});
+}
 $('detail-collapse').addEventListener('click',()=>{$('detail-case-study').hidden=true;$('detail-stage').scrollIntoView({block:'nearest'})});
 function projectMedia(){if(!activeProject)return[];if(activeProject.draft)return[];if(Array.isArray(activeProject.media)&&activeProject.media.length)return activeProject.media;let ids=[activeProject.img,'t4','t12','t21'];if(activeProject.id==='training')ids=['t21','t18','t5','t2'];if(activeProject.id==='holyweek')ids=['t16','t12','t24','t13'];return [...new Set(ids)].filter(k=>IMAGES[k])}
-function renderMedia(){$('detail-stage').classList.toggle('media-contain',Boolean(activeProject?.mediaContain));if(activeProject?.draft){$('detail-stage').innerHTML=`<img src="${activeProject.cover}" alt="Temporary typographic cover"><span class="stage-label">CASE STUDY IN DEVELOPMENT</span>`;$('detail-thumbnails').innerHTML='';return;}let imgs=projectMedia();const hasVideo=Boolean(activeProject?.video),items=hasVideo?['__video__',...imgs]:imgs;let idx=Math.min(activeMedia,items.length-1),key=items[idx];$('detail-stage').innerHTML=key==='__video__'?`<a href="${activeProject.video}" target="_blank" rel="noopener noreferrer" style="position:relative;display:block;width:100%;height:100%;color:white"><img src="${activeProject.cover||IMAGES[activeProject.img]}" alt="Selected portfolio image accompanying the public project video" ${framingAttr(coverFraming(activeProject))}><span style="position:absolute;inset:0;display:grid;place-items:center;background:#0007"><span style="background:#f42f3f;padding:15px 21px;border-radius:12px;font-weight:800">▶ Watch project video ↗</span></span></a><span class="stage-label">VIDEO · Opens public recording</span>`:`<img src="${IMAGES[key]||key}" alt="Selected production portfolio image" ${framingAttr(galleryFraming(idx-(hasVideo?1:0)),activeProject?.mediaContain?'contain':'cover')}><span class="stage-label">${idx+1} / ${items.length} · Media preview</span>`;$('detail-thumbnails').innerHTML=items.map((thumb,i)=>`<button class="media-thumb ${i===idx?'active':''}" data-media="${i}" aria-label="Show media ${i+1}"><img src="${thumb==='__video__'?(activeProject.cover||IMAGES[activeProject.img]):(IMAGES[thumb]||thumb)}" alt="" ${thumb==='__video__'?framingAttr(coverFraming(activeProject)):framingAttr(galleryFraming(i-(hasVideo?1:0)),activeProject?.mediaContain?'contain':'cover')}>${thumb==='__video__'?'<span>▶ Video</span>':''}</button>`).join('');all('[data-media]').forEach(b=>b.addEventListener('click',()=>{activeMedia=Number(b.dataset.media);renderMedia()}))}
+
+function renderMedia(){
+  const stage=$('detail-stage'),strip=$('detail-thumbnails');
+  stage.classList.toggle('media-contain',Boolean(activeProject?.mediaContain));
+  if(activeProject?.draft){
+    stage.replaceChildren();
+    const pic=document.createElement('img');pic.src=activeProject.cover||'';pic.alt='Project cover';stage.appendChild(pic);
+    const label=document.createElement('span');label.className='stage-label';label.textContent='CASE STUDY IN DEVELOPMENT';stage.appendChild(label);
+    strip.replaceChildren();return;
+  }
+  const videos=projectGalleryVideos().map(v=>({type:'video',data:v}));
+  const photos=projectMedia().map((src,i)=>({type:'image',src:IMAGES[src]||src,photoIndex:i}));
+  const items=videos.concat(photos);
+  const idx=items.length?Math.max(0,Math.min(activeMedia,items.length-1)):0;
+  const item=items[idx];
+  stage.replaceChildren();
+  strip.replaceChildren();
+  if(!item)return;
+  if(item.type==='video'){
+    const player=createProjectPlayer(item.data,item.data.poster||activeProject.cover);
+    if(player)stage.appendChild(player);
+    stage.classList.remove('media-contain');
+  }else{
+    const pic=document.createElement('img');
+    pic.src=item.src;pic.alt='Project gallery image '+(item.photoIndex+1);
+    const setting=galleryFraming(item.photoIndex);
+    pic.style.objectFit=setting?.fit==='contain'?'contain':setting?.fit==='cover'?'cover':activeProject.mediaContain?'contain':'cover';
+    const bound=n=>Number.isFinite(Number(n))?Math.min(100,Math.max(0,Number(n))):50;
+    pic.style.objectPosition=bound(setting?.x)+'% '+bound(setting?.y)+'%';
+    stage.appendChild(pic);
+  }
+  const label=document.createElement('span');
+  label.className='stage-label'+(item.type==='video'?' stage-label-video':'');
+  label.textContent=(idx+1)+' / '+items.length+' · '+(item.type==='video'?'Video — play here':'Media preview');
+  stage.appendChild(label);
+  items.forEach((entry,i)=>{
+    const btn=document.createElement('button');
+    btn.type='button';btn.className='media-thumb'+(i===idx?' active':'');
+    btn.setAttribute('aria-label',entry.type==='video'?'Play '+(entry.data.title||'project video'):'Show image '+(entry.photoIndex+1));
+    btn.dataset.media=String(i);
+    const thumbSrc=entry.type==='video'?(entry.data.poster||activeProject.cover):entry.src;
+    if(thumbSrc){
+      const img=document.createElement('img');
+      img.src=IMAGES[thumbSrc]||thumbSrc;img.alt='';img.loading='lazy';
+      btn.appendChild(img);
+    }
+    if(entry.type==='video'){
+      const marker=document.createElement('span');marker.textContent='▶ Video';btn.appendChild(marker);
+    }
+    btn.addEventListener('click',()=>{
+      activeMedia=i;renderMedia();
+    });
+    strip.appendChild(btn);
+  });
+}
+
 // Album: full source gallery, using original aspect ratios, categories and individual edit-only credits.
 // One randomized ordering per page load, preserving order when changing filters or revisiting the gallery.
 const PHOTO_DIMS=window.SWITCH_PHOTO_DIMENSIONS||{};

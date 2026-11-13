@@ -74,3 +74,16 @@ Pages CMS → **Projects (all content)** now exposes non-destructive image frami
 - These settings change the Switch-style **project card**, **media viewer**, and **thumbnail** presentation only. They do not cut, replace, or modify the underlying files.
 - The existing `mediaContain` legacy option remains as a default; any per-image setting overrides it. Older projects without framing metadata retain their previous display and Some Sweet Day's original cover behavior.
 - To adjust image positioning, save in Pages CMS and inspect the public project after GitHub Pages redeploys. This is a metadata-based editor, **not a drag-to-crop UI**. Images manually embedded in rich-text case-study HTML have their own layout and are not affected by these gallery controls.
+
+
+### CMS video playback in project galleries and full case studies (November 2026)
+
+In Pages CMS → **Projects (all content)**, use **Playable videos — top gallery and full case study** (`projectVideos`). Each entry has a title; either a YouTube, Vimeo, Google Drive sharing URL, or an uploaded MP4/WebM file; optional poster and caption; and two switches:
+
+- **Play in top photo/video reel** (`showInGallery`, default on) adds a playable item ahead of photos in the project's horizontal gallery.
+- **Embed below full case study** (`showInCaseStudy`, default on) adds an embedded player beneath the case-study article without hand-editing HTML.
+- Both may be enabled simultaneously for the same video; moving between media stops playback. Full-case articles keep their existing images, text, and links.
+- `video` remains a legacy watch URL and will now also be playable inside the top gallery for supported hosts; it is not automatically duplicated in the full case study, since many existing cases already embed their own players.
+- The **Project videos** media folder is `assets/videos/projects`. Pages CMS accepts short MP4/WebM uploads. GitHub enforces a 100 MiB maximum per file, and large video files increase repository and Pages deployment size; **host full films on YouTube or Vimeo and paste the URL** instead.
+- The rich-text **Full case study** field still supports more precise embed placement via Source mode if needed. The structured video list is recommended for general use because Pages CMS rich-text sanitization may strip raw iframe markup.
+- YouTube and Vimeo videos use privacy-friendly iframe players; Google Drive video links use preview embeds if accessible to viewers; direct MP4/WebM use native video controls. Unsupported links appear as an external open-video link rather than a broken player.

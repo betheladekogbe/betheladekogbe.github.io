@@ -9,6 +9,13 @@ media:
     output: /assets/images/projects
     categories: [image]
     rename: safe
+  - name: project_videos
+    label: Project videos (short MP4 and WebM files)
+    input: assets/videos/projects
+    output: /assets/videos/projects
+    categories: [video]
+    extensions: [mp4, webm]
+    rename: safe
   - name: photography
     label: Photography images
     input: assets/images/photography
@@ -350,8 +357,49 @@ content:
       - name: mediaNote
         label: Photo gallery caption
         type: text
+      - name: projectVideos
+        label: Playable videos — top gallery and full case study
+        description: Add a video from YouTube, Vimeo, Google Drive or an MP4/WebM file. The same video can appear in the top media reel and below the full case study. Large full-length films are better hosted on YouTube or Vimeo.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: Video title
+            type: string
+            required: true
+          - name: url
+            label: Video URL (YouTube, Vimeo, Google Drive or direct MP4/WebM)
+            description: Leave blank if you upload a video file instead.
+            type: string
+          - name: file
+            label: Upload video file (MP4 or WebM)
+            description: Leave blank if using a video URL. Recommended only for small clips; GitHub file size limits apply.
+            type: file
+            options:
+              media: project_videos
+              extensions: [mp4, webm]
+          - name: poster
+            label: Video thumbnail image (optional)
+            type: image
+            options:
+              media: project_images
+          - name: caption
+            label: Video caption (optional)
+            type: text
+          - name: showInGallery
+            label: Play in top photo/video reel
+            type: boolean
+            default: true
+          - name: showInCaseStudy
+            label: Embed below full case study
+            type: boolean
+            default: true
       - name: video
-        label: Video URL
+        label: Legacy video URL (also plays in top gallery)
+        description: Older projects use this field. For new videos, use Playable videos above to control both locations.
         type: string
       - name: audio
         label: Audio URL
