@@ -354,9 +354,6 @@ content:
             label: Image focus — top/bottom (0–100)
             type: number
             options: {min: 0, max: 100}
-      - name: mediaNote
-        label: Photo gallery caption
-        type: text
       - name: projectVideos
         label: Playable videos — top gallery and full case study
         description: Add a video from YouTube, Vimeo, Google Drive or an MP4/WebM file. The same video can appear in the top media reel and below the full case study. Large full-length films are better hosted on YouTube or Vimeo.
