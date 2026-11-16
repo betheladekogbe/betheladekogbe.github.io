@@ -1,33 +1,34 @@
 ---
-title: "Holy Week Devotional Video Series"
-organization: "Pentecostal Tabernacle"
-year: "2026"
-date: 2026-04-20
-category: "Creative direction · Video production"
-role: "Creative Director · Video Editor · Colorist"
-summary: "An eight-part video devotional series created with a six-person crew for Pentecostal Tabernacle."
+title: Holy Week Devotional Video Series
+organization: Pentecostal Tabernacle
+year: '2026'
+date: 2026-04-20T00:00:00Z
+category: Creative direction · Video production
+role: Creative Director · Video Editor · Colorist
+summary: An eight-part video devotional series created with a six-person crew
+  for Pentecostal Tabernacle.
 featured: true
 order: 1
 art: series
-image: "/assets/images/photography/holy-week-cover.jpg"
-image_alt: "A Holy Week devotional speaker gesturing in front of colorful stained-glass windows."
+image: /assets/images/photography/holy-week-cover.jpg
+image_alt: A Holy Week devotional speaker gesturing in front of colorful
+  stained-glass windows.
 ---
-
-This past Holy Week, I had the privilege of directing a six-person crew to produce an eight-part video devotional series for Pentecostal Tabernacle. We crafted a daily sequence of reflections designed to guide the community through the biggest week in the Christian calendar.
+In the spring of 2026, I had the privilege of directing a six-person crew to produce an eight-part video devotional series for Pentecostal Tabernacle. We crafted a daily sequence of reflections designed to guide the community through the biggest week in the Christian calendar.
 
 <figure class="os-story-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/xtCVRaLPyUY" title="Holy Week Devotional Series — video example" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/xtCVRaLPyUY" title="Holy Week Devotional Series — video example" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
   <figcaption><a href="https://youtu.be/xtCVRaLPyUY" target="_blank" rel="noopener noreferrer">Watch this devotional on YouTube ↗</a></figcaption>
 </figure>
 
 ## Pre-Production
 
-This project began with a proposal. It was revised and approved by Pentecostal Tabernacle's creative team and executive board. The scripts would be pre-written by me and approved by the communications director of the church, but we all agreed to let the speaker have some creative liberties. We wanted the content to be emotionally valuable for the talent and feel personal to the congregation, so we made a special effort to pick members of the community who were well-spoken, personable, and represented the diversity of the church.
+This project began with a proposal. It was revised and approved by Pentecostal Tabernacle’s creative team and executive board. The scripts would be pre-written by me and approved by the communications director of the church, but we all agreed to let the speaker have some creative liberties. We wanted the content to be emotionally valuable for the talent and feel personal to the congregation, so we made a special effort to pick members of the community who were well-spoken, personable, and represented the diversity of the church.
 
 From the proposal, you can see that we also originally planned to shoot on the streets outside of their south campus, but because of weather changes and consideration of staff and talent, we moved inside the building and pivoted to shots with a heavy focus on the stained glass in the historical building.
 
-<p class="portfolio-caption">For the original production artifacts, cast blocks, and scripts, see the expanded section below.</p>
-
+For the original production artifacts, cast blocks, and scripts, see the expanded section below.
+{: .portfolio-caption}
 
 ## Inside the original production brief
 
@@ -65,67 +66,74 @@ I wrote eight short, standalone scripts to match the day-by-day publishing seque
     <p>7 Days before Jesus Christ was resurrected, he entered into the city with a lot of commotion. This Palm Sunday we remember how Jesus came humbly into Jerusalem on a donkey but was met with the praise fit for a king. We now have the same call to action. Jesus may appear in our lives in an unexpected way but we choose how we respond. Come praise Jesus with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
   </div>
 </details>
+
 <details class="portfolio-disclosure">
   <summary>02 / Holy Monday — Joel Holly</summary>
   <div class="portfolio-disclosure-body">
     <p><strong>Script context:</strong> Cleansing the Temple · Cast block: 12:00 PM</p>
-    <p>6 Days before Jesus Christ was resurrected, He was in the temple disrupting the status quo. “My Temple will be a house of prayer,” He said “but you have turned it into a den of thieves.” It’s encouraging to remember how little Jesus puts up with foolishness in His House but do we carry out the first part of what he said? “My Temple will be a house of prayer,”<br>Come pray with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
+    <p>6 Days before Jesus Christ was resurrected, He was in the temple disrupting the status quo. “My Temple will be a house of prayer,” He said “but you have turned it into a den of thieves.” It’s encouraging to remember how little Jesus puts up with foolishness in His House but do we carry out the first part of what he said? “My Temple will be a house of prayer,”<br />Come pray with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
   </div>
 </details>
+
 <details class="portfolio-disclosure">
   <summary>03 / Holy Tuesday — Elder Cam Edey</summary>
   <div class="portfolio-disclosure-body">
     <p><strong>Script context:</strong> Mark 12:28–34 · Cast block: 1:00 PM</p>
-    <p>5 Days before Jesus Christ was resurrected, Jesus shared wisdom and challenged religious leaders. He answered their most important question “ What is the greatest commandment?” Jesus boldly replied: Love God and love others. He didn’t focus on rules for rules sake, but to encourage love. That same challenge still stands for us today.<br>Come show your neighbor some love this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
+    <p>5 Days before Jesus Christ was resurrected, Jesus shared wisdom and challenged religious leaders. He answered their most important question “ What is the greatest commandment?” Jesus boldly replied: Love God and love others. He didn’t focus on rules for rules sake, but to encourage love. That same challenge still stands for us today.<br />Come show your neighbor some love this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
   </div>
 </details>
+
 <details class="portfolio-disclosure">
   <summary>04 / Holy Wednesday — Mia Tao</summary>
   <div class="portfolio-disclosure-body">
     <p><strong>Script context:</strong> Mark 14:10–11 · Cast block: 12:00 PM</p>
-    <p>4 Days before Jesus Christ was resurrected Judas, made a choice that would set the course of history. He went to the religious leaders and agreed to betray Jesus for 30 pieces of silver. Jesus knew the hearts of the people and still moved towards the cross with love and purpose. This Easter, we’re reminded that no matter what challenges or betrayals we face, God’s love never fails.<br>Come experience His grace with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
+    <p>4 Days before Jesus Christ was resurrected Judas, made a choice that would set the course of history. He went to the religious leaders and agreed to betray Jesus for 30 pieces of silver. Jesus knew the hearts of the people and still moved towards the cross with love and purpose. This Easter, we’re reminded that no matter what challenges or betrayals we face, God’s love never fails.<br />Come experience His grace with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
   </div>
 </details>
+
 <details class="portfolio-disclosure">
   <summary>05 / Maundy Thursday — Tim Joseph</summary>
   <div class="portfolio-disclosure-body">
     <p><strong>Script context:</strong> The Last Supper · Cast block: 1:00 PM</p>
-    <p>The Day before Jesus Christ was killed he washed his disciples feet at the last supper. The imagery of the last supper is iconic but not the image of Jesus washing his disciples feet. It’s hard to imagine God on his knees washing the feet of his students but It’s an example of how we should serve each other.<br>Think of some ways you can serve your community this week and come worship with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
+    <p>The Day before Jesus Christ was killed he washed his disciples feet at the last supper. The imagery of the last supper is iconic but not the image of Jesus washing his disciples feet. It’s hard to imagine God on his knees washing the feet of his students but It’s an example of how we should serve each other.<br />Think of some ways you can serve your community this week and come worship with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
   </div>
 </details>
+
 <details class="portfolio-disclosure">
   <summary>06 / Good Friday — Anna Adekogbe</summary>
   <div class="portfolio-disclosure-body">
     <p><strong>Script context:</strong> Mark 15:21–39 · Cast block: 1:00 PM</p>
-    <p>The Day Jesus Christ was killed, what looked like defeat was actually the greatest act of love! He took on sin, pain, and death so we could have freedom. Think of the person you love the most in the world. Could you give your life for their’s? Could you give your life for someone you didn’t love? How about someone who hated you?<br>Come give thanks for the price Jesus paid with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
+    <p>The Day Jesus Christ was killed, what looked like defeat was actually the greatest act of love! He took on sin, pain, and death so we could have freedom. Think of the person you love the most in the world. Could you give your life for their’s? Could you give your life for someone you didn’t love? How about someone who hated you?<br />Come give thanks for the price Jesus paid with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
   </div>
 </details>
+
 <details class="portfolio-disclosure">
   <summary>07 / Holy Saturday — Joyce Holly</summary>
   <div class="portfolio-disclosure-body">
     <p><strong>Script context:</strong> The sealed tomb · Cast block: 12:00 PM</p>
-    <p>The Day after Jesus was killed, they still conspired against him. A guard was hired to make sure the disciples didn’t come in the night to steal Jesus’ body away. Unknowingly the guard became witnesses of the resurrection. Jesus Christ may have been dead but did not stay dead and there was nothing the devil or anyone else could do about it.<br>Come celebrate the resurrection and new life with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
+    <p>The Day after Jesus was killed, they still conspired against him. A guard was hired to make sure the disciples didn’t come in the night to steal Jesus’ body away. Unknowingly the guard became witnesses of the resurrection. Jesus Christ may have been dead but did not stay dead and there was nothing the devil or anyone else could do about it.<br />Come celebrate the resurrection and new life with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
   </div>
 </details>
+
 <details class="portfolio-disclosure">
   <summary>08 / Resurrection Sunday — Aaron Jennings</summary>
   <div class="portfolio-disclosure-body">
     <p><strong>Script context:</strong> The resurrection · Cast block: 1:00 PM</p>
-    <p>The Day Jesus Christ was resurrected, death became something you no longer needed to fear. That’s the gospel. Someone loves us so much that he gave His own life to cripple death forever. So now with Jesus in your heart, your sins are forgiven and you are made new. No one could give you a greater gift than this. So what will you do with your new freedom? If you had a blank check, what would you spend it on? And who would you spend it with?<br>Come rejoice with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
+    <p>The Day Jesus Christ was resurrected, death became something you no longer needed to fear. That’s the gospel. Someone loves us so much that he gave His own life to cripple death forever. So now with Jesus in your heart, your sins are forgiven and you are made new. No one could give you a greater gift than this. So what will you do with your new freedom? If you had a blank check, what would you spend it on? And who would you spend it with?<br />Come rejoice with us this Easter at Pentecostal Tabernacle right here in Cambridge.</p>
   </div>
 </details>
 
 ## Production
 
-We pulled off this very quick job within a single day with PT's stellar media team. With the entire sanctuary to ourselves, we had ample space to create some excellent shots fully utilizing the beauty of the building.
+We pulled off this very quick job within a single day with PT’s stellar media team. With the entire sanctuary to ourselves, we had ample space to create some excellent shots fully utilizing the beauty of the building.
 
-- **Creative Director:** Bethel Adekogbe
-- **Director of Photography:** Susanna Donkor
-- **Script Supervisor & Consultant:** Erica Kelly
-- **Production Sound Mixer:** Berlyn Joseph
-- **Chief Lighting Technician:** Abigail Sah
-- **Talent Relations Manager:** Anna Adekogbe
-- **Lead Production Coordinator:** Joshua Ikegwu
+* **Creative Director:** Bethel Adekogbe
+* **Director of Photography:** Susanna Donkor
+* **Script Supervisor & Consultant:** Erica Kelly
+* **Production Sound Mixer:** Berlyn Joseph
+* **Chief Lighting Technician:** Abigail Sah
+* **Talent Relations Manager:** Anna Adekogbe
+* **Lead Production Coordinator:** Joshua Ikegwu
 
 <div class="os-project-media-note">
   <span class="os-project-media-icon" aria-hidden="true">▣</span>
@@ -142,10 +150,10 @@ We filmed everything one week before Holy Week began, so we had to edit everythi
 
 *This campaign gained over 27,500 views in the first four weeks after the initial post.*
 
-You can find the entire video series on all Pentecostal Tabernacle's social media, and we've included some written comments from Pentecostal Tabernacle's leadership below.
+You can find the entire video series on all Pentecostal Tabernacle’s social media, and we’ve included some written comments from Pentecostal Tabernacle’s leadership below.
 
 <figure class="os-story-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/0mfl1BOiD5I" title="Easter Sunday — Holy Week Daily Devotional number eight" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/0mfl1BOiD5I" title="Easter Sunday — Holy Week Daily Devotional number eight" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
   <figcaption><a href="https://youtu.be/0mfl1BOiD5I" target="_blank" rel="noopener noreferrer">Watch Easter Sunday devotional on YouTube ↗</a></figcaption>
 </figure>
 
@@ -155,4 +163,4 @@ You can find the entire video series on all Pentecostal Tabernacle's social medi
 
 [Watch the Easter Sunday devotional on YouTube ↗](https://youtu.be/0mfl1BOiD5I)
 
-**Related case study:** [Easter 2025 — Three-Service Live Production]({{ '/work/easter-2025/' | relative_url }}) shows a different aspect of Easter media leadership: staffing, real-time switching, and coordination across three services.
+**Related case study:** \[Easter 2025 — Three-Service Live Production\]({{ '/work/easter-2025/' | relative_url }}) shows a different aspect of Easter media leadership: staffing, real-time switching, and coordination across three services.
